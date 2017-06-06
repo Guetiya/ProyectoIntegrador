@@ -1,0 +1,236 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+background-image : url(../../images/fondo/dust.png);
+border-image: url(border.png) 50round;
+font-family: sans-serif, cursiva;
+size:auto;
+
+}
+.contenido{
+  size:auto;
+  width: auto;
+  height: auto;
+}
+
+.titulo p{
+  width: auto;
+  height: auto;
+}
+
+.firma {
+  font-size: 20px;
+  background: none;
+  color: rgba(112, 0, 37, 0.7);
+  display: inline-block;
+
+
+}
+
+.logo{
+  background-image: url(../../images/fotos/logo.jpg);
+  width: auto;
+  height: auto;
+  border-radius: 100px;
+  border-color: purple;
+  overflow: hidden;
+  display: inline-block;
+  background-size: cover;
+}
+
+h1{
+  background: linear-gradient(to top left, #FF9980 0%, #e9e7e8 100%);
+  color: #700025;
+  font-family: 'Parisienne', cursive;
+  font-size: 55px;
+  border: solid 1.5px #ff9999;
+  border-radius: 10px;
+  border-width: 1.5px;
+  line-height: 73px;
+  height: auto;
+  width: auto;
+  vertical-align: middle;
+  text-align: center;
+}
+
+nav{
+list-style: georgian;
+border: solid 1.5px #ff9980;
+border-radius: 10px;
+background-color:#e9e7e8;
+}
+
+.barranavegacion{
+  width: 100%;
+  height: 60px;
+  display: inline-block;
+}
+
+.listanavegacion{
+  text-decoration: underline;
+  color: rgb(130, 7, 47);
+  font-family: 'Merienda', cursive;
+  margin-left: 10px;
+  font-size: 23px;;
+}
+
+.navegacion li{
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  width: auto;
+}
+
+li{
+  width: auto;
+  height: auto;
+  margin:0px;
+}
+
+div.contenido{
+  background-image : url(../../images/fondo/dust.png);
+}
+
+.competenciasDelphine{
+  height: auto;
+  width: auto;
+  z-index: 0;
+  background-color: rgba(255, 153, 128, 0.41);
+  background: cover;
+  margin: auto;
+  border-radius: 10px;
+  display:inline-block;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  color: #700025;
+  font-size: 40px;
+  background-color: #e9e7e8;
+  border: solid 1.5px #ff9980;
+  width: auto;
+  text-align: center;
+  border-bottom:;
+  border-radius: 10px;
+  display: inline-block;
+}
+ .trabajos{
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 0;
+  background-image : url(../../images/fondo/dust.png);
+  margin: auto;
+}
+
+img{
+border-radius: 10px;
+}
+
+h3{
+  font-family: 'Kalam', cursive;
+  font-size: 25px;
+  color:#700025;
+  margin-bottom: 17px;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.peinados, .maquillaje, .asesoriadeimagen{
+  height: auto;
+  position: relative;
+  display: inline-block;
+  margin:5px;
+  border-radius: 20px;
+  float: left;
+  width: auto;
+}
+
+.peinados p .maquillaje p .asesoriadeimagen p{
+display: inline-block;
+}
+
+p{
+  font-family: 'Niconne', cursive;
+  font-size: 25px;
+  background-color: rgba(255, 153, 128, 0.41);
+  border-radius: 10px;
+  padding-left: 13px;
+  margin-right: 10px;
+}
+
+.trabajos p{
+  display: inline-block;
+  width: 272px;
+  height: 38%;
+  bottom: 56px;
+  position: absolute;
+  left: 12px;
+  top: 449px;
+  overflow: auto;
+}
+
+.mariageenbeaute{
+  background-color: rgba(255, 153, 128, 0.41);
+  width: auto;
+  height: auto;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  padding: auto;
+}
+.Mariage_pie{
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+}
+
+.texto{
+  font-size: 20px;
+}
+
+.texto p{
+  width: auto;
+  margin: auto;
+  background-image : url(../../images/fondo/dust.png);
+  text-align:left;
+  font-family: 'Merienda', cursive;
+  font-size: 20px;
+}
+
+footer{
+  width: 100%;
+  height: 25px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+div.footer{
+  width: 100%;
+  margin: auto;
+  color: #700025;
+  text-align: center;
+}
+
+.footer a{
+  color:#700025;
+  margin-right: 2%;
+}
+@media(max-width: 320px){
+  .listanavegacion{
+    text-decoration: underline;
+    color: rgb(130, 7, 47);
+    font-family: 'Merienda', cursive;
+    display: inline-block;
+    margin-left: 60px;
+    font-size: 30px;
+  }
+
+
+
+}
