@@ -1,0 +1,169 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+background-image : url(../../images/fondo/dust.png);
+border-image: url(border.png) 50round;
+font-family: sans-serif, cursiva;
+position: relative;
+}
+
+.titulo p{
+  width: 150px;
+  height: 20px;
+}
+
+.firma {
+  position: absolute;
+  left: 56%;
+  top: 36px;
+  background: none;
+  color: rgba(112, 0, 37, 0.7);
+}
+
+.logo{
+  background-image: url(../../images/fotos/logo.jpg);
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  border-radius: 100px;
+  border-color: purple;
+  top:-28px;
+  left: 71px;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  background-size: cover;
+}
+
+h1{
+  background: linear-gradient(to top left, #FF9980 0%, #e9e7e8 100%);
+  color: #700025;
+  font-family: 'Parisienne', cursive;
+  font-size: 55px;
+  border: solid 1.5px #ff9999;
+  border-radius: 10px;
+  border-width: 1.5px;
+  line-height: 73px;
+  height: 90px;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+p{
+  font-family: 'Niconne', cursive;
+  font-size: 20px;
+  border-radius: 10px;
+  padding-left: 13px;
+  margin-right: 10px;
+}
+
+nav{
+list-style: georgian;
+height: 77px;
+border: solid 1.5px #ff9980;
+border-radius: 10px;
+background-color:#e9e7e8;
+}
+
+.barranavegacion{
+  left: 34px;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.listanavegacion{
+  text-decoration: underline;
+  color: rgb(130, 7, 47);
+  font-family: 'Merienda', cursive;
+}
+
+ul{
+  width: auto;
+  height: 134px;
+  display: block;
+  position: relative;
+}
+
+.navegacion li{
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  width: 100px;
+}
+
+li{
+  width: 90px;
+  height: auto;
+  margin:0px;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  font-size: 40px;
+  background-color: #e9e7e8;
+  border: solid 1.5px #ff9980;
+  color: #700025;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  border-bottom:;
+  border-radius: 10px;
+}
+
+.sesionTrabajo{
+  background-color: rgba(255, 153, 128, 0.41);
+  border-radius: 10px;
+}
+
+.sesionTrabajo .faq{
+  width: 95%;
+  position: relative;
+  z-index: 0;
+  background-image : url(../../images/fondo/dust.png);
+  margin: auto;
+  border-radius: 10px;
+  right: 2px;
+  bottom: 12px;
+}
+
+article{
+  margin-left: 13px;
+}
+
+.preguntasRepuestas p{
+  font-family: 'Merienda', cursive;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h3{
+  font-family: 'Merienda', cursive;
+  background-color: rgba(255, 153, 128, 0.24);
+  font-size: 20px;
+}
+
+footer{
+  width: 100%;
+  height: 25px;
+  display: inline-block;
+  background-image : url(../../images/fondo/dust.png);
+  margin-top: 15px;
+}
+
+div.footer{
+  width: 100%;
+  margin: auto;
+  color: #700025;
+  text-align: center;
+}
+
+.footer a{
+  color:#700025;
+  margin-right: 2%;
+}
