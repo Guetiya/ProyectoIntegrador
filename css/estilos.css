@@ -13,6 +13,7 @@ size:auto;
   size:auto;
   width: auto;
   height: auto;
+
 }
 
 .titulo p{
@@ -26,8 +27,6 @@ size:auto;
   color: rgba(112, 0, 37, 0.7);
   display: inline-block;
   border: none;
-
-
 }
 
 .logo{
@@ -102,14 +101,14 @@ li{
 }
 
 div.contenido{
-  background-image : url(../../images/fondo/dust.png);
+  background-image : url();
 }
 
 .competenciasDelphine{
   height: auto;
   width: auto;
   z-index: 0;
-  background-color: rgba(255, 153, 128, 0.41);
+  background-color: ;
   background: cover;
   margin: auto;
   border-radius: 10px;
@@ -121,9 +120,6 @@ h2{
   font-family: 'Parisienne', cursive;
   color: #700025;
   font-size: 40px;
-  background-color: #e9e7e8;
-  border-top: solid 1.5px #ff9980;
-  border-bottom:  solid 1.5px #ff9980;
   border-left: none;
   border-right: none;
   width: auto;
@@ -188,7 +184,7 @@ p{
 }
 
 .mariageenbeaute{
-  background-color: rgba(255, 153, 128, 0.41);
+  background-color: ;
   width: auto;
   height: auto;
   margin: auto;
