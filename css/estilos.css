@@ -140,7 +140,7 @@ border-radius: 10px;
 
 h3{
   font-family: 'Kalam', cursive;
-  font-size: 25px;
+  font-size: 45px;
   color:#700025;
   margin-bottom: 17px;
   display: inline-block;
@@ -164,11 +164,13 @@ display: inline-block;
 
 p{
   font-family: 'Niconne', cursive;
-  font-size: 25px;
-  background-color: rgba(255, 153, 128, 0.41);
-  border-radius: 10px;
+  font-size: 35px;
   padding-left: 13px;
   margin-right: 10px;
+  display: block;
+  border-top: solid 1.5px #ff9980;
+  border-bottom: solid 1.5px #ff9980;
+  background-color: #e9e7e8;
 }
 
 .trabajos p{
