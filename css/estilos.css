@@ -46,7 +46,10 @@ h1{
   font-family: 'Parisienne', cursive;
   font-size: 55px;
   border: solid 1.5px #ff9999;
-  border-radius: 10px;
+  border-top: solid 1.5px #ff9999 ;
+  border-bottom: solid 1.5px #ff9999 ;
+  border-left: none ;
+  border-right: none ;
   border-width: 1.5px;
   line-height: 73px;
   height: auto;
@@ -58,7 +61,10 @@ h1{
 nav{
 list-style: georgian;
 border: solid 1.5px #ff9980;
-border-radius: 10px;
+border-top:  solid 1.5px #ff9980;
+border-bottom: solid 1.5px #ff9980;
+border-left: none;
+border-right: none;
 background-color:#e9e7e8;
 }
 
@@ -110,12 +116,13 @@ h2{
   color: #700025;
   font-size: 40px;
   background-color: #e9e7e8;
-  border: solid 1.5px #ff9980;
+  border-top: solid 1.5px #ff9980;
+  border-bottom:  solid 1.5px #ff9980;
+  border-left: none;
+  border-right: none;
   width: auto;
   text-align: center;
-  border-bottom:;
-  border-radius: 10px;
-  display: inline-block;
+  display: block;
 }
  .trabajos{
   height: auto;
