@@ -78,8 +78,13 @@ background-color:#e9e7e8;
   text-decoration: underline;
   color: rgb(130, 7, 47);
   font-family: 'Merienda', cursive;
-  margin-left: 10px;
-  font-size: 23px;;
+  padding-right: 20px;
+
+  font-size: 33px;
+  text-decoration: none;
+  border-right: solid 1.5px #82072F;
+  margin-right: 40px;
+  margin-left: 20px;
 }
 
 .navegacion li{
@@ -230,16 +235,21 @@ div.footer{
   color:#700025;
   margin-right: 2%;
 }
-@media(max-width: 320px){
+
+@media (max-width: 1340px){
   .listanavegacion{
     text-decoration: underline;
     color: rgb(130, 7, 47);
     font-family: 'Merienda', cursive;
-    display: inline-block;
-    margin-left: 60px;
-    font-size: 30px;
-  }
+    padding-right: 20px;
 
+    font-size: 33px;
+    text-decoration: none;
+    border-right: none;
+    margin-right: 40px;
+    margin-left: 20px;
+  }
+}
 
 
 }
