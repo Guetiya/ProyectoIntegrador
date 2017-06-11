@@ -1,85 +1,74 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
-    <title>Formulario de registro</title>
-    <!-- esto es la pagina de registrarse -->
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Kalam|Niconne|Parisienne|Itim|Merienda|Rochester" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  </head>
-  <body>
-    <div class="contenido">
-      <!-- cabecera -->
-      <header class="cabecera" role="banner">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+  <title>Formulario de registro</title>
+  <!-- esto es la pagina de registrarse -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Kalam|Niconne|Parisienne|Itim|Merienda|Rochester" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <div class="contenido">
+    <!-- cabecera -->
+    <header class="cabecera" role="banner">
       <img src="" alt="" class="logo">
-        <div class="titulo">
-          <h1 class="tituloPrincipal">Mariage en beauté  <p class="firma">par Delphine B.</p></h1>
+      <div class="titulo">
+        <h1 class="tituloPrincipal">Mariage en beauté  <p class="firma">par Delphine B.</p></h1>
 
-        </div>
-        <nav class="navegacion" role="navegacion">
-          <ul class="barranavegacion">
-            <li> <a href="./home.html" class="listanavegacion">Inicio</a> </li>
-            <li> <a href="#" class="listanavegacion">¿Quién soy?</a> </li>
-            <li> <a href="#" class="listanavegacion">servicios</a> </li>
-            <li> <a href="./faq.html" class="listanavegacion">FAQ</a></li>
-            <li>  <a href="./index.html" class="listanavegacion">Log in</a></li>
-            <li>  <a href="./formulariodeusuario.html" class="listanavegacion"style="border-right:none;">Registrarse</a></li>
-
-          </ul>
-        </nav>
-      </header>
-      <div class="sesionTrabajo">
-        <h2>Formulario de registro</h2>
-      <form action="script.php" method="get">
-        <div>
-          <label for="Appelido"> Apellido : </label>
-          <input type="text" placeholder="Apellido" id="Apellido" name="Apellido" required>
-        </div>
-        <div>
-          <label for="Nombre"> Nombre : </label>
-          <input type="text" placeholder="Nombre" id="Nombre" name="Nombre" required>
-        </div>
-        <div>
-          <label for="Genero"> Genero : </label>
-          <input type="radio" name="Genero"> <label for "Hombre"> Hombre </label>
-          <input type="radio" name="Genero"> <label for "Mujer"> Mujer</label>
-        </div>
-        <div>
-          <label for="Correo electronico"> Correo electrónico : </label>
-          <input type="email" placeholder="Correo electrónico" id="Correo"name="correo electronico">
-        </div>
-        <div>
-          <label for="Contrasena"> Contraseña : </label>
-          <input type="password" placeholder="Contraseña" name="Contrasena" required>
-          <label for="RepetirContrasena"> Repetir contraseña : </label>
-          <input type="password" placeholder="Contraseña" name="Contrasena" required>
-
-        </div>
-
-
-        <div class="recordarme">
-          <input type="checkbox" name="Recordarme">
-          <span for="Recordarme"> Recordarme</span>
-        </div>
-        <br>
-        <br>
-          <button type="submit"> Registrarme </button>
-          <button type="reset"> Borrar </button>
-        <br>
-        <br>
-        </form>
       </div>
-    <!-- footer -->
-      <footer>
-        <div class="footer">
-          <a href="&copy; Copyright 2017">&copy; Copyright 2017</a>
-          <a href="Menciones legales">Menciones legales</a>
-          <a href="#top">Top</a>
-        </div>
-      </footer>
+      <nav class="navegacion" role="navegacion">
+        <ul class="barranavegacion">
+          <li> <a href="./home.html" class="listanavegacion">Inicio</a> </li>
+          <li> <a href="#" class="listanavegacion">¿Quién soy?</a> </li>
+          <li> <a href="#" class="listanavegacion">servicios</a> </li>
+          <li> <a href="./faq.html" class="listanavegacion">FAQ</a></li>
+          <li> <a href="./index.html" class="listanavegacion">Log in</a></li>
+          <li> <a href="./formulariodeusuario.html" class="listanavegacion" style="border-right:none;background-color:#FCA28D;">Registrarse</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2>Formulario de registro</h2>
+    <form action="script.php" method="get">
+      <div class="Formulario_registro">
+        <label for="Appelido"> Apellido </label>
+        <input type="text" placeholder="Apellido" id="Apellido" name="Apellido" required class="campos">
+        <label for="Nombre"> Nombre  </label>
+        <input type="text" placeholder="Nombre" id="Nombre" name="Nombre" required class="campos"> Genero
+        <select name="genero" value="genero" class="campos">
+          <option value="genero">indefinido</option>
+          <option value="genero">Hombre</option>
+          <option value="genero">Mujer</option>
+        </select>
+        <label for="Correo electronico"> Correo electrónico  </label>
+        <input type="email" placeholder="Correo electrónico" id="Correo" name="correo electronico" class="campos">
+        <label for="Contrasena"> Contraseña  </label>
+        <input type="password" placeholder="Contraseña" name="Contrasena" required class="campos">
+        <label for="RepetirContrasena"> Repetir contraseña  </label>
+        <input type="password" placeholder="Contraseña" name="Contrasena" required class="campos">
+        <span for="Recordarme"> Recordarme  <input type="checkbox" name="Recordarme"class="campos"></span>
+      </div>
+      <br>
+      <br>
+      <button type="submit" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
+      <button type="reset"class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
+      <br>
+      <br>
+    </form>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="footer">
+      <a href="&copy; Copyright 2017">&copy; Copyright 2017</a>
+      <a href="Menciones legales">Menciones legales</a>
+      <a href="#top">Top</a>
     </div>
-  </body>
+  </footer>
+  </div>
+</body>
+
 </html>

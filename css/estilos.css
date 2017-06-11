@@ -79,7 +79,20 @@ background-color:#e9e7e8;
   color: rgb(130, 7, 47);
   font-family: 'Merienda', cursive;
   padding-right: 20px;
+  font-size: 33px;
+  text-decoration: none;
+  border-right: solid 1.5px #82072F;
+  margin-right: 40px;
 
+
+}
+.listanavegacion:hover{
+  text-decoration: underline;
+  color: rgb(130, 7, 47);
+  font-family: 'Merienda', cursive;
+  padding-right: 20px;
+  background-color: #FCA28D;
+  border-radius: 800px;
   font-size: 33px;
   text-decoration: none;
   border-right: solid 1.5px #82072F;
@@ -93,7 +106,28 @@ background-color:#e9e7e8;
   text-align: center;
   width: auto;
 }
+.SubTitulo_mariage{
+  font-size: 60px;
+}
+.imagenes{
 
+}
+.titulo_imagenes_redondas{
+  font-family: 'Merienda', cursive;
+  margin-right: 40px;
+  font-size: 45px;
+
+}
+.imagenes_redondas{
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  border: solid 3px #700025;
+  margin-right: 150px;
+  margin-left: 75px;
+
+
+}
 li{
   width: auto;
   height: auto;
@@ -231,19 +265,53 @@ div.footer{
 .respuestaFaq{
   font-size: 60px;
 }
+.Formulario_registro{
+  display:   inline-grid;
+  text-align: center;
+  color: #700025;
+  font-family: 'Merienda', cursive;
+  font-size: 30px;
 
+}
+.campos{
+  border-color: #FAA996;
+border-radius: 80px;
+padding: 5px;
+font-family: 'Merienda', cursive;
+font-size: 15px;
+}
+.login{
+  border-color: #FAA996;
+  color: #700025;
+  font-family: 'Merienda', cursive;
+  font-size: 30px;
+  border-radius: 80px;
+  padding: 5px;
+  background-color: ghostwhite;
+}
+.login:hover{
+  border-color: #FAA996;
+  color: #700025;
+  font-family: 'Merienda', cursive;
+  font-size: 30px;
+  border-radius: 80px;
+  padding: 5px;
+  background-color: darksalmon;
+}
 @media (max-width: 1340px){
   .listanavegacion{
     text-decoration: underline;
     color: rgb(130, 7, 47);
     font-family: 'Merienda', cursive;
     padding-right: 20px;
-
     font-size: 33px;
     text-decoration: none;
     border-right: none;
     margin-right: 40px;
     margin-left: 20px;
+  }
+  .titulo_imagenes_redondas{
+    display: none;
   }
 }
 
