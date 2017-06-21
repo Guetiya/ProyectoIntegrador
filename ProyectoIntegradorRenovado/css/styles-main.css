@@ -1,0 +1,202 @@
+/*Tipografias y títulos
+========================*/
+body {
+  font-family: "Open Sans";
+}
+
+h1, h2, h3, h4, .main-description, .sign {
+  font-family: Parisienne;
+}
+
+.main-description {
+  font-size: 55px;
+}
+
+aside a, i {
+  color: #aaa;
+}
+
+.listanavegacion {
+  color : #aaa;
+}
+
+/* Estilos principales
+==============================*/
+ /*Main description*/
+ .main-description {
+  margin-top: -30px;
+ }
+
+ .center {
+   position: relative;
+ }
+
+ .sign {
+   position: absolute;
+   right: 0;
+   bottom: -17px;
+ }
+
+
+/*aside*/
+.left-col ul,
+.right-col ul {
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.left-col ul li {
+  list-style-type: none;
+  float: left;
+}
+
+.right-col ul {
+  text-align: right;
+}
+
+.right-col .login li {
+    list-style-type: none;
+    text-align: right;
+    display: inline-block;
+}
+
+.separator {
+  margin: 0 10px;
+}
+
+.left-col .social li {
+  margin-right: 10px;
+}
+
+
+/* Search
+=============*/
+.search {
+  position: relative;
+}
+.search input {
+  padding-right: 30px;
+}
+.fa-search {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+}
+
+/* Barra de navegacion
+=============*/
+.navbar-nav {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+}
+
+.navbar-nav ul {
+  padding-left: 0;
+}
+.navbar-nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navbar-nav a {
+  font-size: 15px;
+  color : black;
+  margin-right: 70px;
+  /*margin-left: 15px;*/
+}
+
+/* Main
+================================*/
+main {
+  background-color: black; /*#e7ece6*/
+  height: 250px;
+  margin-top: 20px;
+}
+
+main h1 {
+  margin-top: 28px;
+}
+
+.cover-title, .cover_p {
+  color: #aaa;
+}
+
+/* Contenido
+================================*/
+h2 {
+  font-size: 30px;
+}
+
+.glyphicon-menu-left {
+  margin-left: 60px;
+}
+
+.testimonios p{
+margin :0;
+}
+
+.fa-quote-right {
+  font-size: 50px;
+  margin-left: 200px;
+  color : #e7ece6;
+}
+
+/* Footer
+================================*/
+footer {
+  background-color: yellow;
+  height: 100px;
+}
+
+footer .left-col ul,
+footer .right-col ul {
+  padding-left: 0;
+  overflow: hidden;
+  color : red;
+}
+
+footer .left-col ul li {
+  list-style-type: none;
+  float: left;
+}
+
+footer .right-col ul {
+  text-align: left;
+}
+
+footer .right-col .copyright li {
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+}
+
+footer .separator {
+  margin: 0 10px;
+}
+
+footer .left-col .social li {
+  margin-right: 10px;
+}
+
+/* Media Querys
+================================*/
+@media (min-width: 1200px) {
+  .sign {
+    right:48px;
+  }
+
+}
+@media (max-width: 991px){
+  .main-description {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .sign {
+
+  }
+  .main-description {
+    margin-top: 0;
+  }
+}
