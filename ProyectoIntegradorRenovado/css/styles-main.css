@@ -146,7 +146,7 @@ margin :0;
 ================================*/
 footer {
   background-color: yellow;
-  height: 100px;
+  display: inline-block;
 }
 
 footer .left-col ul,
