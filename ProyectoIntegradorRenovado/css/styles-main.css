@@ -4,8 +4,9 @@ body {
   font-family: "Open Sans";
 }
 
-h1, h2, h3, h4, .main-description, .sign {
+h1, h2, h3, .main-description, .sign {
   font-family: Parisienne;
+  color: #FF9980;
 }
 
 .main-description {
@@ -109,8 +110,8 @@ aside a, i {
 /* Main
 ================================*/
 main {
-  background-color: black; /*#e7ece6*/
-  height: 250px;
+  background-color: black; /* Otras colores posibles #e7ece6 #FF9980 */
+  height: 266px;
   margin-top: 20px;
 }
 
@@ -122,10 +123,34 @@ main h1 {
   color: #aaa;
 }
 
+.carousel-inner .item img {
+  height: 266px;
+  margin-left: 900px;
+}
+
+.carousel-caption h3 {
+  margin-bottom: 40px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.carousel-caption a {
+  color: #FF9980;
+  text-decoration: none;
+}
+
 /* Contenido
 ================================*/
 h2 {
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #e7ece6;
+}
+
+.articulos h4 {
+  font-family: 'Arimo', sans-serif;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .glyphicon-menu-left {
@@ -145,7 +170,7 @@ margin :0;
 /* Footer
 ================================*/
 footer {
-  background-color: yellow;
+  background-color: #e7ece6;
   display: inline-block;
 }
 
@@ -153,7 +178,7 @@ footer .left-col ul,
 footer .right-col ul {
   padding-left: 0;
   overflow: hidden;
-  color : red;
+  color : #aaa;
 }
 
 footer .left-col ul li {
@@ -179,6 +204,24 @@ footer .left-col .social li {
   margin-right: 10px;
 }
 
+
+/* Formularios
+================================*/
+/*!!!!!!Cambiar el background-color del main de los formularios de registro y login */ 
+.Formulario_registro label {
+  height: 30px;
+  font-size: 18px;
+}
+.campos {
+  border-color: #FAA996;
+  border-radius: 80px;
+  width: 250px;
+}
+.formulario button,
+.login button {
+  width: 100px;
+  height: 26px;
+}
 /* Media Querys
 ================================*/
 @media (min-width: 1200px) {
