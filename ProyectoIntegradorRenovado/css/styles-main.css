@@ -110,11 +110,13 @@ aside a, i {
 /* Main
 ================================*/
 main {
-  background-color: papayawhip; /* Otras colores posibles #e7ece6 #FF9980 */
-  height: 376px;
+  background-color: black; /* Otras colores posibles #e7ece6 #FF9980 */
+  height: 327px;
   margin-top: 20px;
 }
-
+.container_login{
+background-color:white;
+}
 main h1 {
   margin-top: 28px;
 }
@@ -138,6 +140,7 @@ main h1 {
   color: #FF9980;
   text-decoration: none;
 }
+
 
 /* Contenido
 ================================*/
@@ -203,6 +206,11 @@ footer .separator {
 footer .left-col .social li {
   margin-right: 10px;
 }
+.col-xs-12{
+  background-color: black;
+  color: floralwhite;
+}
+
 
 
 /* Formularios
@@ -222,6 +230,13 @@ footer .left-col .social li {
   width: 100px;
   height: 26px;
 }
+/*
+formulario de registro
+*/
+.container_register{
+  background-color: white;
+}
+
 /* Media Querys
 ================================*/
 @media (min-width: 1200px) {
