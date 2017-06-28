@@ -1,3 +1,36 @@
+<?php
+require_once "validacion.php";
+require_once "usuarios.php";
+
+// Inicializar mi usuario
+$fueCompletado = isset($_REQUEST['submitted']);
+
+$errores = 0; 
+
+if ($fueCompletado) {
+
+    // Validar la informacion
+    if (count($_FILES)) {
+        $avatarFileName = $_FILES['avatar']['name'];
+        $avatarFile = $_FILES['avatar']['tmp_name'];
+        $avatarExtension = pathinfo($avatarFileName, PATHINFO_EXTENSION);
+
+        move_uploaded_file($avatarFile, 'avatars/' . md5($user['username']) . '.' . $avatarExtension);
+    }
+
+    // Guardarlo en un file
+    $resultado = guardarUsuario($_REQUEST['nombre'], $_REQUEST['apellido'], $_REQUEST['genero'], $_REQUEST['correo'], $_REQUEST['contrasena']);
+
+    }
+
+    if (is_array($resultado) && ! empty($resultado)) {
+        echo "Hubo errores";
+    } else {
+        echo "Se guardo bien";
+    }
+
+
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -81,48 +114,82 @@
         </div>
       </div>
     </header>
-    <main class="main_registro"> <!--TODO css-->
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-6 col-xs-offset-3">
-            <div class="formulario">
-              <h2 style="background-color: white;color: black;">Formulario de usuario</h2>
-              <form action="script.php" method="get" class="form_registro">
-                <div class="Formulario_registro">
-                  <label for="Apellido"> Apellido : </label>
-                  <input type="text" placeholder="Apellido" id="Apellido" name="Apellido" required class="campos">
-                  <br>
-                  <label for="Nombre"> Nombre : </label>
-                  <input type="text" placeholder="Nombre" id="Nombre" name="Nombre" required class="campos">
-                  <br>
-                  <label for="Genero"> Genero : </label>
-                  <select name="genero" value="genero" class="campos">
-                    <option value="genero">Hombre</option>
-                    <option value="genero">Mujer</option>
-                  </select>
-                  <br>
-                  <label for="Correo electronico"> Correo electrónico : </label>
-                  <input type="email" placeholder="Correo electrónico" id="Correo" name="correo electronico" class="campos">
-                  <br>
-                  <label for="Contrasena"> Contraseña : </label>
-                  <input type="password" placeholder="Contraseña" name="Contrasena" required class="campos">
-                  <br>
-                  <label for="RepetirContrasena"> Repetir contraseña : </label>
-                  <input type="password" placeholder="Contraseña" name="Contrasena" required class="campos">
-                  <br>
-                  <span for="Recordarme"> Recordarme <input type="checkbox" name="Recordarme"class="campos"></span>
+    <main> <!--TODO css-->
+      <form id='register' action='registrar.php' method='post' enctype="multipart/form-data">
+        <input type='hidden' name='submitted' id='submitted' value='1'/>
+
+          <div class='short_explanation'>* campos requeridos</div>
+
+          <div><span class='error'></span></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-6 col-xs-offset-3">
+                <div class="formulario">
+                  <h2>Formulario de usuario</h2>
+
+                    <div class="Formulario_registro">
+                      <label for="apellido">Apellido* : </label>
+                      <input type="text" placeholder="apellido" id="apellido" name="apellido" required class="campos" maxlength="40">
+                      <span style="color: red"  class='error'>
+                        <?php  //es cuando la persona ingresa su nombre le dice directamente que no es valido?
+                            if (isset($errores['apellido'])) {
+                                echo "El apellido ingresado no es valido";
+                            }
+                        ?>
+                      </span>
+                      <br>
+                      <label for="nombre">Nombre* : </label>
+                      <input type="text" placeholder="nombre" id="nombre" name="nombre" required class="campos" maxlength="40">
+                      <span style="color: red"  class='error'>
+                        <?php  //es cuando la persona ingresa su nombre le dice directamente que no es valido?
+                            if (isset($errores['nombre'])) {
+                                echo "El nombre ingresado no es valido";
+                            }
+                        ?>
+                      </span>
+                      <br>
+                      <label for="genero">Genero : </label>
+                      <select name="genero" value="genero" class="campos">
+                        <option value="genero">Hombre</option>
+                        <option value="genero">Mujer</option>
+                      </select>
+                      <br>
+                      <label for="correo">Correo electrónico* : </label>
+                      <input type="email" placeholder="correo electrónico" id="correo" name="correo" required class="campos" maxlength="40">
+                      <span style="color: red"  class='error'>
+                        <?php
+                          if (isset($errores['correo'])) {
+                            echo "El correo ingresado no es valido";
+                          }
+                        ?>
+                      </span>
+                      <br>
+                      <label for="contrasena">Contraseña* : </label>
+                      <input type="password" placeholder="contraseña" name="contrasena" required class="campos" maxlength="40">
+                      <span style="color: red"  class='error'>
+                        <?php
+                          if (isset($errores['contrasena'])) {
+                            echo "La contraseña ingresada no es valida";
+                          }
+                        ?>
+                      </span>
+                      <br>
+                      <label for="repetirContrasena">Repetir contraseña* : </label>
+                      <input type="password" placeholder="contraseña" name="contrasena" required class="campos" maxlength="40">
+                      <br>
+                      <span for="recordarme">Recordarme <input type="checkbox" name="recordarme"class="campos"></span>
+                    </div>
+                      <br>
+                      <br>
+                      <button type="submit" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
+                      <button type="reset"class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
+                      <br>
+                      <br>
+                  </form>
                 </div>
-                  <br>
-                  <br>
-                  <button type="submit" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
-                  <button type="reset"class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
-                  <br>
-                  <br>
-              </form>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
     </main>
     <footer class="col-xs-12"> <!--TODO segun el index home-->
       <div class="container">
