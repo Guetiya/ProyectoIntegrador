@@ -192,6 +192,7 @@ margin :0;
 footer {
   background-color: #e7ece6;
   display: inline-block;
+  float: left;
 }
 
 footer .left-col ul,
