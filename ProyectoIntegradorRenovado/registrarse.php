@@ -104,132 +104,148 @@ if ($fueCompletado) {
     </div>
     </header>
     <main class="main_registro"> <!--TODO css-->
+      <div class="container">
       <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data">
-        <fieldset>
-          <legend>Registarse</legend> <!--se puede poner aca el titulo h2? -->
+          <!--<legend>Registarse</legend> se puede poner aca el titulo h2? -->
             <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
-
-              <div class='short_explanation'>* campos requeridos</div>
-
               <div><span class='error'></span></div>
-              <div class="container">
                 <div class="row">
                   <div class="col-xs-6 col-xs-offset-3">
                     <div class="formulario"> <!--no sé si es necesario -->
-                      <h2>Formulario de usuario</h2>
+                      <h2 class="text-center">Formulario de usuario</h2>
 
-                        <div class="Formulario_registro"> <!-- no sé qué class dar-->
-                          <div class="container">
-                            <label for="apellido">Apellido* : </label>
-                            <input type="text" placeholder="apellido" id="apellido" name="apellido" required class="campos" maxlength="40">
-                            <span style="color: red"  class='error'>
-                              <?php  //es cuando la persona ingresa su nombre le dice directamente que no es valido?
-                                  if (isset($errores['apellido'])) {
-                                      echo "El apellido ingresado no es valido";
+                        <div class='short_explanation'>* campos requeridos</div>
+                        <br/>
+                        <div class="Formulario_registro form-horizontal">
+                          <div class="form-group">
+                            <label class="col-xs-3" for="apellido">Apellido* : </label>
+                            <div class="col-xs-9">
+                              <input type="text" placeholder="apellido" id="apellido" name="apellido" required class="campos" maxlength="40">
+                              <span style="color: red"  class='error'>
+                                <?php  //es cuando la persona ingresa su nombre le dice directamente que no es valido?
+                                    if (isset($errores['apellido'])) {
+                                        echo "El apellido ingresado no es valido";
+                                    }
+                                ?>
+                              </span>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label class="col-xs-3" for="nombre">Nombre* : </label>
+                            <div class="col-xs-9">
+                              <input type="text" placeholder="nombre" id="nombre" name="nombre" required class="campos" maxlength="40">
+                              <span style="color: red"  class='error'>
+                                <?php  //es cuando la persona ingresa su nombre le dice directamente que no es valido?
+                                    if (isset($errores['nombre'])) {
+                                        echo "El nombre ingresado no es valido";
+                                    }
+                                ?>
+                              </span>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label class="col-xs-3" for="genero">Genero : </label>
+                            <div class="col-xs-9">
+                              <select name="genero" value="genero" class="campos">
+                                <option value="genero">Hombre</option>
+                                <option value="genero">Mujer</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label class="col-xs-3" for="correo">Correo electrónico* : </label>
+                            <div class="col-xs-9">
+                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" required class="campos" maxlength="40">
+                              <span style="color: red"  class='error'>
+                                <?php
+                                  if (isset($errores['correo'])) {
+                                    echo "El correo ingresado no es valido";
                                   }
-                              ?>
-                            </span>
+                                ?>
+                              </span>
+                            </div>
                           </div>
 
-                          <div class="container">
-                            <label for="nombre">Nombre* : </label>
-                            <input type="text" placeholder="nombre" id="nombre" name="nombre" required class="campos" maxlength="40">
-                            <span style="color: red"  class='error'>
-                              <?php  //es cuando la persona ingresa su nombre le dice directamente que no es valido?
-                                  if (isset($errores['nombre'])) {
-                                      echo "El nombre ingresado no es valido";
+                          <div class="form-group">
+                            <label class="col-xs-3" for="contrasena">Contraseña* : </label>
+                            <div class="col-xs-9">
+                              <input type="password" placeholder="contraseña" name="contrasena" required class="campos" maxlength="40">
+                              <span style="color: red"  class='error'>
+                                <?php
+                                  if (isset($errores['contrasena'])) {
+                                    echo "La contraseña ingresada no es valida";
                                   }
-                              ?>
-                            </span>
+                                ?>
+                              </span>
+                            </div>
                           </div>
+                          <div class="form-group">
+                            <label class="col-xs-3" for="fotoPerfil">Foto perfil: </label>
+                            <div class="col-xs-9">
+                              <input type='file' name='fotoPerfil'/><br/>
+                              <span id='register_username_errorloc' class='error'></span>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                             <div class="col-sm-offset-3 col-sm-9">
+                               <div class="checkbox">
+                                 <label>
+                                   <input type="checkbox" name="recordarme"class="">Recordarme
+                                 </label>
+                               </div>
+                             </div>
+                           </div>
 
-                          <div class="container">
-                            <label for="genero">Genero : </label>
-                            <select name="genero" value="genero" class="campos">
-                              <option value="genero">Hombre</option>
-                              <option value="genero">Mujer</option>
-                            </select>
-                          </div>
-
-                          <div class="container">
-                            <label for="correo">Correo electrónico* : </label>
-                            <input type="email" placeholder="correo electrónico" id="correo" name="correo" required class="campos" maxlength="40">
-                            <span style="color: red"  class='error'>
-                              <?php
-                                if (isset($errores['correo'])) {
-                                  echo "El correo ingresado no es valido";
-                                }
-                              ?>
-                            </span>
-                          </div>
-
-                          <div class="container">
-                            <label for="contrasena">Contraseña* : </label>
-                            <input type="password" placeholder="contraseña" name="contrasena" required class="campos" maxlength="40">
-                            <span style="color: red"  class='error'>
-                              <?php
-                                if (isset($errores['contrasena'])) {
-                                  echo "La contraseña ingresada no es valida";
-                                }
-                              ?>
-                            </span>
-                          </div>
-
-                          <div class="container">
-                            <label for="fotoPerfil">Foto de perfil </label>
-                            <input type='file' name='fotoPerfil'/><br/>
-                            <span id='register_username_errorloc' class='error'></span>
-                          </div>
-
-                          <div class="container">
-                          <span for="recordarme">Recordarme <input type="checkbox" name="recordarme"class="campos"></span>
-                          </div>
                       </div>
-                          <br>
-                          <br>
-                          <div class="container">
-                          <button type="submit" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
-                          <button type="reset"class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
+
+                          <div class="form-group">
+                             <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
+                                <button type="reset" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
+                             </div>
                           </div>
-                          <br>
-                          <br>
-                      
                     </div>
                   </div>
                 </div>
-              </div>
-            </fieldset>
           </form>
+        </div>
     </main>
-    <!--<footer class="col-xs-12">
+    <footer>
       <div class="container">
         <div class="row">
-          <div class="col-xs-5">
-            <aside class="left-col">
-              <div class="language">
-                <ul class="lang-selector">
-                  <li class="fr">Francés<span class="separator">|</span></li>
-                  <li class="es">Español<span class="separator">|</span></li>
-                  <li class="en">Inglés</li>
-                </ul>
-                <ul class="social">
-                  <li><a href="https://www.facebook.com/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
-                  <li><a href="https://www.instagram.com/?hl=fr" target="new"><i class="fa fa-instagram fa-2x"></a></i></li>
-                </ul>
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-xs-5">
+                <aside class="left-col">
+                  <div class="language">
+                    <ul class="lang-selector">
+                      <li class="fr">Francés<span class="separator">|</span></li>
+                      <li class="es">Español<span class="separator">|</span></li>
+                      <li class="en">Inglés</li>
+                    </ul>
+                    <ul class="social">
+                      <li><a href="https://www.facebook.com/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
+                      <li><a href="https://www.instagram.com/?hl=fr" target="new"><i class="fa fa-instagram fa-2x"></a></i></li>
+                    </ul>
+                  </div>
+                </aside>
               </div>
-            </aside>
-          </div>
-          <div class="col-xs-7">
-            <aside class="right-col">
-              <ul class="copyright">
-                <li>&copy; Copyright<span class="separator">|</span></li> --><!-- Comentario para sacar espacio en blanco adicional
-                --><!--<li>Menciones legales</li>
-              </ul>
-            </aside>
+              <div class="col-xs-7">
+                <aside class="right-col">
+                  <ul class="copyright">
+                    <li>&copy; Copyright<span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
+                    --><li>Menciones legales</li>
+                  </ul>
+                </aside>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

@@ -37,7 +37,7 @@
             <aside class="right-col">
               <ul class="login">
                 <li> <a href="./index.html" class="listanavegacion" style="background-color:#e7ece6">Login</a><span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
-                --><li> <a href="./formulariodeusuario.html" class="listanavegacion" style="border-right:none;">Registrarse</a></li>
+                --><li> <a href="./registrarse.php" class="listanavegacion" style="border-right:none;">Registrarse</a></li>
               </ul>
               <div class="row">
                 <div class="col-md-6 pull-right">
@@ -81,31 +81,47 @@
         </div>
       </div>
     </header>
-    <main class="login"> <!--TODO css-->
+    <main class="main_registro"> <!--TODO css-->
       <div class="container">
-        <div class="row">
-          <div class="col-xs-6 col-xs-offset-3">
-            <div class="login">
-              <h2 style="color:black;"> Login </h2>
-              <form action="script.php" method="get"><!--ver el formulario-->
-                <div class="Formulario_registro">
-                  <label for="Correo electronico" class="Formulario_registro"> Correo electrónico : </label>
-                  <input type="email" placeholder="Correo electrónico" id="Correo" name="correo electronico" class="campos">
-                  <br>
-                  <label for="Contrasena" class="Formulario_registro"> Contraseña : </label>
-                  <input type="password" placeholder="Contraseña" name="Contrasena" required class="campos">
-                  <br>
-                  <br>
-                  <button type="submit" class="login" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Login </button>
-                  <br>
-                  <br>
-                  <a href="ContrasenaOlvidado.html" class="Formulario_registro"> ¿Has olvidado tu contraseña? </a>
-                  <br>
-              </form>
-            </div>
-          </div>
+      <form id='registro' action='login.html' method='post' enctype="multipart/form-data">
+            <!--<legend>Registarse</legend> se puede poner aca el titulo h2? -->
+              <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
+                <div><span class='error'></span></div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                      <div class="login"> <!--peut être mettre en class formulario -->
+                        <h2 class="text-center" style="color:black;"> Login </h2> <!--a ver por el color-->
+                        <!--<form action="script.php" method="post"><!ver el formulario-->
+                          <div class="Formulario_registro form-horizontal">
+                            <div class="form-group">
+                              <label class="col-xs-3" for="correo"> Correo electrónico : </label>
+                              <div class="col-xs-9">
+                                <input type="email" placeholder="Correo electrónico" id="correo" name="correo" class="campos">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-xs-3" for="contrasena" class="Formulario_registro"> Contraseña : </label>
+                              <div class="col-xs-9">
+                                <input type="password" placeholder="Contraseña" name="contrasena" required class="campos">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="login" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Login </button>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-sm-offset-3 col-sm-9">
+                                <a href="ContrasenaOlvidado.html" class="Formulario_registro"> ¿Has olvidado tu contraseña? </a>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </form>
         </div>
-      </div>
     </main>
     <footer class="col-xs-12"> <!--TODO segun home -->
       <div class="container">
