@@ -1,4 +1,8 @@
 <?php
+
+//  header('Location: http://www.registrarse.html/');
+  //exit;
+
 require_once "validacion.php";
 require_once "usuarios.php";
 
@@ -103,7 +107,7 @@ if ($fueCompletado) {
       </div>
     </div>
     </header>
-    <main class="main_registro"> <!--TODO css-->
+    <main class="main_registro">
       <div class="container">
       <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data">
           <!--<legend>Registarse</legend> se puede poner aca el titulo h2? -->
@@ -112,7 +116,7 @@ if ($fueCompletado) {
                 <div class="row">
                   <div class="col-xs-6 col-xs-offset-3">
                     <div class="formulario"> <!--no sé si es necesario -->
-                      <h2 class="text-center">Formulario de usuario</h2>
+                      <h2 class="text-center">Registrarse</h2>
 
                         <div class='short_explanation'>* campos requeridos</div>
                         <br/>
@@ -120,9 +124,9 @@ if ($fueCompletado) {
                           <div class="form-group">
                             <label class="col-xs-3" for="apellido">Apellido* : </label>
                             <div class="col-xs-9">
-                              <input type="text" placeholder="apellido" id="apellido" name="apellido" required class="campos" maxlength="40">
+                              <input type="text" placeholder="apellido" id="apellido" name="apellido" required class="campos" maxlength="40" value="<?php if(isset($apellido)) {echo $apellido; } ?>" id="apellido" placeholder="Apellido" />
                               <span style="color: red"  class='error'>
-                                <?php  //es cuando la persona ingresa su nombre le dice directamente que no es valido?
+                                <?php
                                     if (isset($errores['apellido'])) {
                                         echo "El apellido ingresado no es valido";
                                     }
@@ -136,7 +140,7 @@ if ($fueCompletado) {
                             <div class="col-xs-9">
                               <input type="text" placeholder="nombre" id="nombre" name="nombre" required class="campos" maxlength="40">
                               <span style="color: red"  class='error'>
-                                <?php  //es cuando la persona ingresa su nombre le dice directamente que no es valido?
+                                <?php
                                     if (isset($errores['nombre'])) {
                                         echo "El nombre ingresado no es valido";
                                     }

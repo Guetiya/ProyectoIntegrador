@@ -3,8 +3,6 @@
   overflow: hidden;
 }*/
 
-
-
 /*Tipografias y títulos
 ========================*/
 body {
@@ -121,6 +119,13 @@ main {
   background-color: black; /* Otras colores posibles #e7ece6 #FF9980 */
   margin-top: 20px;
 }
+
+/*.carousel-slide{ /*nuevo*/
+/*  background-color: black;
+}*/
+
+
+/* en el formulario */
 .main_registro{
   background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */
   margin-top: 20px;
@@ -140,9 +145,9 @@ main {
 main h1 {
   margin-top: 28px;
 }
-/*
-formulario
-*/
+
+/* formulario
+================================*/
 .formulario{
   background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */
   /*height: 377px; No hacer*/
@@ -196,7 +201,7 @@ h2 {
 }
 
 .testimonios p{
-margin :0;
+  margin :0;
 }
 
 .fa-quote-right {
