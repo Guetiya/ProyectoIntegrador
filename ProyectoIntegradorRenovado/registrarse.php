@@ -1,8 +1,5 @@
 <?php
 
-//  header('Location: http://www.registrarse.html/');
-  //exit;
-
 require_once "validacion.php";
 require_once "usuarios.php";
 
