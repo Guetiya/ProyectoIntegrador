@@ -1,21 +1,31 @@
 <?php
+require_once "funciones.php";
+$apellido = (isset($_POST['apellido']) ? $_POST['apellido'] : "");
+$nombre = (isset($_POST['nombre']) ? $_POST['nombre'] : "");
+$genero = (isset($_POST['genero']) ? $_POST['genero'] : "");
+$correo = (isset($_POST['correo']) ? $_POST['correo'] : "");
+$contrasena = (isset($_POST['contrasena']));
 
-require_once "validacion.php";
-require_once "usuarios.php";
+$generos = ["", "Hombre", "Mujer"];
+$errores =[];
 
-// Inicializar mi usuario
-$fueCompletado = isset($_REQUEST['submitted']);
+if ($_POST){
 
-if ($fueCompletado) {
-    $resultado = guardarUsuario($_REQUEST['nombre'], $_REQUEST['apellido'], $_REQUEST['genero'], $_REQUEST['correo'], $_REQUEST['contrasena'], $_FILES['fotoPerfil']);
+      $errores = validarDatos($_POST);
+      if (count($errores) == 0){
+        $usuario = crearUsuario($_POST);
 
-    if (is_array($resultado) && ! empty($resultado)) {
-        echo "Hubo errores";
+        $errorImagen = subirFoto($_POST);
+
+        $errores = array_merge($errores, $errorImagen);
+        if (count($errores) == 0){
+          $usuario = guardarUsuario($_POST);
+          header ("location:bienvenidos.php");
+          exit;
+        }
       }
-    else {
-        echo "Se guardo bien";
-      }
- }
+}
+print_r($_POST);
 
 ?>
 
@@ -106,6 +116,17 @@ if ($fueCompletado) {
     </header>
     <main class="main_registro">
       <div class="container">
+
+        <?php
+        if (isset($errores)){
+
+          echo "<ul>";
+          foreach ($errores as $key => $error) {
+            echo '<li>'. $error . "</li>";
+          }
+          echo "</ul>";
+        }
+        ?>
       <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data">
           <!--<legend>Registarse</legend> se puede poner aca el titulo h2? -->
             <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
@@ -115,78 +136,106 @@ if ($fueCompletado) {
                     <div class="formulario"> <!--no sé si es necesario -->
                       <h2 class="text-center">Registrarse</h2>
 
-                        <div class='short_explanation'>* campos requeridos</div>
+                        <div class='short_explanation'>* Campos requeridos</div>
                         <br/>
                         <div class="Formulario_registro form-horizontal">
                           <div class="form-group">
                             <label class="col-xs-3" for="apellido">Apellido* : </label>
                             <div class="col-xs-9">
                               <input type="text" placeholder="apellido" id="apellido" name="apellido" required class="campos" maxlength="40" value="<?php if(isset($apellido)) {echo $apellido; } ?>" id="apellido" placeholder="Apellido" />
-                              <span style="color: red"  class='error'>
+                              <!-- <span style="color: red"  class='error'>
                                 <?php
-                                    if (isset($errores['apellido'])) {
-                                        echo "El apellido ingresado no es valido";
-                                    }
+                                    // if (isset($errores['apellido'])) {
+                                    //     echo "El apellido ingresado no es valido";
+                                    // }
                                 ?>
-                              </span>
+                              </span> -->
                             </div>
                           </div>
 
                           <div class="form-group">
                             <label class="col-xs-3" for="nombre">Nombre* : </label>
                             <div class="col-xs-9">
-                              <input type="text" placeholder="nombre" id="nombre" name="nombre" required class="campos" maxlength="40">
-                              <span style="color: red"  class='error'>
+                              <input type="text" placeholder="nombre" id="nombre" name="nombre" required class="campos" maxlength="40" value="<?php if(isset($nombre)) {echo $nombre; } ?>">
+                              <!-- <span style="color: red"  class='error'>
                                 <?php
-                                    if (isset($errores['nombre'])) {
-                                        echo "El nombre ingresado no es valido";
-                                    }
+                                    // if (isset($errores['nombre'])) {
+                                    //     echo "El nombre ingresado no es valido";
+                                    // }
                                 ?>
-                              </span>
+                              </span> -->
                             </div>
                           </div>
 
                           <div class="form-group">
                             <label class="col-xs-3" for="genero">Genero : </label>
                             <div class="col-xs-9">
-                              <select name="genero" value="genero" class="campos">
+                              <select class="campos <?=$huboErrorGenero?>" name="genero">
+                                <?php foreach ($generos as $genero) : ?>
+                                  <?php if ($_POST["genero"] == $genero) : ?>
+                                    <option value="<?=$genero?>" selected>
+                                      <?=$genero?>
+                                    </option>
+                                  <?php else : ?>
+                                    <option value="<?=$genero?>">
+                                      <?=$genero?>
+                                    </option>
+                                  <?php endif; ?>
+                                <?php endforeach;?>
+                              </select>
+                              <!-- <select name="genero" value="genero" class="campos">
                                 <option value="genero">Hombre</option>
                                 <option value="genero">Mujer</option>
-                              </select>
+                              </select> -->
                             </div>
                           </div>
 
                           <div class="form-group">
                             <label class="col-xs-3" for="correo">Correo electrónico* : </label>
                             <div class="col-xs-9">
-                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" required class="campos" maxlength="40">
-                              <span style="color: red"  class='error'>
+                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" required class="campos" maxlength="40" value="">
+                              <!-- <span style="color: red"  class='error'>
                                 <?php
-                                  if (isset($errores['correo'])) {
-                                    echo "El correo ingresado no es valido";
-                                  }
+                                  // if (isset($errores['correo'])) {
+                                  //   echo "El correo ingresado no es valido";
+                                  // }
                                 ?>
-                              </span>
+                              </span> -->
                             </div>
                           </div>
 
                           <div class="form-group">
                             <label class="col-xs-3" for="contrasena">Contraseña* : </label>
                             <div class="col-xs-9">
-                              <input type="password" placeholder="contraseña" name="contrasena" required class="campos" maxlength="40">
-                              <span style="color: red"  class='error'>
+                              <input type="password" placeholder="contraseña" name="contrasena" required class="campos" maxlength="40" >
+                              <!-- <span style="color: red"  class='error'>
                                 <?php
-                                  if (isset($errores['contrasena'])) {
-                                    echo "La contraseña ingresada no es valida";
-                                  }
+                                  // if (isset($errores['contrasena'])) {
+                                  //   echo "La contraseña ingresada no es valida";
+                                  // }
                                 ?>
-                              </span>
+                              </span> -->
                             </div>
                           </div>
+
+                          <div class="form-group">
+                            <label class="col-xs-3" for="contrasena">Repetir contraseña* : </label>
+                            <div class="col-xs-9">
+                              <input type="password" placeholder="contraseña" name="repetirContrasena" required class="campos" maxlength="40" >
+                              <!-- <span style="color: red"  class='error'>
+                                <?php
+                                  // if (isset($errores['contrasena'])) {
+                                  //   echo "La contraseña ingresada no es valida";
+                                  // }
+                                ?>
+                              </span> -->
+                            </div>
+                          </div>
+
                           <div class="form-group">
                             <label class="col-xs-3" for="fotoPerfil">Foto perfil: </label>
                             <div class="col-xs-9">
-                              <input type='file' name='fotoPerfil'/><br/>
+                              <input type='file' name='imgPerfil'/><br/>
                               <span id='register_username_errorloc' class='error'></span>
                             </div>
                           </div>
@@ -204,7 +253,7 @@ if ($fueCompletado) {
 
                           <div class="form-group">
                              <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
+                                <button type="submit" class="Formulario_registro" value="Me registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
                                 <button type="reset" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
                              </div>
                           </div>
@@ -212,6 +261,7 @@ if ($fueCompletado) {
                   </div>
                 </div>
           </form>
+
         </div>
     </main>
     <footer>
