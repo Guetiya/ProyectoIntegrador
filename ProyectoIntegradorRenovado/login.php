@@ -1,3 +1,7 @@
+<?php
+include 'validar.php';
+ ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -83,7 +87,7 @@
     </header>
     <main class="main_registro"> <!--TODO css-->
       <div class="container">
-      <form id='registro' action='validar.php' method='post' enctype="multipart/form-data">
+      <form id='registro' action='login.php' method='post' enctype="multipart/form-data">
             <!--<legend>Registarse</legend> se puede poner aca el titulo h2? -->
               <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
                 <div><span class='error'></span></div>
@@ -97,13 +101,15 @@
                             <div class="form-group">
                               <label class="col-xs-3" for="correo"> Correo electrónico : </label>
                               <div class="col-xs-9">
-                                <input type="email" placeholder="Correo electrónico" id="correo" name="correo" class="campos">
+                                <input type="email" placeholder="Correo electrónico" id="correo" name="correo" class="campos" value="<?php echo $usuario; ?>">
+                                <?php echo $error_usuario; ?>
                               </div>
                             </div>
                             <div class="form-group">
                               <label class="col-xs-3" for="contrasena" class="Formulario_registro"> Contraseña : </label>
                               <div class="col-xs-9">
-                                <input type="password" placeholder="Contraseña" name="contrasena" required class="campos">
+                                <input type="password" placeholder="Contraseña" name="contrasena"  class="campos">
+                                <?php echo $error_contrasena; ?>
                               </div>
                             </div>
                             <div class="form-group">
