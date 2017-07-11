@@ -32,11 +32,11 @@ function validarDatos($variable){
 
      if (empty($variable['contrasena'])){
        $errores['contrasena'] = "Tienes que ingresar una contraseña!";
-     }elseif (strlen($variable['contrasena']) < 8 ||strlen($variable['repetirContrasena']) < 8){ // suis pas sure du trim ($contrasena = trim(!strlen($contrasena) > 8))
-      $errores['contrasena'] = "tu contraseña debe presentar un minimo de 8 letras!";
-    }elseif ($variable['contrasena'] != $variable['repetirContrasena']) {
-      $errores['contrasena'] = "las contraseñas no son iguales!";
-    }
+     }elseif (strlen($variable['contrasena']) < 8 ||strlen($variable['repetirContrasena']) < 8){
+       $errores['contrasena'] = "tu contraseña debe presentar un minimo de 8 letras!";
+      }elseif ($variable['contrasena'] != $variable['repetirContrasena']) {
+        $errores['contrasena'] = "las contraseñas no son iguales!";
+      }
 
      return $errores;
 var_dump($variable);
