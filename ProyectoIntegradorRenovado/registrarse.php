@@ -12,20 +12,18 @@ $errores =[];
 if ($_POST){
 
       $errores = validarDatos($_POST);
+      $errorImagen = subirFoto();
+      $errores = array_merge($errores, $errorImagen);
+
       if (count($errores) == 0){
         $usuario = crearUsuario($_POST);
-
-        $errorImagen = subirFoto($_POST);
-
-        $errores = array_merge($errores, $errorImagen);
-        if (count($errores) == 0){
-          $usuario = guardarUsuario($_POST);
-          header ("location:bienvenidos.php");
-          exit;
-        }
+        //print_r($usuario); die;
+        $usuario = guardarUsuario($usuario);
+        header ("location:bienvenidos.php");
+        exit;
       }
 }
-print_r($_POST);
+//print_r($_POST);
 
 ?>
 
@@ -117,20 +115,26 @@ print_r($_POST);
     <main class="main_registro">
       <div class="container">
 
-        <?php
-        if (isset($errores)){
 
-          echo "<ul>";
-          foreach ($errores as $key => $error) {
-            echo '<li>'. $error . "</li>";
-          }
-          echo "</ul>";
-        }
-        ?>
       <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data">
-          <!--<legend>Registarse</legend> se puede poner aca el titulo h2? -->
             <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
-              <div><span class='error'></span></div>
+              <div class="form-group">
+                <label class="col-xs-3" for=""></label>
+                  <div class="col-xs-9">
+                      <span style="color: red" type="center" class='error'>
+                            <?php
+                              if (isset($errores)){
+                              echo "<ul>";
+                              foreach ($errores as $key => $error) {
+                                echo '<li>'. $error . "</li>";
+                              }
+                              echo "</ul>";
+                              }
+                            ?>
+                      </span>
+                  </div>
+              </div>
+
                 <div class="row">
                   <div class="col-xs-6 col-xs-offset-3">
                     <div class="formulario"> <!--no sé si es necesario -->
@@ -193,7 +197,7 @@ print_r($_POST);
                           <div class="form-group">
                             <label class="col-xs-3" for="correo">Correo electrónico* : </label>
                             <div class="col-xs-9">
-                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" required class="campos" maxlength="40" value="">
+                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" required class="campos" maxlength="40" value="<?php if(isset($correo)) {echo $correo; } ?>">
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                   // if (isset($errores['correo'])) {
@@ -235,7 +239,7 @@ print_r($_POST);
                           <div class="form-group">
                             <label class="col-xs-3" for="fotoPerfil">Foto perfil: </label>
                             <div class="col-xs-9">
-                              <input type='file' name='imgPerfil'/><br/>
+                              <input type='file' name='imgPerfil' value="<?php if(isset($imgPerfil)) {echo $imgPerfil; } ?>"/><br/>
                               <span id='register_username_errorloc' class='error'></span>
                             </div>
                           </div>

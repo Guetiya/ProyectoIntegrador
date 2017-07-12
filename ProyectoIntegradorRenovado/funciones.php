@@ -12,7 +12,7 @@ function validarDatos($variable){
        $errores['apellido'] = "escribi un apellido!";
      }elseif (!ctype_alpha($variable['apellido'])) {
        $errores['apellido'] = "tu apellido tiene contener solamente letras!";
-     }elseif (strlen($variable['apellido']) <= 2) {
+     }elseif (strlen($variable['apellido']) < 2) {
        $errores['apellido'] = "tu apellido debe estar compuesto por un minimo de 2 letras! ";
      }
 
@@ -20,7 +20,7 @@ function validarDatos($variable){
        $errores['nombre'] = "escribi un nombre!";
      }elseif (!ctype_alpha($variable['nombre'])) {
        $errores['nombre'] = "tu nombre tiene contener solamente letras!";
-     }elseif (strlen($variable['nombre']) <= 2) {
+     }elseif (strlen($variable['nombre']) < 2) {
        $errores['nombre'] = "tu nombre debe estar compuesto por un minimo de 2 letras! ";
      }
 
@@ -39,10 +39,10 @@ function validarDatos($variable){
       }
 
      return $errores;
-var_dump($variable);
+//var_dump($variable);
   }
 
-//crearUsuario segun los datos que recibe validarDatos
+//crearUsuario 
 function crearUsuario($variable){
 
 $usuario = [
@@ -50,13 +50,14 @@ $usuario = [
   'nombre'     => $variable['nombre'],
   'genero'     => $variable['genero'],
   'correo'     => $variable['correo'],
-  'contrasena' => password_hash($variable['contrasena'], PASSWORD_DEFAULT)
+  'contrasena' => password_hash($variable['contrasena'], PASSWORD_DEFAULT),
+  'imagen'     => $variable['imagen'],
 ];
 
 return $usuario;
 }
 
-//fonction écrire une archive d'utilisateurs
+
 function guardarUsuario($usuario)
 {
   $json = json_encode($usuario);
@@ -67,7 +68,7 @@ function guardarUsuario($usuario)
 
 
 
-function subirFoto($usuario) {
+function subirFoto() {
 
   $errores = [];
 
@@ -87,11 +88,11 @@ function subirFoto($usuario) {
 
 		$miArchivo = $miArchivo . "/fotoPerfil/"; // il me créé une archive /img/
 
-    $miArchivo = $miArchivo. md5($_FILES["imgPerfil"]["name"]) . "." . $ext;
-
+    $miArchivo = $miArchivo. md5($_FILES["imgPerfil"]["name"].microtime()) . "." . $ext;
+    $_POST["imagen"] = $miArchivo;
 		move_uploaded_file($archivo, $miArchivo);
 	} else {
-    $errores["imgPerfil"] = "Hubo un error al procesar el archivo";
+    $errores["imgPerfil"] = "Hubo un error al procesar tu imagen de perfil";
   }
 
   return $errores;
