@@ -42,7 +42,7 @@ function validarDatos($variable){
 //var_dump($variable);
   }
 
-//crearUsuario 
+//crearUsuario
 function crearUsuario($variable){
 
 $usuario = [
@@ -98,6 +98,6 @@ function subirFoto() {
   return $errores;
 }
 
-var_dump($_FILES);
+//var_dump($_FILES);
 
  ?>

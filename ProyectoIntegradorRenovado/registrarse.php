@@ -66,8 +66,8 @@ if ($_POST){
           <div class="col-xs-6">
             <aside class="right-col">
               <ul class="login">
-                <li> <a href="./login.html" class="listanavegacion">Login</a><span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
-                --><li> <a href="./formulariodeusuario.html" class="listanavegacion" style="background-color:#e7ece6">Registrarse</a></li>
+                <li> <a href="./login.php" class="listanavegacion">Login</a><span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
+                --><li> <a href="./registarse.php" class="listanavegacion" style="background-color:#e7ece6">Registrarse</a></li>
               </ul>
               <div class="row">
                 <div class="col-md-6 pull-right">
@@ -114,8 +114,6 @@ if ($_POST){
     </header>
     <main class="main_registro">
       <div class="container">
-
-
       <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data">
             <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
               <div class="form-group">
@@ -243,15 +241,6 @@ if ($_POST){
                               <span id='register_username_errorloc' class='error'></span>
                             </div>
                           </div>
-                          <div class="form-group">
-                             <div class="col-sm-offset-3 col-sm-9">
-                               <div class="checkbox">
-                                 <label>
-                                   <input type="checkbox" name="recordarme"class="">Recordarme
-                                 </label>
-                               </div>
-                             </div>
-                           </div>
 
                       </div>
 

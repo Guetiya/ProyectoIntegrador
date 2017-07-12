@@ -40,7 +40,7 @@ include 'validar.php';
           <div class="col-xs-6">
             <aside class="right-col">
               <ul class="login">
-                <li> <a href="./index.html" class="listanavegacion" style="background-color:#e7ece6">Login</a><span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
+                <li> <a href="./login.php" class="listanavegacion" style="background-color:#e7ece6">Login</a><span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
                 --><li> <a href="./registrarse.php" class="listanavegacion" style="border-right:none;">Registrarse</a></li>
               </ul>
               <div class="row">
@@ -85,17 +85,31 @@ include 'validar.php';
         </div>
       </div>
     </header>
-    <main class="main_registro"> <!--TODO css-->
+    <main class="main_registro">
       <div class="container">
       <form id='registro' action='login.php' method='post' enctype="multipart/form-data">
-            <!--<legend>Registarse</legend> se puede poner aca el titulo h2? -->
-              <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
-                <div><span class='error'></span></div>
+              <input type='hidden' name='submitted' id='submitted' value='1'/>
+                  <div class="form-group">
+                    <label class="col-xs-3" for=""></label>
+                      <div class="col-xs-9">
+                          <span style="color: red" type="center" class='error'>
+                                <?php
+                                  if (isset($errores)){
+                                  echo "<ul>";
+                                  foreach ($errores as $key => $error) {
+                                    echo '<li>'. $error . "</li>";
+                                  }
+                                  echo "</ul>";
+                                  }
+                                ?>
+                          </span>
+                      </div>
+                  </div>
 
                   <div class="row">
                     <div class="col-xs-6 col-xs-offset-3">
                       <div class="login"> <!--peut être mettre en class formulario -->
-                        <h2 class="text-center" style="color:black;"> Login </h2> <!--a ver por el color-->
+                        <h2 class="text-center" style="color:black;"> Login </h2>
                         <!--<form action="script.php" method="post"><!ver el formulario-->
                           <div class="Formulario_registro form-horizontal">
                             <div class="form-group">
@@ -118,6 +132,15 @@ include 'validar.php';
                               </div>
                             </div>
                             <div class="form-group">
+                               <div class="col-sm-offset-3 col-sm-9">
+                                 <div class="checkbox">
+                                   <label>
+                                     <input type="checkbox" name="recordarme"class="">Recordarme
+                                   </label>
+                                 </div>
+                               </div>
+                             </div>
+                            <div class="form-group">
                               <div class="col-sm-offset-3 col-sm-9">
                                 <a href="ContrasenaOlvidado.html" class="Formulario_registro"> ¿Has olvidado tu contraseña? </a>
                               </div>
@@ -129,7 +152,7 @@ include 'validar.php';
             </form>
         </div>
     </main>
-    <footer class="col-xs-12"> <!--TODO segun home -->
+    <footer class="col-xs-12">
       <div class="container">
         <div class="row">
           <div class="col-xs-5">

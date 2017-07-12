@@ -128,13 +128,9 @@ main {
   box-sizing: border-box;
 }
 
-.registro {
+/*.registro {
   position: absolute;
-}
-
-.fieldset {
-  position: absolute;
-}
+}*/
 
 
 main h1 {
@@ -148,6 +144,7 @@ main h1 {
   /*height: 377px; No hacer*/
   margin-top: 20px;
 }
+
 /*.form_registro{
   background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */
 /*  height: 266px;
@@ -181,9 +178,6 @@ main h1 {
 .container .row .col-xs-12 {
   background-color: black;
 }
-/*main .container .row .col-xs-12 .cover .container {
-  background-color: black;
-}*/
 /* Contenido
 ================================*/
 h2 {
@@ -263,7 +257,6 @@ footer .left-col .social li {
 
 /* Formularios
 ================================*/
-/*!!!!!!Cambiar el background-color del main de los formularios de registro y login */
 .Formulario_registro label {
   height: 30px;
   font-size: 18px;
@@ -273,14 +266,17 @@ footer .left-col .social li {
   border-radius: 80px;
   width: 250px;
 }
-.formulario button,
-.login button {
+.formulario button {
   width: 100px;
   height: 26px;
   margin-bottom: 35px;
 }
 
-
+.login button {
+  width: 100px;
+  height: 26px;
+  margin-top: 20px;
+}
 /* Media Querys
 ================================*/
 @media (min-width: 1200px) {
