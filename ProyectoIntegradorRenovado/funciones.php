@@ -80,7 +80,7 @@ function subirFoto() {
 		$ext = pathinfo($nombre, PATHINFO_EXTENSION);
 
     if ($ext != "jpg" && $ext != "png" && $ext != "jpeg") {
-      $errores["imgPerfil"] = "Solo acepto formatos jpg, png y jpeg";
+      $errores["imgPerfil"] = "Las fotos solo aceptan formatos jpg, png y jpeg";
       return $errores;
     }
 
@@ -91,6 +91,8 @@ function subirFoto() {
     $miArchivo = $miArchivo. md5($_FILES["imgPerfil"]["name"].microtime()) . "." . $ext;
     $_POST["imagen"] = $miArchivo;
 		move_uploaded_file($archivo, $miArchivo);
+
+    //mettre le if ici
 	} else {
     $errores["imgPerfil"] = "Hubo un error al procesar tu imagen de perfil";
   }
@@ -98,6 +100,10 @@ function subirFoto() {
   return $errores;
 }
 
+if($tamano > 500000) {
+      $errores["imgPerfil"] = "¡Tu imagen es muy grande!";
+      return $errores;
+    }
 //var_dump($_FILES);
 
  ?>
