@@ -132,6 +132,11 @@ include 'validar.php';
                               </div>
                             </div>
                             <div class="form-group">
+                              <div class="col-sm-offset-3 col-sm-9">
+                                <a href="ContrasenaOlvidado.html" class="Formulario_registro"> ¿Has olvidado tu contraseña? </a>
+                              </div>
+                            </div>
+                            <div class="form-group">
                                <div class="col-sm-offset-3 col-sm-9">
                                  <div class="checkbox">
                                    <label>
@@ -140,11 +145,7 @@ include 'validar.php';
                                  </div>
                                </div>
                              </div>
-                            <div class="form-group">
-                              <div class="col-sm-offset-3 col-sm-9">
-                                <a href="ContrasenaOlvidado.html" class="Formulario_registro"> ¿Has olvidado tu contraseña? </a>
-                              </div>
-                            </div>
+
                       </div>
                     </div>
                   </div>

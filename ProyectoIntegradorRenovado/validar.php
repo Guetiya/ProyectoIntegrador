@@ -4,6 +4,7 @@ $pass='';
 $error_usuario = "";
 $error_contrasena = "";
 
+//si es 
 if($_POST){
   //var_dump($_POST);
   $usuario = $_POST['correo'];
@@ -15,9 +16,9 @@ if($_POST){
   if ( empty ($pass)){
     $error_contrasena = "la contraseña no debe estar vacía";
   }
-if (($usuario) && ($pass) == (//usuario y contraseña del json) ) {
+if (($usuario) && ($pass) == ("usuario y contraseña del json")) {
 
-session_start;
+
 
 }
 }
