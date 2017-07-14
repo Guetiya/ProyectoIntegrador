@@ -15,10 +15,11 @@ if($_POST){
   if ( empty ($pass)){
     $error_contrasena = "la contraseña no debe estar vacía";
   }
+if (($usuario) && ($pass) == (//usuario y contraseña del json) ) {
 
-  
+session_start;
 
-
+}
 }
 
 ?>
