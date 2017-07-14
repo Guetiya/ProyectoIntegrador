@@ -84,6 +84,14 @@ function subirFoto() {
       return $errores;
     }
 
+    // $taille_maxi = 100000;
+    // //Taille du fichier
+    // $taille = filesize($_FILES['imgPerfil']['tmp_name']);
+    // if($taille>$taille_maxi)
+    // {
+    //      $errores = 'Le fichier est trop gros...';
+    // }
+
 		$miArchivo = dirname(__FILE__); //si je veux garder une photo dans mon archive je dois changer ici!
 
 		$miArchivo = $miArchivo . "/fotoPerfil/"; // il me créé une archive /img/
@@ -100,10 +108,13 @@ function subirFoto() {
   return $errores;
 }
 
-if($tamano > 500000) {
-      $errores["imgPerfil"] = "¡Tu imagen es muy grande!";
-      return $errores;
-    }
+
+
+
+// if($tamano > 500000) {
+//       $errores["imgPerfil"] = "¡Tu imagen es muy grande!";
+//       return $errores;
+//     }
 //var_dump($_FILES);
 
  ?>

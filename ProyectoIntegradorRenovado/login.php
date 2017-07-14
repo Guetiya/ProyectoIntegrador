@@ -108,8 +108,8 @@ include 'validar.php';
 
                   <div class="row">
                     <div class="col-xs-6 col-xs-offset-3">
-                      <div class="login"> <!--peut être mettre en class formulario -->
-                        <h2 class="text-center" style="color:black;"> Login </h2>
+                      <div class="formulario"> <!--peut être mettre en class formulario -->
+                        <h2 class="text-center">Login</h2>
                         <!--<form action="script.php" method="post"><!ver el formulario-->
                           <div class="Formulario_registro form-horizontal">
                             <div class="form-group">
@@ -152,31 +152,35 @@ include 'validar.php';
             </form>
         </div>
     </main>
-    <footer class="col-xs-12">
+    <footer>
       <div class="container">
         <div class="row">
-          <div class="col-xs-5">
-            <aside class="left-col">
-              <div class="language">
-                <ul class="lang-selector">
-                  <li class="fr"> <a href="#"> Francés </a><span class="separator">|</span></li>
-                  <li class="es"> <a href="#"> Español </a><span class="separator">|</span></li>
-                  <li class="en"> <a href="#"> Inglés </a></li>
-                </ul>
-                <ul class="social">
-                  <li><a href="https://www.facebook.com/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
-                  <li><a href="https://www.instagram.com/?hl=fr" target="new"><i class="fa fa-instagram fa-2x"></a></i></li>
-                </ul>
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-xs-5">
+                <aside class="left-col">
+                  <div class="language">
+                    <ul class="lang-selector">
+                      <li class="fr">Francés<span class="separator">|</span></li>
+                      <li class="es">Español<span class="separator">|</span></li>
+                      <li class="en">Inglés</li>
+                    </ul>
+                    <ul class="social">
+                      <li><a href="https://www.facebook.com/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
+                      <li><a href="https://www.instagram.com/?hl=fr" target="new"><i class="fa fa-instagram fa-2x"></a></i></li>
+                    </ul>
+                  </div>
+                </aside>
               </div>
-            </aside>
-          </div>
-          <div class="col-xs-7">
-            <aside class="right-col">
-              <ul class="copyright">
-                <li>&copy; Copyright<span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
-                --><li>Menciones legales</li>
-              </ul>
-            </aside>
+              <div class="col-xs-7">
+                <aside class="right-col">
+                  <ul class="copyright">
+                    <li>&copy; Copyright<span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
+                    --><li>Menciones legales</li>
+                  </ul>
+                </aside>
+              </div>
+            </div>
           </div>
         </div>
       </div>
