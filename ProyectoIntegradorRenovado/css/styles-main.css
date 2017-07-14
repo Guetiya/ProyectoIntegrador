@@ -94,22 +94,27 @@ aside a, i {
 .navbar-nav {
   position: relative;
   display: block;
-  margin-top: 20px;
+  width: 100%;
+}
+
+.navbar-default {
+  background-color: inherit;
+  border-color: transparent;
+  margin-top: 20px  ;
 }
 
 .navbar-nav ul {
   padding-left: 0;
 }
+
 .navbar-nav li {
-  display: inline-block;
   list-style-type: none;
 }
 
 .navbar-nav a {
   font-size: 15px;
   color : black;
-  margin-right: 70px;
-  /*margin-left: 15px;*/
+  padding: 10px 15px;
 }
 
 /* Main
@@ -119,7 +124,6 @@ main {
   margin-top: 20px;
 }
 
-
 /* en el formulario */
 .main_registro{
   background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */
@@ -127,11 +131,6 @@ main {
   position: relative;
   box-sizing: border-box;
 }
-
-/*.registro {
-  position: absolute;
-}*/
-
 
 main h1 {
   margin-top: 28px;
@@ -145,11 +144,6 @@ main h1 {
   margin-top: 20px;
 }
 
-/*.form_registro{
-  background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */
-/*  height: 266px;
-  margin-top: 20px;
-}*/
 .login{
   background-color: white;
 }
@@ -187,12 +181,14 @@ h2 {
   font-weight: bold;
   color: black;
 }
+
 em {
   /*color :#e7ece6;*/
   font-family: Parisienne;
   font-size: 22px;
   color: #FF9980;
 }
+
 .articulos h4 {
   font-family: 'Arimo', sans-serif;
   font-style: italic;
@@ -261,11 +257,13 @@ footer .left-col .social li {
   height: 30px;
   font-size: 18px;
 }
+
 .campos {
   border-color: #FAA996;
   border-radius: 80px;
   width: 250px;
 }
+
 .formulario button {
   width: 100px;
   height: 26px;
@@ -283,17 +281,21 @@ footer .left-col .social li {
   .sign {
     right:48px;
   }
-
 }
+
+@media (min-width: 768px) {
+  .navbar-nav li {
+    width: 20%;
+  }
+}
+
 @media (max-width: 991px){
   .main-description {
     margin-top: 0;
   }
 }
-@media (max-width: 767px) {
-  .sign {
 
-  }
+@media (max-width: 767px) {
   .main-description {
     margin-top: 0;
   }

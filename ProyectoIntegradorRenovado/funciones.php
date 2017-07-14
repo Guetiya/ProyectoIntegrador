@@ -77,20 +77,12 @@ function subirFoto() {
 		$nombre=$_FILES["imgPerfil"]["name"];
 		$archivo=$_FILES["imgPerfil"]["tmp_name"];
 
-		$ext = pathinfo($nombre, PATHINFO_EXTENSION);
+		$ext = strtolower(pathinfo($nombre, PATHINFO_EXTENSION)); //lo pasa en minuscula
 
     if ($ext != "jpg" && $ext != "png" && $ext != "jpeg") {
       $errores["imgPerfil"] = "Las fotos solo aceptan formatos jpg, png y jpeg";
       return $errores;
     }
-
-    // $taille_maxi = 100000;
-    // //Taille du fichier
-    // $taille = filesize($_FILES['imgPerfil']['tmp_name']);
-    // if($taille>$taille_maxi)
-    // {
-    //      $errores = 'Le fichier est trop gros...';
-    // }
 
 		$miArchivo = dirname(__FILE__); //si je veux garder une photo dans mon archive je dois changer ici!
 
