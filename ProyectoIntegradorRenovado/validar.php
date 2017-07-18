@@ -4,7 +4,7 @@ $pass='';
 $error_usuario = "";
 $error_contrasena = "";
 
-//si es 
+//si es
 if($_POST){
   //var_dump($_POST);
   $usuario = $_POST['correo'];
@@ -14,13 +14,37 @@ if($_POST){
     $error_usuario = "el usuario es incorrecto";
   }
   if ( empty ($pass)){
-    $error_contrasena = "la contraseña no debe estar vacía";
+    $error_contrasena = "contraseña incorrecta";
   }
-if (($usuario) && ($pass) == ("usuario y contraseña del json")) {
-
-
 
 }
-}
+if (isset($_POST) && ($_POST == 1)){
+  $user = ValidarPass($_POST ['contrasena']);
+  if ($user) {
+    # code...
+    header ("location: index.php");
+  }else {
+    echo"No lo encontré";
+  }
+  }
 
+if (isset ($usuario) &&  isset($pass)) {
+
+ValidarPass($pass);
+
+}
+function ValidarPass($pass)
+{
+  $fp = fopen('users.json', 'r');
+  while ($linea = fgets($fp)) {
+    if (!empty($linea)) {
+      $linea = json_decode($linea, true);
+      if ($linea['contrasena'] == $pass) {
+        $error_contrasena = "contraseña incorrecta";
+      }
+    }
+  }
+
+ return false;
+}
 ?>

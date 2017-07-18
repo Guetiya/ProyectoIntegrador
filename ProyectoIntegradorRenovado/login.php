@@ -122,7 +122,7 @@ include 'validar.php';
                             <div class="form-group">
                               <label class="col-xs-3" for="contrasena" class="Formulario_registro"> Contraseña : </label>
                               <div class="col-xs-9">
-                                <input type="password" placeholder="Contraseña" name="contrasena"  class="campos">
+                                <input type="password" placeholder="Contraseña" name="contrasena"  class="campos" value="<?php echo $pass; ?>">
                                 <?php echo $error_contrasena; ?>
                               </div>
                             </div>
