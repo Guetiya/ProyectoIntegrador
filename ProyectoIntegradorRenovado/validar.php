@@ -17,8 +17,6 @@ if($_POST){
     $error_contrasena = "contraseña incorrecta";
   }
 
-}
-if (isset($_POST) && ($_POST == 1)){
   $user = ValidarPass($_POST ['contrasena']);
   if ($user) {
     # code...
@@ -26,13 +24,9 @@ if (isset($_POST) && ($_POST == 1)){
   }else {
     echo"No lo encontré";
   }
-  }
-
-if (isset ($usuario) &&  isset($pass)) {
-
-ValidarPass($pass);
-
 }
+
+
 function ValidarPass($pass)
 {
   $fp = fopen('users.json', 'r');
@@ -40,11 +34,13 @@ function ValidarPass($pass)
     if (!empty($linea)) {
       $linea = json_decode($linea, true);
       if ($linea['contrasena'] == $pass) {
-        $error_contrasena = "contraseña incorrecta";
+        header ("location: index.html");
       }
+
     }
   }
 
  return false;
 }
+
 ?>

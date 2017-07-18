@@ -1,6 +1,8 @@
 <?php
-include 'validar.php';
- ?>
+require_once 'validar.php';
+
+
+?>
 
 <!DOCTYPE html>
 <html>
