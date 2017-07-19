@@ -22,22 +22,23 @@ if($_POST){
     # code...
     header ("location: index.php");
   }else {
-    echo"No lo encontré";
+    $error_usuario =" el usuario es incorrecto";
+    $error_contrasena ="contraseña incorrecta";
   }
 }
 
 
 function ValidarPass($pass)
 {
-  echo "El pass sin hashear es: " . $pass;
+  //echo "El pass sin hashear es: " . $pass;
   $hashed = sha1($pass);
-  echo "Vamos a buscar el password: " . $hashed;
+  //echo "Vamos a buscar el password: " . $hashed;
   $fp = fopen('users.json', 'r');
   while ($linea = fgets($fp)) {
     if (!empty($linea)) {
-      echo $linea;
+      //echo $linea;
       $linea = json_decode($linea, true);
-      if ($linea['contrasena'] == $pass) {
+      if ($linea['contrasena'] == $hashed) {
         header ("location: index.html");
       }
 
