@@ -50,7 +50,7 @@ $usuario = [
   'nombre'     => $variable['nombre'],
   'genero'     => $variable['genero'],
   'correo'     => $variable['correo'],
-  'contrasena' => password_hash($variable['contrasena'], PASSWORD_DEFAULT),
+  'contrasena' => sha1($variable['contrasena']),
   'imagen'     => $variable['imagen'],
 ];
 

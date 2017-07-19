@@ -29,9 +29,13 @@ if($_POST){
 
 function ValidarPass($pass)
 {
+  echo "El pass sin hashear es: " . $pass;
+  $hashed = sha1($pass);
+  echo "Vamos a buscar el password: " . $hashed;
   $fp = fopen('users.json', 'r');
   while ($linea = fgets($fp)) {
     if (!empty($linea)) {
+      echo $linea;
       $linea = json_decode($linea, true);
       if ($linea['contrasena'] == $pass) {
         header ("location: index.html");
