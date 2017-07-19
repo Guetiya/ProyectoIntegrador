@@ -39,7 +39,9 @@ function ValidarPass($pass)
       //echo $linea;
       $linea = json_decode($linea, true);
       if ($linea['contrasena'] == $hashed) {
-        header ("location: index.html");
+        header ("location: index_usuarios.php");
+        session_start();
+        $_SESSION ['nombre'] = $nombre;
       }
 
     }
