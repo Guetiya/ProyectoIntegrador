@@ -41,7 +41,7 @@ function ValidarPass($pass)
       if ($linea['contrasena'] == $hashed) {
         header ("location: index_usuarios.php");
         session_start();
-        $_SESSION ['nombre'] = $nombre;
+        $_SESSION ['nombre'] = $linea['nombre'];
       }
 
     }

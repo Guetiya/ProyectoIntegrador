@@ -41,8 +41,8 @@ session_start();
           <div class="col-xs-6">
             <aside class="right-col">
               <ul class="login">
-                <li style="display:block;">usuario:<?php  echo $_SESSION['nombre']; ?></li>
-                <li style="display:block;"> <a href="./index.php"> <input type="button" name="boton" value="cerrar sesión"><?php session_destroy() ?></a></li>
+                <li class="nombre_usuario">Usuario:  <?php  echo $_SESSION['nombre']; ?></li>
+                <li class="session"style="display:block;"> <a href="./index.php"> <input type="button" name="boton" value="cerrar sesión"><?php session_destroy() ?></a></li>
 
               </ul>
               <div class="row">

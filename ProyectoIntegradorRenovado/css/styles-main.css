@@ -135,6 +135,12 @@ main {
 main h1 {
   margin-top: 28px;
 }
+/* pagina del usuario:*/
+.nombre_usuario{
+  display:block;
+  color: #ffa38d;
+  font-size: 15px;
+}
 
 /* formulario
 ================================*/
