@@ -10,16 +10,16 @@ function validarDatos($variable){
 
      if (empty($variable['apellido'])){
        $errores['apellido'] = "escribi un apellido!";
-     }elseif (!ctype_alpha($variable['apellido'])) {
-       $errores['apellido'] = "tu apellido tiene contener solamente letras!";
+    //  }elseif (!ctype_alpha($variable['apellido'])) {
+    //    $errores['apellido'] = "tu apellido tiene contener solamente letras!";
      }elseif (strlen($variable['apellido']) < 2) {
        $errores['apellido'] = "tu apellido debe estar compuesto por un minimo de 2 letras! ";
      }
 
      if (empty($variable['nombre'])){
        $errores['nombre'] = "escribi un nombre!";
-     }elseif (!ctype_alpha($variable['nombre'])) {
-       $errores['nombre'] = "tu nombre tiene contener solamente letras!";
+    //  }elseif (!ctype_alpha($variable['nombre'])) {
+    //    $errores['nombre'] = "tu nombre tiene contener solamente letras!";
      }elseif (strlen($variable['nombre']) < 2) {
        $errores['nombre'] = "tu nombre debe estar compuesto por un minimo de 2 letras! ";
      }
