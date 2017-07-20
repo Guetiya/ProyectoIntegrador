@@ -64,6 +64,7 @@ aside a, i {
     list-style-type: none;
     text-align: right;
     display: inline-block;
+    color: #aaa;
 }
 
 .separator {
