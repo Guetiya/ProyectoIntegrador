@@ -26,7 +26,6 @@ if ($_POST){
 //print_r($_POST);
 
 ?>
-
 <!DOCTYPE html>
 <html>
   <head>
