@@ -26,6 +26,8 @@ if ($_POST){
 //print_r($_POST);
 
 ?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -91,7 +93,7 @@ if ($_POST){
             <!--<nav class="navegacion">-->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li class = "active"> <a href="./index.html" style="">Inicio</a> </li>
+                    <li class = "active"> <a href="./index.php" style="">Inicio</a> </li>
                     <li role="presentation"> <a href="#">¿Quién soy?</a> </li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"
