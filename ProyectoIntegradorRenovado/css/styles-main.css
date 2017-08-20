@@ -187,6 +187,7 @@ h2 {
   text-align: center;
   font-weight: bold;
   color: black;
+  display: inline-block;
 }
 
 em {
@@ -208,7 +209,11 @@ em {
 }
 
 .testimonios p{
-  margin :0;
+  margin: auto;
+  display: inline-block;
+}
+.testimonios{
+  display: block;
 }
 
 .fa-quote-right {
