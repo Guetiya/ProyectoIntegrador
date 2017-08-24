@@ -195,32 +195,28 @@
             <div class="articulos">
               <h2 style="text-align:center;">Ultimos artículos</h2>
               <h4>Artículo 1</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                LKJKljshfjksJHKJSKDJSKJDNSDklhfejkrfhjdncbsgdfhjkbhzjfkr chrfhejincididuntalirum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
               <h4>Artículo 2</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                LKJKljshfjksJHKJSKDJSKJDNSDklhfejkrfhjdncbsgdfhjkbhzjfkr chrfhejincididuntalirum</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
               <h4>Artículo 3</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                LKJKljshfjksJHKJSKDJSKJDNSDklhfejkrfhjdncbsgdfhjkbhzjfkr chrfhejincididuntalirum</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo</p>
             </div>
           </div>
-          <div class="col-xs-3">
-            <div class="testimonios">
-              <h2 style=""> Testimonios </h2>
+          <div class="row" >
+            <div class="col-xs-6">
+              <h2 class="testimonios">Testimonios</h2>
               <span class="glyphicon glyphicon-menu-left"></span>
-              <img src="images/Photo 003 - Copie.jpg" alt="" width="100px" height="100px" class="img-circle">
+              <img src="images/Photo 003 - Copie.jpg" alt="" width="50%" height="50%" class="img-circle">
               <span class="glyphicon glyphicon-menu-right"></span>
               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 Duis aute irure dolor in tur.</p>
-                <i class="fa fa-quote-right"></i>
             </div>
           </div>
-          <div class="col-xs-3">
-            <div class="profesionales">
-              <h2 style=""> ¿Sos profesional? </h2>
+          <div class="row">
+            <div class="col-xs-6">
+              <h2 class="testimonios"> ¿Sos profesional? </h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
