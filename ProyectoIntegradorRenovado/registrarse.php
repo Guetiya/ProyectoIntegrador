@@ -132,7 +132,6 @@ if ($_POST){
                       </span>
                   </div>
               </div>
-
                 <div class="row">
                   <div class="col-xs-6 col-xs-offset-3">
                     <div class="formulario"> <!--no sé si es necesario -->
