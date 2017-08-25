@@ -143,6 +143,9 @@ main h1 {
   font-size: 15px;
 }
 
+.carousel {
+  background-color: black;
+}
 /* formulario
 ================================*/
 .formulario{

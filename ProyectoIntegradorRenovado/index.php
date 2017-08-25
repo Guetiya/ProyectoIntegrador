@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Estilos principales-->
     <link rel="stylesheet" href="css/styles-main.css">
-    
+
     <title></title>
   </head>
   <body>
@@ -98,7 +98,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                     <li class = "active"> <a href="#" style="background-color:#e7ece6">Inicio</a> </li>
-                    <li role="presentation"> <a href="#">¿Quién soy?</a> </li>
+                    <li role="presentation"> <a href="./quiensoy.php">¿Quién soy?</a> </li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                       role="button" aria-haspopup="true" aria-expanded="false">Prestaciones <span class="caret"></span></a>
@@ -120,79 +120,74 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-xs-12">
-            <div class="cover">
-              <div class="container">
-                <!--carussel -->
-                <div id="carousel-example-generic" class="carousel-slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                  </ol>
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="200px">
-                      <div class="carousel-caption">
-                        <a href="#"> <!--a poner sobre los otros -->
-                          <h3>¿Te vas a casar o tienes una ceremonia?</h3>
-                          <p>¡Qué buena noticia! ¿Te falta inspiración para tu peinado, maquillaje, e incluso tu vestuario? ¡No te preocupes!<strong> <em>Mariage en beauté </em></strong> te brinda consejos de belleza y te ofrece prestaciones
-                          personalizadas.<strong><em>Mariage en beauté</em></strong> juega sobre la combinación de un estilo adaptado con colores adecuadamente escogidos para resaltar tu belleza, con el fin de que irradies el día D. <br>Porque cada uno merece una belleza a medida, <strong><em>Mariage en beauté</em></strong> contribuye a descubrir la tuya.
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="images/robe.jpg" alt="" width="200px" height="250px">
-                      <div class="carousel-caption">
-                        <a href="#">
-                          <h3>Peinados</h3>
-                          <p>Del pelo rizado a tieso, de largo a corto…. <strong><em>Mariage en beauté</em></strong>
-                            te crea el peinado a tu medida, <br>solamente para vos, para ese día tan esperado.</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="266px">
-                      <div class="carousel-caption">
-                        <a href="#">
-                          <h3>Maquillaje</h3>
-                          <p>Maquillaje natural o uno más atrevido…. A través de su práctica y sus paletas de
-                            colores, <strong><em>Mariage en beauté</em></strong> escoge los que intensifican tus rasgos
-                            para que tu cara se ilumine el día D.</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="images/robe.jpg" alt="" width="200px" height="266px">
-                      <div class="carousel-caption">
-                        <a href="#">
-                          <h3>Asesoria de imagen</h3>
-                          <p><strong><em>Mariage en beauté</em></strong> combina las formas, las texturas, los estilos
-                          y los colores con el fin de que <br>estén plenamente acorde a tu vestuario.</p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="200px">
+              <div class="carousel-caption">
+                <a href="#">
+                  <h3>¿Te vas a casar o tienes una ceremonia?</h3>
+                  <p>¡Qué buena noticia! ¿Te falta inspiración para tu peinado, maquillaje, e incluso tu vestuario? ¡No te preocupes!<strong> <em>Mariage en beauté </em></strong> te brinda consejos de belleza y te ofrece prestaciones
+                  personalizadas.<strong><em>Mariage en beauté</em></strong> juega sobre la combinación de un estilo adaptado con colores adecuadamente escogidos para resaltar tu belleza, con el fin de que irradies el día D. <br>Porque cada uno merece una belleza a medida, <strong><em>Mariage en beauté</em></strong> contribuye a descubrir la tuya.
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/robe.jpg" alt="" width="200px" height="250px">
+              <div class="carousel-caption">
+                <a href="#">
+                  <h3>Peinados</h3>
+                  <p>Del pelo rizado a tieso, de largo a corto…. <strong><em>Mariage en beauté</em></strong>
+                    te crea el peinado a tu medida, <br>solamente para vos, para ese día tan esperado.</p>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="266px">
+              <div class="carousel-caption">
+                <a href="#">
+                  <h3>Maquillaje</h3>
+                  <p>Maquillaje natural o uno más atrevido…. A través de su práctica y sus paletas de
+                    colores, <strong><em>Mariage en beauté</em></strong> escoge los que intensifican tus rasgos
+                    para que tu cara se ilumine el día D.</p>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/robe.jpg" alt="" width="200px" height="266px">
+              <div class="carousel-caption">
+                <a href="#">
+                  <h3>Asesoria de imagen</h3>
+                  <p><strong><em>Mariage en beauté</em></strong> combina las formas, las texturas, los estilos
+                  y los colores con el fin de que <br>estén plenamente acorde a tu vestuario.</p>
+                </a>
               </div>
             </div>
           </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          </div>
         </div>
+
+        <!-- Carrusel falla-->
+
         <div class="row">
-          <div class="col-xs-6">
-            <div class="articulos">
+            <div class="articulos col-sm-4">
               <h2 style="text-align:center;">Ultimos artículos</h2>
               <h4>Artículo 1</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
@@ -201,10 +196,8 @@
               <h4>Artículo 3</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo</p>
             </div>
-          </div>
-          <div class="row" >
-            <div class="col-xs-6">
-              <h2 class="testimonios">Testimonios</h2>
+            <div class="testimonios col-sm-4">
+              <h2 class="">Testimonios</h2>
               <span class="glyphicon glyphicon-menu-left"></span>
               <img src="images/Photo 003 - Copie.jpg" alt="" width="50%" height="50%" class="img-circle">
               <span class="glyphicon glyphicon-menu-right"></span>
@@ -213,18 +206,15 @@
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 Duis aute irure dolor in tur.</p>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-6">
-              <h2 class="testimonios"> ¿Sos profesional? </h2>
+            <div class="testimonios col-sm-4">
+              <h2 class=""> ¿Sos profesional? </h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                  dolor in reprehenderit in voluptate velit esnulla pariatur. Except id est laborum.</p>
             </div>
-          </div>
         </div>
-      </div>
+
     </main>
     <footer class="col-xs-12">
       <div class="container">
