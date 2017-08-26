@@ -12,7 +12,7 @@ function guardarUsuario($nombre, $apellido, $genero, $correo, $contrasena, $foto
 
         // Transformarlo a json
         $jsonUser = json_encode([
-            'nombre'     => $nombre, /* en verde se pone el name? */
+            'nombre'     => $nombre, 
             'apellido'   => $apellido,
             'genero'     => $genero,
             'correo'     => $correo,
@@ -70,7 +70,7 @@ function validarUsuario($nombre, $apellido, $genero, $correo, $contrasena)
 function subirFoto($fotoPerfil)
 {
   if (count($fotoPerfil)) {
-      $avatarFileName = $fotoPerfil['name']; //changer name ??
+      $avatarFileName = $fotoPerfil['name'];
       $avatarFile = $fotoPerfil['tmp_name'];
       $avatarExtension = pathinfo($avatarFileName, PATHINFO_EXTENSION);
 
@@ -80,7 +80,7 @@ function subirFoto($fotoPerfil)
   return $resultado;
 }
 
-function buscarUsuario($username) //où va t on la retrouver celle ci? mmm et comment faire vu que je n'ai pas d'usuario
+function buscarUsuario($username)
 {
   $fp = fopen('users.json', 'r');
   while ($linea = fgets($fp)) {

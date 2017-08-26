@@ -196,7 +196,7 @@ session_start();
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-6">
+          <div class="col-xs-4">
             <div class="articulos">
               <h2 style="text-align:center;">Ultimos artículos</h2>
               <h4>Artículo 1</h4>
@@ -210,7 +210,7 @@ session_start();
                 LKJKljshfjksJHKJSKDJSKJDNSDklhfejkrfhjdncbsgdfhjkbhzjfkr chrfhejincididuntalirum</p>
             </div>
           </div>
-          <div class="col-xs-3">
+          <div class="col-xs-4">
             <div class="testimonios">
               <h2 style=""> Testimonios </h2>
               <span class="glyphicon glyphicon-menu-left"></span>
@@ -223,7 +223,7 @@ session_start();
                 <i class="fa fa-quote-right"></i>
             </div>
           </div>
-          <div class="col-xs-3">
+          <div class="col-xs-4">
             <div class="profesionales">
               <h2 style=""> ¿Sos profesional? </h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

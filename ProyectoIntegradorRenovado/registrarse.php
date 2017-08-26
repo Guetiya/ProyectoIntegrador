@@ -24,9 +24,37 @@ if ($_POST){
       }
 }
 //print_r($_POST);
-
 ?>
 
+<?php
+$dsn = 'mysql:host=localhost; dbname=mariage_en_beaute; charset=utf8mb4; port:3306';
+$db_user = 'root';
+$db_pass = '';
+
+// $db = new PDO($dsn, $db_user);
+//        $sql = "INSERT INTO users(Apellido, Nombre, Correo, contraseña)
+//        VALUES(?,?,?,?)";
+//        $query = $db->prepare($sql);
+//        $query -> execute(['Mathilde', 'Girard', 'mathilde@gmail.com', 'mathilde']);
+//        $query -> execute(['Aurélien', 'Girard', 'Aurelien@orange.fr', 'Yenyenbis']);
+//        $db =null;
+// $db = new PDO($dsn, $db_user);
+// if (isset($_POST['apellido']) AND isset($_POST['nombre']) AND isset($_POST['correo']) AND isset($_POST['contrasena'])){
+//     $query = $db->prepare("INSERT INTO pelicula(Apellido, Nombre, Correo, contraseña)
+//     VALUES(?,?,?,?)");
+//     $query->execute(array($_POST['apellido'], $_POST['nombre'], $_POST['correo'], $_POST['contrasena']));
+//     $db = null;
+//   }
+// var_dump($query);
+
+// $db = new PDO($dsn, $db_user);
+//        $sql = "INSERT INTO users(Apellido, Nombre, Correo, contraseña)
+//        VALUES(?,?,?,?)";
+//        $query = $db->prepare($sql);
+//        $query -> execute(array($_POST['apellido'], $_POST['nombre'], $_POST['correo'], $_POST['contrasena']));
+//        $db =null;
+// var_dump($query);
+?>
 
 <!DOCTYPE html>
 <html>
@@ -129,6 +157,7 @@ if ($_POST){
                               echo "</ul>";
                               }
                             ?>
+
                       </span>
                   </div>
               </div>
@@ -150,6 +179,7 @@ if ($_POST){
                                     //     echo "El apellido ingresado no es valido";
                                     // }
                                 ?>
+
                               </span> -->
                             </div>
                           </div>
@@ -240,13 +270,26 @@ if ($_POST){
                               <span id='register_username_errorloc' class='error'></span>
                             </div>
                           </div>
-
                       </div>
-
                           <div class="form-group">
                              <div class="col-sm-offset-2 col-sm-10">
                                 <button type="submit" class="Formulario_registro" value="Me registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
                                 <button type="reset" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
+
+                                <?php
+                                $dsn = 'mysql:host=localhost; dbname=mariage_en_beaute; charset=utf8mb4; port:3306';
+                                $db_user = 'root';
+                                $db_pass = '';
+                                $db = new PDO($dsn, $db_user);
+                                if (isset($_POST['apellido']) AND isset($_POST['nombre']) AND isset($_POST['correo']) AND isset($_POST['contrasena'])){
+                                    $query = $db->prepare("INSERT INTO pelicula(Apellido, Nombre, Correo, contraseña)
+                                    VALUES(?,?,?,?)");
+                                    $query->execute(array($_POST['apellido'], $_POST['nombre'], $_POST['correo'], $_POST['contrasena']));
+                                    $db = null;
+                                  }
+                                var_dump($query);
+                                ?>
+
                              </div>
                           </div>
                     </div>
