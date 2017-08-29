@@ -103,14 +103,19 @@ session_start();
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                     <li class = "active"> <a href="#" style="background-color:#e7ece6">Inicio</a> </li>
-                    <li role="presentation"> <a href="#">¿Quién soy?</a> </li>
+                    <li role="presentation"> <a href="./quienSoy.php">¿Quién soy?</a> </li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                       role="button" aria-haspopup="true" aria-expanded="false">Prestaciones <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                          <li><a href="#">Peinados</a></li>
-                          <li><a href="#">Maquillaje</a></li>
-                          <li><a href="#">Asesoria de imagen</a></li>
+                          <li><a href="./peinados.php">Peinados</a></li>
+                          <li><a href="./maquillaje.php">Maquillaje</a></li>
+                          <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Nutrición</a></li>
+                          <li><a href="#">Practicante en desarollo personal</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Prestaciones y precios</a></li>
                       </ul>
                     <li role="presentation"> <a href="#">Profesionales</a> </li>
                     <li role="presentation"> <a href="#">Contactos</a> </li>
@@ -198,14 +203,14 @@ session_start();
         <div class="row">
           <div class="col-xs-4">
             <div class="articulos">
-              <h2 style="text-align:center;">Ultimos artículos</h2>
-              <h4>Artículo 1</h4>
+              <h2 style="text-align:center;"><a href="./articulos.php">Ultimos artículos</a></h2>
+              <h4> <a href="articulos.php#belleza">Categoría Belleza</a></h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 LKJKljshfjksJHKJSKDJSKJDNSDklhfejkrfhjdncbsgdfhjkbhzjfkr chrfhejincididuntalirum.</p>
-              <h4>Artículo 2</h4>
+              <h4><a href="articulos.php#nutricion">Categoría nutrición</a></h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 LKJKljshfjksJHKJSKDJSKJDNSDklhfejkrfhjdncbsgdfhjkbhzjfkr chrfhejincididuntalirum</p>
-              <h4>Artículo 3</h4>
+              <h4><a href="articulos.php#desarolloPersonal">Categoría desarollo personal</a></h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 LKJKljshfjksJHKJSKDJSKJDNSDklhfejkrfhjdncbsgdfhjkbhzjfkr chrfhejincididuntalirum</p>
             </div>

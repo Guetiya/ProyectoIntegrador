@@ -171,7 +171,7 @@ main h1 {
   margin-bottom: 24px;
   font-size: 35px;
   font-weight: bold;
-  color: #e7ece6;
+  color: #823d30;#e7ece6
 }
 
 .carousel-caption a {
@@ -189,7 +189,7 @@ h2 {
   font-size: 26px;
   text-align: center;
   font-weight: bold;
-  color: black;
+  color: #823d30;
   display: inline-block;
 }
 
@@ -225,6 +225,23 @@ em {
   color : #e7ece6;
 }
 
+
+/* Contenido quien soy?
+================================*/
+
+/*div div .articulos h2{
+font-family: Parisienne;
+}*/
+h2 a {
+  color: #823d30;
+}
+ h4 a{
+  color: #FF9980;
+ }
+
+.minombre{
+  font-family: "Parisienne";
+}
 /* Footer
 ================================*/
 footer {

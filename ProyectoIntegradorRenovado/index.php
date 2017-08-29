@@ -98,16 +98,21 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                     <li class = "active"> <a href="#" style="background-color:#e7ece6">Inicio</a> </li>
-                    <li role="presentation"> <a href="./quiensoy.php">¿Quién soy?</a> </li>
+                    <li role="presentation"> <a href="./quienSoy.php">¿Quién soy?</a> </li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                       role="button" aria-haspopup="true" aria-expanded="false">Prestaciones <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                          <li><a href="#">Peinados</a></li>
-                          <li><a href="#">Maquillaje</a></li>
-                          <li><a href="#">Asesoria de imagen</a></li>
+                          <li><a href="./peinados.php">Peinados</a></li>
+                          <li><a href="./maquillaje.php">Maquillaje</a></li>
+                          <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Nutrición</a></li>
+                          <li><a href="#">Desarollo personal</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Tarifas</a></li>
                       </ul>
-                    <li role="presentation"> <a href="#">Profesionales</a> </li>
+                    <li role="presentation"> <a href="#">Galeria fotos</a> </li>
                     <li role="presentation"> <a href="#">Contactos</a> </li>
                   </ul>
                 </div>
@@ -143,7 +148,7 @@
             <div class="item">
               <img src="images/robe.jpg" alt="" width="200px" height="250px">
               <div class="carousel-caption">
-                <a href="#">
+                <a href="./peinados.php">
                   <h3>Peinados</h3>
                   <p>Del pelo rizado a tieso, de largo a corto…. <strong><em>Mariage en beauté</em></strong>
                     te crea el peinado a tu medida, <br>solamente para vos, para ese día tan esperado.</p>
@@ -153,7 +158,7 @@
             <div class="item">
               <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="266px">
               <div class="carousel-caption">
-                <a href="#">
+                <a href="./maquillaje.php">
                   <h3>Maquillaje</h3>
                   <p>Maquillaje natural o uno más atrevido…. A través de su práctica y sus paletas de
                     colores, <strong><em>Mariage en beauté</em></strong> escoge los que intensifican tus rasgos
@@ -164,7 +169,7 @@
             <div class="item">
               <img src="images/robe.jpg" alt="" width="200px" height="266px">
               <div class="carousel-caption">
-                <a href="#">
+                <a href="./asesoriaDeImagen.php">
                   <h3>Asesoria de imagen</h3>
                   <p><strong><em>Mariage en beauté</em></strong> combina las formas, las texturas, los estilos
                   y los colores con el fin de que <br>estén plenamente acorde a tu vestuario.</p>
@@ -188,18 +193,18 @@
 
         <div class="row">
             <div class="articulos col-sm-4">
-              <h2 style="text-align:center;">Ultimos artículos</h2>
-              <h4>Artículo 1</h4>
+              <h2 style="text-align:center;"><a href="./articulos.php">Ultimos artículos</a></h2>
+              <h4> <a href="articulos.php#belleza">Categoría Belleza</a></h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-              <h4>Artículo 2</h4>
+              <h4><a href="articulos.php#nutricion">Categoría nutrición</a></h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-              <h4>Artículo 3</h4>
+              <h4><a href="articulos.php#desarolloPersonal">Categoría desarollo personal</a></h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo</p>
             </div>
             <div class="testimonios col-sm-4">
               <h2 class="">Testimonios</h2>
               <span class="glyphicon glyphicon-menu-left"></span>
-              <img src="images/Photo 003 - Copie.jpg" alt="" width="50%" height="50%" class="img-circle">
+              <img src="images/Photo 003 - Copie.jpg" alt="" width="100px" height="100px" class="img-circle">
               <span class="glyphicon glyphicon-menu-right"></span>
               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -208,7 +213,7 @@
             </div>
             <div class="testimonios col-sm-4">
               <h2 class=""> ¿Sos profesional? </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              <p>Coiffeur professionnel, et tu souhaites Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                  dolor in reprehenderit in voluptate velit esnulla pariatur. Except id est laborum.</p>

@@ -12,7 +12,7 @@ function guardarUsuario($nombre, $apellido, $genero, $correo, $contrasena, $foto
 
         // Transformarlo a json
         $jsonUser = json_encode([
-            'nombre'     => $nombre, 
+            'nombre'     => $nombre,
             'apellido'   => $apellido,
             'genero'     => $genero,
             'correo'     => $correo,
@@ -91,6 +91,5 @@ function buscarUsuario($username)
       }
     }
   }
-
   return false;
 }

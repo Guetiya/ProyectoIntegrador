@@ -19,10 +19,9 @@ if($_POST){
 
   $user = ValidarPass($_POST ['contrasena']);
   if ($user) {
-    # code...
     header ("location: index.php");
   }else {
-    $error_usuario =" el usuario es incorrecto";
+    $error_usuario ="el usuario es incorrecto";
     $error_contrasena ="contraseña incorrecta";
   }
 }
