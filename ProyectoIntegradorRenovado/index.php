@@ -107,12 +107,13 @@
                           <li><a href="./maquillaje.php">Maquillaje</a></li>
                           <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
                           <li role="separator" class="divider"></li>
-                          <li><a href="#">Nutrición</a></li>
-                          <li><a href="#">Desarollo personal</a></li>
+                          <li><a href="#">Talleres en grupos</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="./nutricion.php">Nutrición</a></li>
                           <li role="separator" class="divider"></li>
                           <li><a href="#">Tarifas</a></li>
                       </ul>
-                    <li role="presentation"> <a href="#">Galeria fotos</a> </li>
+                    <li role="presentation"> <a href="./galeria.php">Galeria fotos</a> </li>
                     <li role="presentation"> <a href="#">Contactos</a> </li>
                   </ul>
                 </div>
@@ -146,7 +147,7 @@
               </div>
             </div>
             <div class="item">
-              <img src="images/robe.jpg" alt="" width="200px" height="250px">
+              <img src="images/fotoCoiffure.jpg" alt="" width="200px" height="150px">
               <div class="carousel-caption">
                 <a href="./peinados.php">
                   <h3>Peinados</h3>
@@ -156,7 +157,7 @@
               </div>
             </div>
             <div class="item">
-              <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="266px">
+              <img src="images/fotoMaquillajebis.jpg" alt="" width="200px" height="100px">
               <div class="carousel-caption">
                 <a href="./maquillaje.php">
                   <h3>Maquillaje</h3>
@@ -194,12 +195,11 @@
         <div class="row">
             <div class="articulos col-sm-4">
               <h2 style="text-align:center;"><a href="./articulos.php">Ultimos artículos</a></h2>
-              <h4> <a href="articulos.php#belleza">Categoría Belleza</a></h4>
+              <h4><span class="glyphicon glyphicon-heart"></span><a href="articulos.php#belleza">Categoría Belleza</a></h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-              <h4><a href="articulos.php#nutricion">Categoría nutrición</a></h4>
+              <h4><span class="glyphicon glyphicon-apple"></span><a href="articulos.php#nutricion">Categoría nutrición</a></h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-              <h4><a href="articulos.php#desarolloPersonal">Categoría desarollo personal</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo</p>
+
             </div>
             <div class="testimonios col-sm-4">
               <h2 class="">Testimonios</h2>

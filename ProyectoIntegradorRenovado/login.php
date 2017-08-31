@@ -88,14 +88,15 @@ require_once 'validar.php';
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                       role="button" aria-haspopup="true" aria-expanded="false">Prestaciones <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                          <li><a href="./peinados.php">Peinados</a></li>
-                          <li><a href="./maquillaje.php">Maquillaje</a></li>
-                          <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Nutrición</a></li>
-                          <li><a href="#">Practicante en desarollo personal</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Prestaciones y precios</a></li>
+                        <li><a href="./peinados.php">Peinados</a></li>
+                        <li><a href="./maquillaje.php">Maquillaje</a></li>
+                        <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Talleres en grupos</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="./nutricion.php">Nutrición</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Tarifas</a></li>
                       </ul>
                     <li role="presentation"> <a href="#">Profesionales</a> </li>
                     <li role="presentation"> <a href="#">Contactos</a> </li>

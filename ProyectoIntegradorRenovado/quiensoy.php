@@ -84,10 +84,11 @@
                         <li><a href="./maquillaje.php">Maquillaje</a></li>
                         <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Nutrición</a></li>
-                        <li><a href="#">Practicante en desarollo personal</a></li>
+                        <li><a href="#">Talleres en grupos</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Prestaciones y precios</a></li>
+                        <li><a href="./nutricion.php">Nutrición</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Tarifas</a></li>
                       </ul>
                     <li role="presentation"> <a href="#">Profesionales</a> </li>
                     <li role="presentation"> <a href="./contactos.php">Contactos</a> </li>
@@ -102,9 +103,13 @@
     <main>
       <div class="container">
           <div class="row">
-            <div class="articulos col-sm-12">
-              <h2 style="text-align:center;">¿Quién es <span class="minombre">Delphine B.</span>?</h2>
-              <h4>Ce que je souhaite accomplir </h4>
+            <div class="contenidoQuienSoy col-sm-12">
+                <h2 style="text-align:center;">¿Quién es <span class="miNombre">Delphine B.</span>?</h2> <!-- retirer le display inline block pour le centrer à h2 -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="articulos col-sm-8">
+              <h4><span class="glyphicon glyphicon-heart"></span>Ce que je souhaite accomplir </h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -113,7 +118,7 @@
                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                 st laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor</p>
-              <h4>Mes talents</h4>
+              <h4><span class="glyphicon glyphicon-star"></span>Mes talents</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -121,7 +126,7 @@
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                 laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-              <h4>Mes formations et compétences</h4>
+              <h4><span class="glyphicon glyphicon-education"></span>Mes formations et compétences</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -130,6 +135,10 @@
                 culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit, sed do eiusmod tempo</p>
             </div>
+            <div class="foto_Delphine col-sm-4">
+                <img src="images/fotoDelphine.jpg" alt="" width="300px" height="200px" > <!-- contour de foto rond!!!!! -->
+            </div>
+
           </div>
       </div>
     </main>

@@ -67,6 +67,14 @@ function guardarUsuario($usuario)
 }
 
 
+function guardarUsuarioBaseDatos($usuario)
+{
+require_once "connect.php";
+  $query = $db->prepare("INSERT INTO users(Apellido, Nombre, Correo, Contraseña)
+  VALUES(?,?,?,?)");
+  $query->execute(array($_POST['apellido'], $_POST['nombre'], $_POST['correo'], sha1($variable['contrasena'])));
+}
+
 
 function subirFoto() {
 

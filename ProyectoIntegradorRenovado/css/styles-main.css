@@ -190,7 +190,7 @@ h2 {
   text-align: center;
   font-weight: bold;
   color: #823d30;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 em {
@@ -200,7 +200,7 @@ em {
   color: #FF9980;
 }
 
-.articulos h4 {
+.articulos h4, .contenido_maquillaje h4 {
   font-family: 'Arimo', sans-serif;
   font-style: italic;
   font-weight: bold;
@@ -235,13 +235,49 @@ font-family: Parisienne;
 h2 a {
   color: #823d30;
 }
- h4 a{
+
+h4 a, h4{
   color: #FF9980;
  }
 
-.minombre{
+.miNombre{
   font-family: "Parisienne";
 }
+
+.foto_Delphine img{
+  border-radius: 100%;
+}
+
+.contenidoQuienSoy h2, .contenidoMaquillaje h2 , .contenidoArticulos h2  {
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+/* Contenido maquillaje
+================================*/
+/*.contenidoMaquillaje h2 {
+margin-top: 0px;
+margin-bottom: 20px;
+}*/
+
+.foto p a{
+  margin-left: 59px;
+}
+
+
+/* articulos
+================================*/
+.articulos h2 {
+  margin-bottom: 25px;
+}
+
+.foto img, .fotoNutricion img {
+  margin-left: 110px;
+}
+
+/*.foto img {
+  margin-top: 106px;
+}*/
 /* Footer
 ================================*/
 footer {

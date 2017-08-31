@@ -12,7 +12,7 @@
     <!-- Estilos principales-->
     <link rel="stylesheet" href="css/styles-main.css">
 
-    <title>¿Quién soy?</title>
+    <title>Artículos</title>
   </head>
   <body>
     <header>
@@ -75,7 +75,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                     <li class = "active"> <a href="./index.php" style="background-color:inherit">Inicio</a> </li>
-                    <li role="presentation"> <a href="#" style="background-color:#e7ece6">¿Quién soy?</a> </li>
+                    <li role="presentation"> <a href="./quienSoy.php">¿Quién soy?</a> </li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                       role="button" aria-haspopup="true" aria-expanded="false">Prestaciones <span class="caret"></span></a>
@@ -84,10 +84,11 @@
                         <li><a href="./maquillaje.php">Maquillaje</a></li>
                         <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Nutrición</a></li>
-                        <li><a href="#">Practicante en desarollo personal</a></li>
+                        <li><a href="#">Talleres en grupos</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Prestaciones y precios</a></li>
+                        <li><a href="./nutricion.php">Nutrición</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Tarifas</a></li>
                       </ul>
                     <li role="presentation"> <a href="#">Profesionales</a> </li>
                     <li role="presentation"> <a href="./contactos.php">Contactos</a> </li>
@@ -102,16 +103,28 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="articulos col-sm-12">
-            <h2 style="text-align:center;">Artículos</h2>
-            <h4 id="belleza">Categoría Belleza</h4>
+          <div class="contenidoArticulos col-sm-12">
+              <h2 style="text-align:center;">Artículos</h2> <!-- retirer le display inline block pour le centrer à h2 -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="articulos col-sm-8">
+            <h4 id="belleza"><span class="glyphicon glyphicon-heart"></span>Categoría Belleza</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <h4 id="nutricion">Categoría nutrición</h4>
+          </div>
+          <div class="foto col-sm-4">
+            <img src="images/fotomaquillaje.jpg" alt="" width="150px" height="200px">
+          </div>
+        </div>
+        <div class="row">
+          <div class="articulos col-sm-8">
+            <h4 id="nutricion"><span class="glyphicon glyphicon-apple"></span>Categoría nutrición</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h4 id="desarolloPersonal">Categoría desarollo personal</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <!-- <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="250px"> -->
+          </div>
+          <div class="fotoNutricion col-sm-4">
+            <img src="images/fotoNutricion.jpg" alt="" width="150px" height="200px">
           </div>
         </div>
       </div>

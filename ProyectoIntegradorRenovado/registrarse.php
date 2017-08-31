@@ -1,5 +1,23 @@
 <?php
+function buscarUsuario($username)
+{
+  $fp = fopen('users.json', 'r');
+  while ($linea = fgets($fp)) {
+    if (!empty($linea)) {
+      $linea = json_decode($linea, true);
+      if ($linea['user'] == $username) {
+        require_once "connect.php";
+        $query = $db->prepare("INSERT INTO users(Apellido, Nombre, Correo, Contraseña)
+        VALUES(?,?,?,?)");
+        $query->execute($username['apellido'], $username['nombre'], $username['correo'], $username['contrasena']);
+      }
+    }
+  }
+  return false;
+}
+
 require_once "funciones.php";
+
 $apellido = (isset($_POST['apellido']) ? $_POST['apellido'] : "");
 $nombre = (isset($_POST['nombre']) ? $_POST['nombre'] : "");
 $genero = (isset($_POST['genero']) ? $_POST['genero'] : "");
@@ -19,11 +37,15 @@ if ($_POST){
         $usuario = crearUsuario($_POST);
         //print_r($usuario); die;
         $usuario = guardarUsuario($usuario);
+        $usuario = guardarUsuarioBaseDatos($usuario);
+
         header ("location:bienvenidos.php");
         exit;
       }
 }
 //print_r($_POST);
+
+
 ?>
 
 <?php
@@ -133,20 +155,21 @@ if ($_POST){
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li class = "active"> <a href="#" style="background-color:#e7ece6">Inicio</a> </li>
+                    <li class = "active"> <a href="./index.php" style="background-color:#e7ece6">Inicio</a> </li>
                     <li role="presentation"> <a href="./quienSoy.php">¿Quién soy?</a> </li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                       role="button" aria-haspopup="true" aria-expanded="false">Prestaciones <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                          <li><a href="./peinados.php">Peinados</a></li>
-                          <li><a href="./maquillaje.php">Maquillaje</a></li>
-                          <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Nutrición</a></li>
-                          <li><a href="#">Practicante en desarollo personal</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Prestaciones y precios</a></li>
+                        <li><a href="./peinados.php">Peinados</a></li>
+                        <li><a href="./maquillaje.php">Maquillaje</a></li>
+                        <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Talleres en grupos</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="./nutricion.php">Nutrición</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Tarifas</a></li>
                       </ul>
                     <li role="presentation"> <a href="#">Profesionales</a> </li>
                     <li role="presentation"> <a href="#">Contactos</a> </li>
@@ -294,18 +317,7 @@ if ($_POST){
                                 <button type="submit" class="Formulario_registro" value="Me registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
                                 <button type="reset" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
 
-                                <?php
-                                $dsn = 'mysql:host=localhost; dbname=mariage_en_beaute; charset=utf8mb4; port:3306';
-                                $db_user = 'root';
-                                $db_pass = '';
-                                $db = new PDO($dsn, $db_user);
-                                if (isset($_POST['apellido']) AND isset($_POST['nombre']) AND isset($_POST['correo']) AND isset($_POST['contrasena'])){
-                                    $query = $db->prepare("INSERT INTO pelicula(Apellido, Nombre, Correo, Contraseña)
-                                    VALUES('$apellido','$nombre','$correo','$contrasena')");
-                                    $query->execute(array($_POST['apellido'], $_POST['nombre'], $_POST['correo'], $_POST['contrasena']));
-                                }
-                                var_dump($query);
-                                ?>
+
 
                              </div>
                           </div>
