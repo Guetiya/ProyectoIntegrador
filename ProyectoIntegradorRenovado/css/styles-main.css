@@ -123,6 +123,7 @@ aside a, i {
 main {
   background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* en el formulario */
@@ -145,6 +146,10 @@ main h1 {
 
 .carousel {
   background-color: black;
+}
+
+.articulos h4 .btn-lg{
+  font-size: 14px;
 }
 /* formulario
 ================================*/
@@ -207,6 +212,13 @@ em {
   color : #FF9980;
 }
 
+.articulos p .btn-lg{
+  font-size: 14px;
+  padding: 5px 9px;
+}
+.articulos h4 .btn-lg{
+  margin-left: none;
+}
 .glyphicon-menu-left {
   margin-left: 60px;
 }
@@ -225,7 +237,9 @@ em {
   color : #e7ece6;
 }
 
-
+.articulos h2 {
+  margin-bottom: 25px;
+}
 /* Contenido quien soy?
 ================================*/
 
@@ -280,11 +294,11 @@ hr{
   border-top: 1px solid #e7ece6;
 }
 
-.btn-lg{
+.prestacionesMaquillaje .btn-lg{
 padding: 4px 9px;
 font-size: 19px;
 margin-left: 522px;
-margin-bottom: 15px;
+/*margin-bottom: 15px;*/
 
 }
 
@@ -308,17 +322,24 @@ margin-bottom: 15px;
 
 /* articulos
 ================================*/
-.articulos h2 {
-  margin-bottom: 25px;
-}
 
 .foto img, .fotoNutricion img {
   margin-left: 110px;
 }
 
+.articulos .btn1-lg{
+  font-size: 14px;
+  padding: 5px 9px;
+  margin-left: 583px;
+}
+
+/*.articulos {
+  margin-bottom: 20px;
+}*/
 /*.foto img {
   margin-top: 106px;
 }*/
+
 /* Footer
 ================================*/
 footer {

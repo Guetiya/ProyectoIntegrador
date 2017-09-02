@@ -102,7 +102,8 @@
       <div class="container">
           <div class="row">
             <div class="contenidoQuienSoy col-sm-12">
-                <h2 style="text-align:center;">¿Quién es <span class="miNombre">Delphine B.</span>?</h2> <!-- retirer le display inline block pour le centrer à h2 -->
+                <h2 style="text-align:center;">¿Quién es <span class="miNombre">Delphine B.</span>?</h2><!-- retirer le display inline block pour le centrer à h2 -->
+                <hr noshade>
             </div>
           </div>
           <div class="row">

@@ -131,6 +131,7 @@
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
           </ol>
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
@@ -175,6 +176,16 @@
                 </a>
               </div>
             </div>
+            <div class="item">
+              <img src="#" alt="" width="200px" height="266px">
+              <div class="carousel-caption">
+                <a href="./nutricion.php">
+                  <h3>Nutrición</h3>
+                  <p><strong><em>Mariage en beauté</em></strong> asocia tambien el bien estar porque
+                  la belleza empieza a partir de lo que hay adentro de vos. Cuidar su interior para cuidar su belleza.</p>
+                </a>
+              </div>
+            </div>
           </div>
           <!-- Controls -->
           <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -194,9 +205,9 @@
             <div class="articulos col-sm-4">
               <h2 style="text-align:center;"><a href="./articulos.php">Ultimos artículos</a></h2>
               <h4><span class="glyphicon glyphicon-heart"></span><a href="articulos.php#belleza">Categoría Belleza</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a class="btn btn-primary btn-lg" href="#" role="button">Leer más</a></p>
               <h4><span class="glyphicon glyphicon-apple"></span><a href="articulos.php#nutricion">Categoría nutrición</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a class="btn btn-primary btn-lg" href="#" role="button">Leer más</a></p>
 
             </div>
             <div class="testimonios col-sm-4">
