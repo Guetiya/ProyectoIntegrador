@@ -110,11 +110,9 @@
                           <li><a href="#">Talleres en grupos</a></li>
                           <li role="separator" class="divider"></li>
                           <li><a href="./nutricion.php">Nutrición</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Tarifas</a></li>
                       </ul>
                     <li role="presentation"> <a href="./galeria.php">Galeria fotos</a> </li>
-                    <li role="presentation"> <a href="#">Contactos</a> </li>
+                    <li role="presentation"> <a href="#">Contacto</a> </li>
                   </ul>
                 </div>
               </div>
@@ -147,7 +145,7 @@
               </div>
             </div>
             <div class="item">
-              <img src="images/fotoCoiffure.jpg" alt="" width="200px" height="150px">
+              <img src="images/fotoCoiffureCopie.jpg" alt="" width="294px">
               <div class="carousel-caption">
                 <a href="./peinados.php">
                   <h3>Peinados</h3>
@@ -157,7 +155,7 @@
               </div>
             </div>
             <div class="item">
-              <img src="images/fotoMaquillajebis.jpg" alt="" width="200px" height="100px">
+              <img src="images/fotoMaquillajebisCopie.jpg" alt="" width="247px">
               <div class="carousel-caption">
                 <a href="./maquillaje.php">
                   <h3>Maquillaje</h3>

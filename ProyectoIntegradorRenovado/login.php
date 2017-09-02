@@ -82,7 +82,7 @@ require_once 'validar.php';
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li class = "active"> <a href="#" style="background-color:#e7ece6">Inicio</a> </li>
+                    <li class = "active"> <a href="./index.php" style="background-color:#e7ece6">Inicio</a> </li>
                     <li role="presentation"> <a href="./quienSoy.php">¿Quién soy?</a> </li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"
@@ -95,11 +95,9 @@ require_once 'validar.php';
                         <li><a href="#">Talleres en grupos</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="./nutricion.php">Nutrición</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Tarifas</a></li>
                       </ul>
                     <li role="presentation"> <a href="#">Profesionales</a> </li>
-                    <li role="presentation"> <a href="#">Contactos</a> </li>
+                    <li role="presentation"> <a href="#">Contacto</a> </li>
                   </ul>
                 </div>
               </div>

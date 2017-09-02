@@ -87,11 +87,9 @@
                         <li><a href="#">Talleres en grupos</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="./nutricion.php">Nutrición</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Tarifas</a></li>
                       </ul>
                     <li role="presentation"> <a href="#">Profesionales</a> </li>
-                    <li role="presentation"> <a href="./contactos.php">Contactos</a> </li>
+                    <li role="presentation"> <a href="./contactos.php">Contacto</a> </li>
                   </ul>
                 </div>
               </div>
@@ -136,7 +134,7 @@
                 consectetur adipisicing elit, sed do eiusmod tempo</p>
             </div>
             <div class="foto_Delphine col-sm-4">
-                <img src="images/fotoDelphine.jpg" alt="" width="300px" height="200px" > <!-- contour de foto rond!!!!! -->
+                <img src="images/fotoDelphine.jpg" alt="" width="400px" > <!-- contour de foto rond!!!!! -->
             </div>
 
           </div>

@@ -87,11 +87,9 @@
                         <li><a href="#">Talleres en grupos</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="./nutricion.php">Nutrición</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Tarifas</a></li>
                       </ul>
                     <li role="presentation"> <a href="#">Profesionales</a> </li>
-                    <li role="presentation"> <a href="./contactos.php">Contactos</a> </li>
+                    <li role="presentation"> <a href="./contactos.php">Contacto</a> </li>
                   </ul>
                 </div>
               </div>
@@ -120,6 +118,21 @@
               <a href="./galeria.php"><img src="images/fotomaquillaje.jpg" alt="" width="200px" height="250px"></a>
                   <p><a href="articulos.php#belleza">Articulos belleza</a></p>
                   <p><a href="#">Testimonios</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="prestacionesMaquillaje col-sm-12">
+              <h2>Prestaciones</h2>
+              <ul>
+                <li>Maquillage de jour</li>
+                <li>Maquillage de soirée</li>
+                <li>Maquillage mariée</li>
+                <li>Maquillage enfants</li>
+                <li>Cours d'auto-maquillage</li>
+                <li>Maquillage de soirée</li>
+              </ul>
+              <p><a class="btn btn-primary btn-lg" href="#" role="button">Ver mas</a></p>
+            </div>
             </div>
           </div>
       </div>

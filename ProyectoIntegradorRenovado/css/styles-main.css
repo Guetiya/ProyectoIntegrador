@@ -245,7 +245,7 @@ h4 a, h4{
 }
 
 .foto_Delphine img{
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .contenidoQuienSoy h2, .contenidoMaquillaje h2 , .contenidoArticulos h2  {
@@ -259,6 +259,10 @@ margin-bottom: 20px;
 margin-top: 0px;
 margin-bottom: 20px;
 }*/
+.prestacionesMaquillaje ul li{
+    list-style-type: none;
+}
+
 
 .foto p a{
   margin-left: 59px;
