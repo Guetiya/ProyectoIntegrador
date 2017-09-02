@@ -261,13 +261,50 @@ margin-bottom: 20px;
 }*/
 .prestacionesMaquillaje ul li{
     list-style-type: none;
+    padding-bottom: 12px;
 }
 
+.prestacionesMaquillaje a .btn{
+text-align: center;
 
+}
+
+.prestacionesMaquillaje li span{
+  /*text-decoration:underline;
+  text-decoration-color:#823d30;*/
+  color: #FF9980;
+  font-size: 16px;
+}
+
+hr{
+  border-top: 1px solid #e7ece6;
+}
+
+.btn-lg{
+padding: 4px 9px;
+font-size: 19px;
+margin-left: 522px;
+margin-bottom: 15px;
+
+}
+
+.btn-primary {
+  background-color: #FF9980;
+  border-color: #FF9980;
+}
+
+.glyphicon-share-alt:before{
+  margin-left: 106px;
+}
 .foto p a{
-  margin-left: 59px;
+  /*margin-left: 59px;*/
+  color: #823d30;
+  font-size: 16px;
 }
 
+.foto p{
+  margin-top: 23px;
+}
 
 /* articulos
 ================================*/
