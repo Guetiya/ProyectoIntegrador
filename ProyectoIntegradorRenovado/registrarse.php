@@ -134,9 +134,9 @@ if ($_POST){
                         <li><a href="./maquillaje.php">Maquillaje</a></li>
                         <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Talleres en grupos</a></li>
-                        <li role="separator" class="divider"></li>
                         <li><a href="./nutricion.php">Nutrición</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Talleres en grupos</a></li>
                       </ul>
                     <li role="presentation"> <a href="#">Profesionales</a> </li>
                     <li role="presentation"> <a href="#">Contacto</a> </li>

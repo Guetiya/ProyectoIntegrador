@@ -108,17 +108,16 @@ session_start();
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                       role="button" aria-haspopup="true" aria-expanded="false">Prestaciones <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                          <li><a href="./peinados.php">Peinados</a></li>
-                          <li><a href="./maquillaje.php">Maquillaje</a></li>
-                          <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Nutrición</a></li>
-                          <li><a href="#">Practicante en desarollo personal</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Prestaciones y precios</a></li>
+                        <li><a href="./peinados.php">Peinados</a></li>
+                        <li><a href="./maquillaje.php">Maquillaje</a></li>
+                        <li><a href="./asesoriaDeImagen.php">Asesoria de imagen</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="./nutricion.php">Nutrición</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Talleres en grupos</a></li>
                       </ul>
-                    <li role="presentation"> <a href="#">Profesionales</a> </li>
-                    <li role="presentation"> <a href="#">Contactos</a> </li>
+                    <li role="presentation"> <a href="./galeria.php">Galeria fotos</a> </li>
+                    <li role="presentation"> <a href="#">Contacto</a> </li>
                   </ul>
                 </div>
               </div>
@@ -130,74 +129,78 @@ session_start();
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-xs-12">
-            <div class="cover">
-              <div class="container">
-                <!--carussel -->
-                <div id="carousel-example-generic" class="carousel-slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                  </ol>
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="200px">
-                      <div class="carousel-caption">
-                        <a href="#"> <!--a poner sobre los otros -->
-                          <h3>¿Te vas a casar o tienes una ceremonia?</h3>
-                          <p>¡Qué buena noticia! ¿Te falta inspiración para tu peinado, maquillaje, e incluso tu vestuario? ¡No te preocupes!<strong> <em>Mariage en beauté </em></strong> te brinda consejos de belleza y te ofrece prestaciones
-                          personalizadas.<strong><em>Mariage en beauté</em></strong> juega sobre la combinación de un estilo adaptado con colores adecuadamente escogidos para resaltar tu belleza, con el fin de que irradies el día D. <br>Porque cada uno merece una belleza a medida, <strong><em>Mariage en beauté</em></strong> contribuye a descubrir la tuya.
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="images/robe.jpg" alt="" width="200px" height="250px">
-                      <div class="carousel-caption">
-                        <a href="#">
-                          <h3>Peinados</h3>
-                          <p>Del pelo rizado a tieso, de largo a corto…. <strong><em>Mariage en beauté</em></strong>
-                            te crea el peinado a tu medida, <br>solamente para vos, para ese día tan esperado.</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="266px">
-                      <div class="carousel-caption">
-                        <a href="#">
-                          <h3>Maquillaje</h3>
-                          <p>Maquillaje natural o uno más atrevido…. A través de su práctica y sus paletas de
-                            colores, <strong><em>Mariage en beauté</em></strong> escoge los que intensifican tus rasgos
-                            para que tu cara se ilumine el día D.</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="images/robe.jpg" alt="" width="200px" height="266px">
-                      <div class="carousel-caption">
-                        <a href="#">
-                          <h3>Asesoria de imagen</h3>
-                          <p><strong><em>Mariage en beauté</em></strong> combina las formas, las texturas, los estilos
-                          y los colores con el fin de que <br>estén plenamente acorde a tu vestuario.</p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="200px">
+              <div class="carousel-caption">
+                <a href="#">
+                  <h3>¿Te vas a casar o tienes una ceremonia?</h3>
+                  <p>¡Qué buena noticia! ¿Te falta inspiración para tu peinado, maquillaje, e incluso tu vestuario? ¡No te preocupes!<strong> <em>Mariage en beauté </em></strong> te brinda consejos de belleza y te ofrece prestaciones
+                  personalizadas.<strong><em>Mariage en beauté</em></strong> juega sobre la combinación de un estilo adaptado con colores adecuadamente escogidos para resaltar tu belleza, con el fin de que irradies el día D. <br>Porque cada uno merece una belleza a medida, <strong><em>Mariage en beauté</em></strong> contribuye a descubrir la tuya.
+                </a>
               </div>
             </div>
+            <div class="item">
+              <img src="images/fotoCoiffureCopie.jpg" alt="" width="294px">
+              <div class="carousel-caption">
+                <a href="./peinados.php">
+                  <h3>Peinados</h3>
+                  <p>Del pelo rizado a tieso, de largo a corto…. <strong><em>Mariage en beauté</em></strong>
+                    te crea el peinado a tu medida, <br>solamente para vos, para ese día tan esperado.</p>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/fotoMaquillajebisCopie.jpg" alt="" width="247px">
+              <div class="carousel-caption">
+                <a href="./maquillaje.php">
+                  <h3>Maquillaje</h3>
+                  <p>Maquillaje natural o uno más atrevido…. A través de su práctica y sus paletas de
+                    colores, <strong><em>Mariage en beauté</em></strong> escoge los que intensifican tus rasgos
+                    para que tu cara se ilumine el día D.</p>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/robe.jpg" alt="" width="200px" height="266px">
+              <div class="carousel-caption">
+                <a href="./asesoriaDeImagen.php">
+                  <h3>Asesoria de imagen</h3>
+                  <p><strong><em>Mariage en beauté</em></strong> combina las formas, las texturas, los estilos
+                  y los colores con el fin de que <br>estén plenamente acorde a tu vestuario.</p>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/fotoNutricion.jpg" alt="" width="200px" height="266px">
+              <div class="carousel-caption">
+                <a href="./nutricion.php">
+                  <h3>Nutrición</h3>
+                  <p><strong><em>Mariage en beauté</em></strong> asocia tambien el bien estar porque
+                  la belleza empieza a partir de lo que hay adentro de vos. Cuidar su interior para cuidar su belleza.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
           </div>
         </div>
         <div class="row">
