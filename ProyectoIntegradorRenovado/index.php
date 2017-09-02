@@ -177,7 +177,7 @@
               </div>
             </div>
             <div class="item">
-              <img src="#" alt="" width="200px" height="266px">
+              <img src="images/fotoNutricion.jpg" alt="" width="200px" height="266px">
               <div class="carousel-caption">
                 <a href="./nutricion.php">
                   <h3>Nutrición</h3>
@@ -228,8 +228,8 @@
                  dolor in reprehenderit in voluptate velit esnulla pariatur. Except id est laborum.</p>
             </div>
         </div>
-
     </main>
+
     <footer class="col-xs-12">
       <div class="container">
         <div class="row">
