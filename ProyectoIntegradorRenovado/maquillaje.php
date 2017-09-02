@@ -102,8 +102,7 @@
       <div class="container">
           <div class="row">
             <div class="contenidoMaquillaje col-sm-12">
-                <h2 style="text-align:center;">Maquillaje</h2>
-                <hr noshade> <!-- retirer le display inline block pour le centrer à h2 -->
+                <h2 style="text-align:center;">Maquillaje</h2> <!-- retirer le display inline block pour le centrer à h2 -->
             </div>
           </div>
           <div class="row">
@@ -117,24 +116,22 @@
             </div>
             <div class="foto col-sm-4">
               <a href="./galeria.php"><img src="images/fotomaquillaje.jpg" alt="" width="200px" height="250px"></a>
-              <p><span class="glyphicon glyphicon glyphicon-share-alt"></span><a href="articulos.php#belleza"> Articulos belleza</a></p>
-              <p><span class="glyphicon glyphicon glyphicon-share-alt"></span><a href="#"> Testimonios</a></p>
+                  <p><a href="articulos.php#belleza">Articulos belleza</a></p>
+                  <p><a href="#">Testimonios</a></p>
             </div>
           </div>
           <div class="row">
             <div class="prestacionesMaquillaje col-sm-12">
               <h2>Prestaciones</h2>
-              <hr noshade>
-              <!-- <hr size=4 width=50% align=center >  -->
               <ul>
-                <li><span>Maquillage de jour</span> : durée 1 heure</li>
-                <li><span>Maquillage de soirée</span> : durée 1 heure</li>
-                <li><span>Maquillage mariée</span> : durée 1 heure le jour J (+ 2 essais)</li>
-                <li><span>Maquillage enfant</span></li>
-                <li><span>Cours d'auto-maquillage</span> : durée 1 heure </li>
-                <li><span>Taller en grupo</span> : pedir informaciones </li>
+                <li>Maquillage de jour</li>
+                <li>Maquillage de soirée</li>
+                <li>Maquillage mariée</li>
+                <li>Maquillage enfants</li>
+                <li>Cours d'auto-maquillage</li>
+                <li>Maquillage de soirée</li>
               </ul>
-              <a class="btn btn-primary btn-lg" href="#" role="button" style="background-color:#ff9980;border:none;">Ver Precios</a>
+              <p><a class="btn btn-primary btn-lg" href="#" role="button">Ver mas</a></p>
             </div>
             </div>
           </div>
