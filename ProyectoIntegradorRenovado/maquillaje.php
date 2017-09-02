@@ -134,7 +134,7 @@
                 <li><span>Cours d'auto-maquillage</span> : durée 1 heure </li>
                 <li><span>Taller en grupo</span> : pedir informaciones </li>
               </ul>
-              <a class="btn btn-primary btn-lg" href="#" role="button">Ver Precios</a>
+              <a class="btn btn-primary btn-lg" href="#" role="button" style="background-color:#ff9980;border:none;">Ver Precios</a>
             </div>
             </div>
           </div>
