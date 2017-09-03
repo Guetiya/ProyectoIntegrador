@@ -406,6 +406,16 @@ footer .left-col .social li {
   height: 26px;
   margin-top: 20px;
 }
+
+/* Contacto
+================================*/
+/*div input .form-control {
+  border-color: #FAA996;
+  border-radius: 80px;
+  width: 250px;
+}*/
+
+
 /* Media Querys
 ================================*/
 @media (min-width: 1200px) {

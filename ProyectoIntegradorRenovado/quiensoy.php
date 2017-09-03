@@ -89,7 +89,7 @@
                         <li><a href="#">Talleres en grupos</a></li>
                       </ul>
                     <li role="presentation"> <a href="#">Profesionales</a> </li>
-                    <li role="presentation"> <a href="./contactos.php">Contacto</a> </li>
+                    <li role="presentation"> <a href="./contacto.php">Contacto</a> </li>
                   </ul>
                 </div>
               </div>

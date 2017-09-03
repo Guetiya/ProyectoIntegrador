@@ -112,7 +112,7 @@
                           <li><a href="#">Talleres en grupos</a></li>
                       </ul>
                     <li role="presentation"> <a href="./galeria.php">Galeria fotos</a> </li>
-                    <li role="presentation"> <a href="#">Contacto</a> </li>
+                    <li role="presentation"> <a href="./contacto.php">Contacto</a> </li>
                   </ul>
                 </div>
               </div>

@@ -139,7 +139,7 @@ if ($_POST){
                         <li><a href="#">Talleres en grupos</a></li>
                       </ul>
                     <li role="presentation"> <a href="#">Profesionales</a> </li>
-                    <li role="presentation"> <a href="#">Contacto</a> </li>
+                    <li role="presentation"> <a href="./contacto.php">Contacto</a> </li>
                   </ul>
                 </div>
               </div>
@@ -171,7 +171,7 @@ if ($_POST){
               </div>
                 <div class="row">
                   <div class="col-xs-6 col-xs-offset-3">
-                    <div class="formulario"> <!--no sé si es necesario -->
+                    <div class="formulario">
                       <h2 class="text-center">Registrarse</h2>
 
                         <div class='short_explanation'>* Campos requeridos</div>
@@ -279,15 +279,12 @@ if ($_POST){
                             </div>
                           </div>
                       </div>
-                          <div class="form-group">
-                             <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="Formulario_registro" value="Me registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
-                                <button type="reset" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
-
-
-
-                             </div>
-                          </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="Formulario_registro" value="Me registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
+                          <button type="reset" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
