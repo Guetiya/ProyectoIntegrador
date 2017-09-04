@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -58,28 +61,7 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-md-11 col-md-offset-1">
-            <nav class="navegacion">
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                      <li class = "active"> <a href="#" style="background-color:#e7ece6">Inicio</a> </li>
-                      <li role="presentation"> <a href="#">¿Quién soy?</a> </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                        role="button" aria-haspopup="true" aria-expanded="false">Prestaciones <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Peinados</a></li>
-                            <li><a href="#">Maquillaje</a></li>
-                            <li><a href="#">Asesoria de imagen</a></li>
-                        </ul>
-                      <li role="presentation"> <a href="#">Profesionales</a> </li>
-                      <li role="presentation"> <a href="#">Contactos</a> </li>
-                    </ul>
-              </div>
-            </nav>
-          </div>
-        </div> -->
+
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
             <!--<nav class="navegacion">-->
@@ -111,7 +93,7 @@
                           <li role="separator" class="divider"></li>
                           <li><a href="#">Talleres en grupos</a></li>
                       </ul>
-                    <li role="presentation"> <a href="./galeria.php">Galeria fotos</a> </li>
+                    <li role="presentation"> <a href="./galeria.php">Galería</a> </li>
                     <li role="presentation"> <a href="#" style="background-color:#e7ece6">Contacto</a> </li>
                   </ul>
                 </div>
@@ -125,16 +107,28 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+
+
+            <?php
+              if (isset($errores)){
+              echo "<ul>";
+              foreach ($errores as $key => $error) {
+                echo '<li>'. $error . "</li>";
+              }
+              echo "</ul>";
+              }
+            ?>
+
             <h2>Contactarme</h2>
-            <form action="#" method ="post" id="frmContact">
+            <form action="postcontacto.php" method ="post" id="frmContact">
 								<div class="row form-group">
 									<div class="col-md-6">
 										<!-- <label for="fname">First Name</label> -->
-										<input type="text" id="nombre" class="form-control" placeholder="Nombre" name="nombre" required="required">
+										<input type="text" id="nombre" class="form-control" placeholder="Nombre" name="nombre" required="required" value="<?php if(isset($nombre)) {echo $nombre; } ?>">
 									</div>
 									<div class="col-md-6">
 										<!-- <label for="lname">Last Name</label> -->
-										<input type="text" id="apellido" class="form-control" placeholder="Apellido" name="apellido" required="required">
+										<input type="text" id="apellido" class="form-control" placeholder="Apellido" name="apellido" required="required" value="<?php if(isset($apellido)) {echo $apellido; } ?>">
 									</div>
 								</div>
 
@@ -165,8 +159,9 @@
 								<div class="form-group" id="sendButtonWait" style="display:none;">
 									<img src="/images/loader2.gif" height="64">
 								</div>
-
 							</form>
+              <h2>Debug : </h2>
+              <?= var_dump($_SESSION); ?>
           </div>
         </div>
       </div>

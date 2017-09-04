@@ -111,7 +111,7 @@
                           <li role="separator" class="divider"></li>
                           <li><a href="#">Talleres en grupos</a></li>
                       </ul>
-                    <li role="presentation"> <a href="./galeria.php">Galeria fotos</a> </li>
+                    <li role="presentation"> <a href="./galeria.php">Galería</a> </li>
                     <li role="presentation"> <a href="./contacto.php">Contacto</a> </li>
                   </ul>
                 </div>
@@ -210,6 +210,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a class="btn btn-primary btn-lg" href="#" role="button" style="background-color:#ff9980;border:none;">Leer más</a></p>
 
             </div>
+
             <div class="testimonios col-sm-4">
               <h2 class="">Testimonios</h2>
               <span class="glyphicon glyphicon-menu-left"></span>
@@ -220,6 +221,7 @@
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 Duis aute irure dolor in tur.</p>
             </div>
+
             <div class="testimonios col-sm-4">
               <h2 class=""> ¿Sos profesional? </h2>
               <p>Coiffeur professionnel, et tu souhaites Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

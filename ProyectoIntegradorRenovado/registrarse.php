@@ -1,20 +1,20 @@
 <?php
-function buscarUsuario($username)
-{
-  $fp = fopen('users.json', 'r');
-  while ($linea = fgets($fp)) {
-    if (!empty($linea)) {
-      $linea = json_decode($linea, true);
-      if ($linea['user'] == $username) {
-        require_once "connect.php";
-        $query = $db->prepare("INSERT INTO users(Apellido, Nombre, Correo, Contraseña)
-        VALUES(?,?,?,?)");
-        $query->execute($username['apellido'], $username['nombre'], $username['correo'], $username['contrasena']);
-      }
-    }
-  }
-  return false;
-}
+// function buscarUsuario($username)
+// {
+//   $fp = fopen('users.json', 'r');
+//   while ($linea = fgets($fp)) {
+//     if (!empty($linea)) {
+//       $linea = json_decode($linea, true);
+//       if ($linea['user'] == $username) {
+//         require_once "connect.php";
+//         $query = $db->prepare("INSERT INTO users(Apellido, Nombre, Correo, Contraseña)
+//         VALUES(?,?,?,?)");
+//         $query->execute($username['apellido'], $username['nombre'], $username['correo'], $username['contrasena']);
+//       }
+//     }
+//   }
+//   return false;
+// }
 
 require_once "funciones.php";
 
