@@ -136,8 +136,9 @@
             </div>
             <div class="foto_Delphine col-sm-4">
                 <img src="images/fotoDelphine.jpg" alt="" width="400px" > <!-- contour de foto rond!!!!! -->
+                <p><span class="glyphicon glyphicon glyphicon-share-alt" style="color:#ff9980"></span><a href="index.php#articulos" style="color:#ff9980"> Articulos</a></p>
+                <p><span class="glyphicon glyphicon glyphicon-share-alt"style="color:#ff9980"></span><a href="#" style="color:#ff9980"> Testimonios</a></p>
             </div>
-
           </div>
       </div>
     </main>

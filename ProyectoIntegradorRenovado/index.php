@@ -203,10 +203,10 @@
 
         <div class="row">
             <div class="articulos col-sm-4">
-              <h2 style="text-align:center;">Artículos</h2>
+              <h2 style="text-align:center;" id="articulos">Artículos</h2>
               <h4><span class="glyphicon glyphicon-heart"></span><a href="articulosBelleza.php">Categoría Belleza</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a href="articulos/articulosBelleza/articulo1.php">leer más</a></p>
-              <h4><span class="glyphicon glyphicon-apple"></span><a href="articulosNutricion.php">Categoría nutrición</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a href="./articulo1.php">leer más</a></p>
+              <h4><span class="glyphicon glyphicon-apple"></span><a href="articulosNutricion.php">Categoría Nutrición</a></h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a href="articulos/articulosNutricion/articuloNutricion1.php">leer más</a></p>
             </div>
 
