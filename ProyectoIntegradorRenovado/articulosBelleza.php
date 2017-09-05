@@ -107,34 +107,40 @@
           </div>
         </div>
         <div class="row">
-          <div class="articulos col-sm-4">
-            <h4 id="belleza"><span class="glyphicon glyphicon-heart"></span>Categoría Belleza</h4>
+          <div class="articulos col-sm-10">
+            <h4 id="belleza"><span class="glyphicon glyphicon-heart"></span>
+            <a href="http://mamaconectada.com/estuvimos-en-atodatarde-hablando-sobre-cyberbullying/" rel="bookmark">Titulo 1</a></h4>
+            <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida id e
             <a href="/articles/créez comme elles">lire la suite</a></p>
-
-          </div>
-          <div class="foto col-sm-2">
-            <img src="images/fotomaquillaje.jpg" alt="" width="150px" height="200px">
-          </div>
-          <div class="articulos col-sm-4">
-            <h4 id="belleza"><span class="glyphicon glyphicon-heart"></span>Categoría Belleza</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, conunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aecat cupidaserunt mollit anim id est laborum.
-            </p>
-            <a class="btn btn-primary btn1-lg" href="./articulosBelleza.php" role="button" style="background-color:#ff9980;border:none;">Leer más</a>
           </div>
           <div class="foto col-sm-2">
             <img src="images/fotomaquillaje.jpg" alt="" width="150px" height="200px">
           </div>
         </div>
         <div class="row">
-          <div class="articulos col-sm-12">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a class="btn btn-primary btn1-lg" href="#" role="button" style="background-color:#ff9980;border:none;">Leer más</a>
+          <div class="articulos col-sm-10">
+            <h4 id="belleza"><span class="glyphicon glyphicon-heart"></span>
+            <a href="http://mamaconectada.com/estuvimos-en-atodatarde-hablando-sobre-cyberbullying/" rel="bookmark">Titulo 1</a></h4>
+            <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida id e
+            <a href="/articles/créez comme elles">lire la suite</a></p>
           </div>
-          <div class="fotoNutricion col-sm-4">
-
+          <div class="foto col-sm-2">
+            <img src="images/fotomaquillaje.jpg" alt="" width="150px" height="200px">
           </div>
-
+        </div>
+        <div>
+          <div class="articulos col-sm-10">
+            <h4 id="belleza"><span class="glyphicon glyphicon-heart"></span>
+            <a href="http://mamaconectada.com/estuvimos-en-atodatarde-hablando-sobre-cyberbullying/" rel="bookmark">Titulo 1</a></h4>
+            <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida id e
+            <a href="/articles/créez comme elles">lire la suite</a></p>
+          </div>
+          <div class="foto col-sm-2">
+            <img src="images/fotomaquillaje.jpg" alt="" width="150px" height="200px">
+          </div>
         </div>
       </div>
     </main>

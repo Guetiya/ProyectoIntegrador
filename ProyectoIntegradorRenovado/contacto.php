@@ -1,6 +1,33 @@
 <?php
-session_start();
-?>
+// session_start();
+require_once "send_form_email.php";
+
+// $apellido = (isset($_POST['apellido']) ? $_POST['apellido'] : "");
+// $nombre = (isset($_POST['nombre']) ? $_POST['nombre'] : "");
+// $correo = (isset($_POST['correo']) ? $_POST['correo'] : "");
+// $tel = (isset($_POST['tel']) ? $_POST['tel'] : "");
+// $message = (isset($_POST['message']) ? $_POST['mmessage'] : "");
+//
+// $errores =[];
+//
+// if ($_POST){
+//
+//       $errores = validarInfo($_POST);
+//
+//       if (count($errores) == 0){
+//         $usuario = enviarCorreo($_POST); // j'en suis ici!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//         //print_r($usuario); die;
+//         $usuario = guardarUsuario($usuario);
+//         $usuario = guardarUsuarioBaseDatos($usuario);
+//
+//         header ("location:bienvenidos.php");
+//         exit;
+//       }
+// }
+// //print_r($_POST);
+//
+// ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -120,15 +147,15 @@ session_start();
             ?>
 
             <h2>Contactarme</h2>
-            <form action="postcontacto.php" method ="post" id="frmContact">
+            <form name="contactform" action="contacto.php" method ="post" id="frmContact">
 								<div class="row form-group">
 									<div class="col-md-6">
 										<!-- <label for="fname">First Name</label> -->
-										<input type="text" id="nombre" class="form-control" placeholder="Nombre" name="nombre" required="required" value="<?php if(isset($nombre)) {echo $nombre; } ?>">
+										<input type="text" id="nombre" class="form-control" placeholder="Nombre" name="nombre" required="required">
 									</div>
 									<div class="col-md-6">
 										<!-- <label for="lname">Last Name</label> -->
-										<input type="text" id="apellido" class="form-control" placeholder="Apellido" name="apellido" required="required" value="<?php if(isset($apellido)) {echo $apellido; } ?>">
+										<input type="text" id="apellido" class="form-control" placeholder="Apellido" name="apellido" required="required">
 									</div>
 								</div>
 
@@ -160,8 +187,7 @@ session_start();
 									<img src="/images/loader2.gif" height="64">
 								</div>
 							</form>
-              <h2>Debug : </h2>
-              <?= var_dump($_SESSION); ?>
+
           </div>
         </div>
       </div>
