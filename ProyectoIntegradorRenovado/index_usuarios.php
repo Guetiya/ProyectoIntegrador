@@ -206,7 +206,7 @@ session_start();
         <div class="row">
           <div class="col-xs-4">
             <div class="articulos">
-              <h2 style="text-align:center;" class="Index_articulo"><a href="./articulos.php">Ultimos artículos</a></h2>
+              <a href="./articulos.php" style="text-decoration:none;"><h2 style="text-align:center;">Ultimos artículos</h2></a>
               <h4> <a href="articulos.php#belleza">Categoría Belleza</a></h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 LKJKljshfjksJHKJSKDJSKJDNSDklhfejkrfhjdncbsgdfhjkbhzjfkr chrfhejincididuntalirum.</p>
