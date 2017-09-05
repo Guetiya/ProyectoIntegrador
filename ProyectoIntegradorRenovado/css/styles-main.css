@@ -245,6 +245,16 @@ em {
 .articulos h2 {
   margin-bottom: 25px;
 }
+/*
+articulos de index usuario:
+*/
+.Index_articulo{
+text-decoration: none;
+}
+Index_articulo:hover{
+  color: #FF9980;
+  background: black;
+}
 /* Contenido quien soy?
 ================================*/
 
