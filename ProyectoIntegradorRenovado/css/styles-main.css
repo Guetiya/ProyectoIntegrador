@@ -219,6 +219,11 @@ em {
 .articulos h4 .btn-lg{
   margin-left: none;
 }
+
+.row .articulos p a{
+  color : #FF9980;
+}
+
 .glyphicon-menu-left {
   margin-left: 60px;
 }
@@ -334,12 +339,19 @@ margin-left: 522px;
   margin-left: 583px;
 }
 
-/*.articulos {
-  margin-bottom: 20px;
-}*/
-/*.foto img {
-  margin-top: 106px;
-}*/
+/* articulosBelleza
+================================*/
+.fotoArticulosBelleza img {
+  margin-left: 0px;
+}
+
+time {
+  color : #aaa;
+}
+
+.rowBelleza p a{
+  color : #FF9980;
+}
 
 /* Footer
 ================================*/
