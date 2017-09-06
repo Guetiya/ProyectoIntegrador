@@ -102,7 +102,7 @@
       <div class="container">
         <div class="row">
           <div class="contenidoArticulos col-sm-12">
-              <h2 style="text-align:center;">Prendre soin de sa peau</h2>
+              <h2 style="text-align:center;">Articulo</h2>
               <hr noshade> <!-- retirer le display inline block pour le centrer à h2 -->
           </div>
         </div>
@@ -143,6 +143,7 @@
           </div>
           <div class="fotoArticulosBelleza col-sm-2">
             <img src="images/fotomaquillaje.jpg" alt="" width="90px" height="100px">
+      
           </div>
         </div>
       </div>

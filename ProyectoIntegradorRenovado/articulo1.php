@@ -102,42 +102,63 @@
       <div class="container">
         <div class="row">
           <div class="contenidoArticulos col-sm-12">
-              <h2 style="text-align:center;">Comment prendre soin de sa peau</h2>
-              <hr noshade> <!-- retirer le display inline block pour le centrer à h2 -->
+            <h2 style="text-align:center;">Comment prendre soin de sa peau</h2>
+            <hr noshade> <!-- retirer le display inline block pour le centrer à h2 -->
           </div>
         </div>
-        <div class="rowBelleza">
-          <div class="articulos col-sm-10">
-
+        <div class="rowBelleza"> rowArticuloBelleza
+          <div class="articulos col-sm-12">
             <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
-            <p>Lorem ipsum ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            <p><em>Lorem ipsum ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
               ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida id...
-
-          </div>
-          <div class="fotoArticulosBelleza col-sm-2">
-            <img src="images/fotomaquillaje.jpg" alt="" width="90px" height="100px">
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida id...</em></p>
           </div>
         </div>
         <div class="rowBelleza">
-          <div class="articulos col-sm-10">
-            <h4 id="belleza"><span class="glyphicon glyphicon-heart"></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e
-            nulla pariatur. Excepteur sint occaecat cupida id e...
+          <div class="articulos col-sm-9">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Et vous? </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-
         </div>
-        <div class="rowBelleza">
-          <div class="articulos col-sm-10">
-            <h4 id="belleza"><span class="glyphicon glyphicon-heart"></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam,xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Excepteur sint occaecat cupida id...
-
+        <div class="row">
+          <div class="articulos col-sm-3">
+            <div class="fotoArticulosBelleza">
+              <img src="images/fotomaquillaje.jpg" alt="" width="90px" height="100px">
+              <p><span class="glyphicon glyphicon glyphicon-share-alt"style="color:#ff9980"></span><a href="#" style="color:#ff9980"> Testimonios</a></p>
+            </div>
           </div>
-
+          <div class="loSabes col-sm-3">
+            <div class="lo sabes">
+              <h3>Lo sabias?</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                n voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
