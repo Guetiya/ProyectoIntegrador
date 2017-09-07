@@ -205,9 +205,9 @@
             <div class="articulos col-sm-4">
               <h2 style="text-align:center;" id="articulos">Artículos</h2>
               <a href="articulosBelleza.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-heart"></span>Categoría Belleza</h4></a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a href="./articulo1.php">leer más</a></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a href="./articuloBelleza1.php">leer más</a></p>
               <a href="articulosNutricion.php"style="text-decoration:none;"><h4><span class="glyphicon glyphicon-apple"></span>Categoría Nutrición</h4></a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a href="articulos/articulosNutricion/articuloNutricion1.php">leer más</a></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a href="./articuloNutricion1.php">leer más</a></p>
             </div>
 
             <div class="testimonios col-sm-4">

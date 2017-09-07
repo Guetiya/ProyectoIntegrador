@@ -117,8 +117,8 @@
             </div>
             <div class="foto col-sm-4">
               <a href="./galeria.php"><img src="images/fotomaquillaje.jpg" alt="" width="200px" height="250px"></a>
-              <p><span class="glyphicon glyphicon glyphicon-share-alt" style="color:#ff9980"></span><a href="articulos.php#belleza" style="color:#ff9980"> Articulos belleza</a></p>
-              <p><span class="glyphicon glyphicon glyphicon-share-alt"style="color:#ff9980"></span><a href="#" style="color:#ff9980"> Testimonios</a></p>
+              <p><span class="glyphicon glyphicon-hand-right" style="color:#ff9980"></span><a href="articulos.php#belleza" style="color:#ff9980"> Articulos belleza</a></p>
+              <p><span class="glyphicon glyphicon-hand-right"style="color:#ff9980"></span><a href="#" style="color:#ff9980"> Testimonios</a></p>
             </div>
           </div>
           <div class="row">

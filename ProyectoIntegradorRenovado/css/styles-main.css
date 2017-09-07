@@ -320,10 +320,7 @@ margin-left: 522px;
   border-color: #FF9980;
 }
 
-.glyphicon-share-alt:before{
-  margin-left: 106px;
-  color: #FF9980;
-}
+
 .foto p a{
   /*margin-left: 59px;*/
   color: #823d30;
@@ -334,7 +331,7 @@ margin-left: 522px;
   margin-top: 23px;
 }
 
-/* articulos
+/* articulos attention ne va plus exister
 ================================*/
 
 .foto img, .fotoNutricion img {
@@ -359,6 +356,33 @@ time {
 
 .rowBelleza p a{
   color : #FF9980;
+}
+
+/* articulos articulo1
+================================*/
+h5 {
+  font-family:'Lora', serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #823d30;
+}
+
+.rowBelleza .articulos p em {
+  color: #333;
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+
+.p {
+font-size: 18px;
+
+}
+
+.firma {
+  text-align: right;
+  font-family: "Parisienne";
+  color: #FF9980;
+  font-size: 18px;
 }
 
 /* Footer

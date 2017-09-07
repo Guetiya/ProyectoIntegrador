@@ -12,7 +12,7 @@
     <!-- Estilos principales-->
     <link rel="stylesheet" href="css/styles-main.css">
 
-    <title>¿Quién soy?</title>
+    <title>Artículo Belleza 1</title>
   </head>
   <body>
     <header>
@@ -75,7 +75,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                     <li class = "active"> <a href="./index.php" style="background-color:inherit">Inicio</a> </li>
-                    <li role="presentation"> <a href="#" style="background-color:#e7ece6">¿Quién soy?</a> </li>
+                    <li role="presentation"> <a href="./quienSoy.php">¿Quién soy?</a> </li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                       role="button" aria-haspopup="true" aria-expanded="false">Prestaciones <span class="caret"></span></a>
@@ -88,7 +88,7 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Talleres en grupos</a></li>
                       </ul>
-                    <li role="presentation"> <a href="./galeria.php">Galería</a> </li>
+                    <li role="presentation"> <a href="#">Profesionales</a> </li>
                     <li role="presentation"> <a href="./contacto.php">Contacto</a> </li>
                   </ul>
                 </div>
@@ -100,46 +100,65 @@
     </header>
     <main>
       <div class="container">
-          <div class="row">
-            <div class="contenidoQuienSoy col-sm-12">
-                <h2 style="text-align:center;">¿Quién es <span class="miNombre">Delphine B.</span>?</h2><!-- retirer le display inline block pour le centrer à h2 -->
-                <hr noshade>
+        <div class="row">
+          <div class="contenidoArticulos col-sm-12">
+            <h5>Comment prendre soin de sa peau</h5>
+            <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
+            <hr noshade> <!-- retirer le display inline block pour le centrer à h2 -->
+          </div>
+        </div>
+        <div class="rowBelleza">
+          <div class="articulos col-sm-12">
+            <p><em>Quelle couleur mettre, quel vêtement porter? Tous les jours la même questuion et aujourd'hui de nouveau et pire encore pour le jour de mon mariage. je suis déjà du genre à ne pas savoir quoi porter en semaine mais là je sens que ça va être compliqué pour me trouver la tenue idéale sans passer pour l'arriérée ...</em></p>
+          </div>
+        </div>
+        <div class="rowBelleza">
+          <div class="articulos col-sm-9">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="./galeria.php"><img src="images/fotomaquillaje.jpg" alt="" width="200px" height="250px"></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <img src="images/fotomaquillaje.jpg" alt="" width="90px" height="100px">
+            <h3>Et vous? </h3>
+            <p>Comment prenez-vous soin de votre peau? Qu'êtes-vous prêtes à faire, à mettre en place, à changer pour avoir la peau que vous souhaitez?</p>
+            <p class="firma">par Delphine B.</p>
+          </div>
+        </div>
+        <div class="rowBelleza">
+          <div class="col-sm-3">
+            <div class="citacion">
+              <h3>Pensamiento</h3>
+              <span class="fa fa-quote-left"></span>
+              <p><em>Atrás el arte hay pasión y atrás la pasión hay amor de este arte.
+              Y no hay más hermosa pasión que el arte de amar.</em></p>
+              <p><span class="glyphicon glyphicon-hand-right"style="color:#ff9980"></span><a href="#" style="color:#ff9980"> Testimonios</a></p>
+              <p><span class="glyphicon glyphicon-share-alt"style="color:#ff9980"></span><a href="#" style="color:#ff9980"> Compartir el artículo</a></p>
             </div>
           </div>
-          <div class="row">
-            <div class="articulos col-sm-8">
-              <h4><span class="glyphicon glyphicon-heart"></span>Ce que je souhaite accomplir </h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                st laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor</p>
-              <h4><span class="glyphicon glyphicon-star"></span>Mes talents</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-              <h4><span class="glyphicon glyphicon-education"></span>Mes formations et compétences</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit, sed do eiusmod tempo</p>
+          <!-- <div class="row">
+            <div class="articulos col-sm-3">
+              <div class="fotoArticulosBelleza">
+              </div>
             </div>
-            <div class="foto_Delphine col-sm-4">
-                <img src="images/fotoDelphine.jpg" alt="" width="400px" > <!-- contour de foto rond!!!!! -->
-                <p><span class="glyphicon glyphicon-hand-right" style="color:#ff9980"></span><a href="index.php#articulos" style="color:#ff9980"> Articulos</a></p>
-                <p><span class="glyphicon glyphicon-hand-right" style="color:#ff9980"></span><a href="#" style="color:#ff9980"> Testimonios</a></p>
-            </div>
-          </div>
+        </div> -->
       </div>
     </main>
 
