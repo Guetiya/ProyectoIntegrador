@@ -103,7 +103,7 @@
         <div class="row">
           <div class="contenidoArticulos col-sm-12">
             <h5>Comment prendre soin de sa peau</h5>
-            <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
+            <p>par Delphine B / <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time></p>
             <hr noshade> <!-- retirer le display inline block pour le centrer à h2 -->
           </div>
         </div>
@@ -139,7 +139,7 @@
             <img src="images/fotomaquillaje.jpg" alt="" width="90px" height="100px">
             <h3>Et vous? </h3>
             <p>Comment prenez-vous soin de votre peau? Qu'êtes-vous prêtes à faire, à mettre en place, à changer pour avoir la peau que vous souhaitez?</p>
-            <p class="firma">par Delphine B.</p>
+            <p class="firma"> Delphine B.</p>
           </div>
         </div>
         <div class="rowBelleza">

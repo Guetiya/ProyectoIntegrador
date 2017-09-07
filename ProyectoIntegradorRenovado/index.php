@@ -29,6 +29,7 @@
                 <ul class="social">
                   <li><a href="https://www.facebook.com/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
                   <li><a href="https://www.instagram.com/?hl=fr" target="new"><i class="fa fa-instagram fa-2x"></a></i></li>
+                  <li><a href="https://www.instagram.com/?hl=fr" target="new"><i class="fa fa-youtube"></a></i></li>
                 </ul>
               </div>
             </aside>

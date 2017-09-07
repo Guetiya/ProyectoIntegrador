@@ -153,7 +153,7 @@
               <h3>Citacion</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboicing elit,
                 t laborum..</p>
-                <p><span class="glyphicon glyphicon glyphicon-share-alt"style="color:#ff9980"></span><a href="#" style="color:#ff9980"> Testimonios</a></p>
+                <p><span class="glyphicon glyphicon-hand-right"style="color:#ff9980"></span><a href="#" style="color:#ff9980"> Testimonios</a></p>
             </div>
           </div>
           <!-- <div class="row">
