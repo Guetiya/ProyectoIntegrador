@@ -108,8 +108,7 @@
         </div>
         <div class="rowBelleza">
           <div class="articulos col-sm-10">
-            <h4 id="belleza"><span class="glyphicon glyphicon-heart"></span>
-            <a href="http://mamaconectada.com/estuvimos-en-atodatarde-hablando-sobre-cyberbullying/" rel="bookmark">Titulo 3</a></h4>
+            <a href="articulosMaquillaje.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-heart"></span>Categoría Peinado</h4></a>
             <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
             <p>Lorem ipsum ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
               ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -122,8 +121,7 @@
         </div>
         <div class="rowBelleza">
           <div class="articulos col-sm-10">
-            <h4 id="belleza"><span class="glyphicon glyphicon-heart"></span>
-            <a href="http://mamaconectada.com/estuvimos-en-atodatarde-hablando-sobre-cyberbullying/" rel="bookmark">Titulo 2</a></h4>
+            <a href="articulosMaquillaje.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-heart"></span>Categoría Maquillaje</h4></a>
             <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e
@@ -136,8 +134,7 @@
         </div>
         <div class="rowBelleza">
           <div class="articulos col-sm-10">
-            <h4 id="belleza"><span class="glyphicon glyphicon-heart"></span>
-            <a href="http://mamaconectada.com/estuvimos-en-atodatarde-hablando-sobre-cyberbullying/" rel="bookmark">Titulo 1</a></h4>
+            <a href="articulosMaquillaje.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-heart"></span>Categoría CEI</h4></a>
             <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
               aliqua. Ut enim ad minim veniam,xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

@@ -99,7 +99,7 @@
 
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                  <li class = "active"> <a href="#" style="background-color:inherit">Inicio</a> </li>
+                  <li class = "active"> <a href="./index.php" style="background-color:inherit">Inicio</a> </li>
                   <li role="presentation"> <a href="./quienSoy.php">¿Quién soy?</a> </li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"
@@ -129,12 +129,12 @@
 		<div class='list-group gallery'>
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
                 <a class="fancybox thumbnail" rel="ligthbox" href="http://placehold.it/800x600.png">
-                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                    <img class="img-responsive" alt="" src="images/fotoLea.jpg" />
                 </a>
             </div> <!-- col-6 / end -->
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
                 <a class="fancybox thumbnail" rel="ligthbox" href="http://placehold.it/800x600.png">
-                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                    <img class="img-responsive" alt="" src="images/fotoJuline.jpg" />
                 </a>
             </div> <!-- col-6 / end -->
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>

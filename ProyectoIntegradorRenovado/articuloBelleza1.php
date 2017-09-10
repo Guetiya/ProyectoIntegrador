@@ -102,7 +102,7 @@
       <div class="container">
         <div class="row">
           <div class="contenidoArticulos col-sm-12">
-            <h5>Comment prendre soin de sa peau</h5>
+            <h5>La préparation de la peau</h5>
             <p>par Delphine B / <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time></p>
             <hr noshade> <!-- retirer le display inline block pour le centrer à h2 -->
           </div>
@@ -137,6 +137,11 @@
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <img src="images/fotomaquillaje.jpg" alt="" width="90px" height="100px">
+            <audio width="480" controls >
+              <source src="audio.mp3" type="audio/mp3" >
+              <source src="audio.wav" type="audio/x-wav" >
+              <source src="audio.ogg" type="audio/ogg" >
+            </audio>
             <h3>Et vous? </h3>
             <p>Comment prenez-vous soin de votre peau? Qu'êtes-vous prêtes à faire, à mettre en place, à changer pour avoir la peau que vous souhaitez?</p>
             <p class="firma"> Delphine B.</p>
