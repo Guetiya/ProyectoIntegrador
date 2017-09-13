@@ -13,7 +13,7 @@ if($_POST){
   if (empty($usuario) && !filter_var($usuario , FILTER_VALIDATE_EMAIL)) {
     $error_usuario = "el usuario es incorrecto";
   }
-  if ( empty ($pass)){
+  if (empty ($pass)){
     $error_contrasena = "contraseña incorrecta";
   }
 

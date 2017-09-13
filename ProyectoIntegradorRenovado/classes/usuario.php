@@ -1,11 +1,16 @@
 <?php
 class usuario
 {
-  private $registrado;
-  private $logeado;
-  private $fotoPerfil;
 
-  public function registrarse()
+  private $id;
+  private $nombre;
+  private $apellido;
+  private $genero;
+  private $correo;
+  private $contrasena;
+  private $foto;
+
+  public function __construct()
   {
 
   }
@@ -17,7 +22,7 @@ class usuario
 
   public function validar()
   {
-    
+
   }
 
 }

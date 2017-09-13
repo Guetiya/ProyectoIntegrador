@@ -109,12 +109,4 @@ function subirFoto() {
 }
 
 
-
-
-// if($tamano > 500000) {
-//       $errores["imgPerfil"] = "¡Tu imagen es muy grande!";
-//       return $errores;
-//     }
-//var_dump($_FILES);
-
  ?>
