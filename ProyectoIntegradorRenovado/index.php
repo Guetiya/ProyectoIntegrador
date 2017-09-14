@@ -12,7 +12,7 @@
     <!-- Estilos principales-->
     <link rel="stylesheet" href="css/styles-main.css">
 
-    <title></title>
+    <title>Inicio</title>
   </head>
   <body>
     <header>
@@ -230,6 +230,7 @@
                  dolor in reprehenderit in voluptate velit esnulla pariatur. Except id est laborum.</p>
             </div>
         </div>
+      </div>
     </main>
 
     <footer class="col-xs-12">
