@@ -1,5 +1,12 @@
 <?php
 require_once 'validar.php';
+if($_POST["recordarme"]=='1' || $_POST["recordarme"]=='on')
+                    {
+                    $hour = time() + 3600 * 24 * 30;
+                    setcookie('username', $login, $hour);
+                         setcookie('password', $password, $hour);
+                    }
+
 
 
 ?>
@@ -144,10 +151,20 @@ require_once 'validar.php';
                             <div class="form-group">
                               <label class="col-xs-3" for="contrasena" class="Formulario_registro"> Contraseña : </label>
                               <div class="col-xs-9">
-                                <input type="password" placeholder="Contraseña" name="contrasena"  class="campos" value="<?php echo $pass; ?>">
+                                <input type="password" placeholder="Contraseña" name="contrasena"  class="campos" value="" id="password"<?php echo $pass; ?>">
                                 <?php echo $error_contrasena; ?>
                               </div>
                             </div>
+                            <div class="form-group">
+                               <div class="col-sm-offset-3 col-sm-9">
+                                 <div class="checkbox">
+                                   <label>
+                                     <input type="checkbox" name="recordarme"class="" id="recordarme">Recordarme
+                                   </label>
+                                 </div>
+                               </div>
+                             </div>
+
                             <div class="form-group">
                               <div class="col-sm-offset-3 col-sm-9">
                                 <button type="submit" class="login" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Login </button>
@@ -158,15 +175,6 @@ require_once 'validar.php';
                                 <a href="ContrasenaOlvidado.html" class="Formulario_registro"> ¿Has olvidado tu contraseña? </a>
                               </div>
                             </div>
-                            <div class="form-group">
-                               <div class="col-sm-offset-3 col-sm-9">
-                                 <div class="checkbox">
-                                   <label>
-                                     <input type="checkbox" name="recordarme"class="">Recordarme
-                                   </label>
-                                 </div>
-                               </div>
-                             </div>
 
                       </div>
                     </div>
