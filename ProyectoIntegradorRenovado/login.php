@@ -1,10 +1,9 @@
 <?php
 require_once 'validar.php';
-if($_POST["recordarme"]=='1' || $_POST["recordarme"]=='on')
+if(isset($_POST["recordarme"]))
                     {
                     $hour = time() + 3600 * 24 * 30;
                     setcookie('username', $login, $hour);
-                         setcookie('password', $password, $hour);
                     }
 
 
