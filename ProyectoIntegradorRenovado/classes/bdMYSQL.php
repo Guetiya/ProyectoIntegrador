@@ -4,7 +4,16 @@ require_once ('usuario.php');
 
 class bdMYSQL extends bd
 {
-  # code...
+  private $connexion;
+
+  public function guardarUsuario(Usuario $xxx){
+
+  }
+
+  public function guardarUsuarioBaseDatos(Usuario $yyy){
+
+  }
+  
 }
 
 

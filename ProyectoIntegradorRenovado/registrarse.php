@@ -137,20 +137,20 @@ if ($_POST){
             <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
               <div class="form-group">
                 <label class="col-xs-3" for=""></label>
-                  <div class="col-xs-9">
-                      <span style="color: red" type="center" class='error'>
-                            <?php
-                              if (isset($errores)){
-                              echo "<ul>";
-                              foreach ($errores as $key => $error) {
-                                echo '<li>'. $error . "</li>";
-                              }
-                              echo "</ul>";
-                              }
-                            ?>
-
-                      </span>
-                  </div>
+                <div class="alert alert-danger">
+                  <!-- <strong>Erreur !</strong> message d'erreur <i>alert-danger</i>. -->
+                  <span style="color: red" type="center" class='error'>
+                        <?php
+                          if (isset($errores)){
+                          echo "<ul>";
+                          foreach ($errores as $key => $error) {
+                            echo '<li>'. $error . "</li>";
+                          }
+                          echo "</ul>";
+                          }
+                        ?>
+                  </span>
+                </div>
               </div>
                 <div class="row">
                   <div class="col-xs-6 col-xs-offset-3">

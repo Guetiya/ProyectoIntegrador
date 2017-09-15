@@ -5,7 +5,16 @@ require_once ('usuario.php');
 
 class bdJSON extends bd
 {
-  # code...
+  private $archivo;
+
+  public function guardarUsuario(Usuario $xxx){
+
+  }
+
+  public function guardarUsuarioBaseDatos(Usuario $yyy){
+
+  }
+
 }
 
 

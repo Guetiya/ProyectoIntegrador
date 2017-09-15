@@ -4,6 +4,7 @@ if(isset($_POST["recordarme"]))
                     {
                     $hour = time() + 3600 * 24 * 30;
                     setcookie('username', $login, $hour);
+
                     }
 
 
