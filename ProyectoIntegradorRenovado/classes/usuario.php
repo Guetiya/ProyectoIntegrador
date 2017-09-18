@@ -14,12 +14,12 @@ class usuario
 
   }
 
-  public function logearse()
+  public function logearse()// à mettre dans Autorizacion
   {
 
   }
 
-  public function validar()
+  public function validar()//validar qué???
   {
 
   }

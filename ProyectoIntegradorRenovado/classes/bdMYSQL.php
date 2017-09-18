@@ -13,7 +13,7 @@ class bdMYSQL extends bd
   public function guardarUsuarioBaseDatos(Usuario $yyy){
 
   }
-  
+
 }
 
 

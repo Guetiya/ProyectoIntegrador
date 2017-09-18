@@ -9,23 +9,23 @@ function validarDatos($variable){
   $errores = [];
 
      if (empty($variable['apellido'])){
-       $errores['apellido'] = "escribi un apellido!";
+       $errores['apellido'] = "Escribi un apellido!";
     //  }elseif (!ctype_alpha($variable['apellido'])) {
     //    $errores['apellido'] = "tu apellido tiene contener solamente letras!";
      }elseif (strlen($variable['apellido']) < 2) {
-       $errores['apellido'] = "tu apellido debe estar compuesto por un minimo de 2 letras! ";
+       $errores['apellido'] = "Tu apellido debe estar compuesto por un minimo de 2 letras! ";
      }
 
      if (empty($variable['nombre'])){
-       $errores['nombre'] = "escribi un nombre!";
+       $errores['nombre'] = "Escribi un nombre!";
     //  }elseif (!ctype_alpha($variable['nombre'])) {
     //    $errores['nombre'] = "tu nombre tiene contener solamente letras!";
      }elseif (strlen($variable['nombre']) < 2) {
-       $errores['nombre'] = "tu nombre debe estar compuesto por un minimo de 2 letras! ";
+       $errores['nombre'] = "Tu nombre debe estar compuesto por un minimo de 2 letras! ";
      }
 
      if (empty($variable['correo'])){
-       $errores['correo'] = "el correo no es valido!";
+       $errores['correo'] = "El correo no es valido!";
      }elseif (!filter_var($variable['correo'], FILTER_VALIDATE_EMAIL)) {
        $errores['correo'] = "El correo ingresado no es valido!";
      }
@@ -33,9 +33,9 @@ function validarDatos($variable){
      if (empty($variable['contrasena'])){
        $errores['contrasena'] = "Tienes que ingresar una contraseña!";
      }elseif (strlen($variable['contrasena']) < 8 ||strlen($variable['repetirContrasena']) < 8){
-       $errores['contrasena'] = "tu contraseña debe presentar un minimo de 8 letras!";
+       $errores['contrasena'] = "Tu contraseña debe presentar un minimo de 8 letras!";
       }elseif ($variable['contrasena'] != $variable['repetirContrasena']) {
-        $errores['contrasena'] = "las contraseñas no son iguales!";
+        $errores['contrasena'] = "Las contraseñas no son iguales!";
       }
 
      return $errores;
@@ -69,7 +69,7 @@ function guardarUsuario($usuario)
 
 function guardarUsuarioBaseDatos($usuario)
 {
-require_once "connect.php";
+  require_once "connect.php";
   $query = $db->prepare("INSERT INTO users(Apellido, Nombre, Correo, Contraseña)
   VALUES(?,?,?,?)");
   $query->execute(array($_POST['apellido'], $_POST['nombre'], $_POST['correo'], sha1($variable['contrasena'])));

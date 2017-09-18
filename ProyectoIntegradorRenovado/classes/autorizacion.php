@@ -2,9 +2,25 @@
 
 require_once ("usuario.php");
 
-public function recordarme($value='')
+class Autorizacion
 {
-  # code...
+
+  public function loguearse()
+  {
+
+  }
+
+  public function logout()
+  {
+
+  }
+  
+  public function recordarme($value='')
+  {
+    # code...
+  }
+
 }
+
 
 ?>

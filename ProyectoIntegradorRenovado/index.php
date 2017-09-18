@@ -12,7 +12,7 @@
     <!-- Estilos principales-->
     <link rel="stylesheet" href="css/styles-main.css">
 
-    <title>Inicio</title>
+    <title>Mariage en beauté</title>
   </head>
   <body>
     <header>
@@ -27,7 +27,7 @@
                   <li class="en"> <a href="#">Inglés</a></li>
                 </ul>
                 <ul class="social">
-                  <li><a href="https://www.facebook.com/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
+                  <li><a href="https://www.facebook.com/delphine.bertin.coiffure/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
                   <li><a href="https://www.instagram.com/?hl=fr" target="new"><i class="fa fa-instagram fa-2x"></a></i></li>
                   <li><a href="https://www.youtube.com" target="new"><i class="fa fa-youtube"></a></i></li>
                 </ul>
@@ -112,6 +112,7 @@
                           <li role="separator" class="divider"></li>
                           <li><a href="#">Talleres en grupos</a></li>
                       </ul>
+                    </li>
                     <li role="presentation"> <a href="./galeria.php">Galería</a> </li>
                     <li role="presentation"> <a href="./contacto.php">Contacto</a> </li>
                   </ul>
