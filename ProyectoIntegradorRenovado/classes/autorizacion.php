@@ -1,6 +1,6 @@
 <?php
 
-require_once ("usuario.php");
+require_once ("db.php");
 
 class Autorizacion
 {
@@ -10,11 +10,11 @@ class Autorizacion
 
   }
 
-  public function logout()
+  public function logout() 
   {
 
   }
-  
+
   public function recordarme($value='')
   {
     # code...

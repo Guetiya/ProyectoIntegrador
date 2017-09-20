@@ -1,11 +1,15 @@
 <?php
-require_once 'validar.php';
-if(isset($_POST["recordarme"]))
-                    {
-                    $hour = time() + 3600 * 24 * 30;
-                    setcookie('username', $login, $hour);
+//require_once 'validar.php';
+require_once './classes/validacion.php';
 
-                    }
+if(isset($_POST["recordarme"]))
+{
+  $hour = time() + 3600 * 24 * 30;
+  // setcookie('username', $login, $hour);
+  setcookie('correo', $usuario, $hour);
+  setcookie('contrasena', $pass, $hour);
+
+}
 
 
 
@@ -151,7 +155,7 @@ if(isset($_POST["recordarme"]))
                             <div class="form-group">
                               <label class="col-xs-3" for="contrasena" class="Formulario_registro"> Contraseña : </label>
                               <div class="col-xs-9">
-                                <input type="password" placeholder="Contraseña" name="contrasena"  class="campos" value="" id="password"<?php echo $pass; ?>">
+                                <input type="password" placeholder="Contraseña" name="contrasena"  class="campos" value="" id="password"<?php echo $pass; ?>>
                                 <?php echo $error_contrasena; ?>
                               </div>
                             </div>
@@ -219,5 +223,5 @@ if(isset($_POST["recordarme"]))
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>

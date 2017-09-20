@@ -1,5 +1,10 @@
 <?php
-require_once "funciones.php";
+//require_once "funciones.php";
+require_once "./classes/validacion.php";
+require_once "./classes/usuario.php";
+require_once "./classes/bd.php";
+require_once "./classes/bdJSON.php";
+require_once "./classes/bdMYSQL.php";
 
 $apellido = (isset($_POST['apellido']) ? $_POST['apellido'] : "");
 $nombre = (isset($_POST['nombre']) ? $_POST['nombre'] : "");

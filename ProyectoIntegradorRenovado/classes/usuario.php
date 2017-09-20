@@ -1,5 +1,5 @@
 <?php
-class usuario
+class Usuario
 {
   private $id;
   private $nombre;
@@ -9,14 +9,55 @@ class usuario
   private $contrasena;
   private $foto;
 
-  public function __construct()
+  public function __construct(Array $usuario)
   {
-
+    $this->nombre     = $variable['nombre'];
+    $this->apellido   = $variable['apellido'];
+    $this->genero     = $variable['genero'];
+    $this->correo     = $variable['correo'];
+    $this->contrasena = sha1($variable['contrasena']);
+    $this->imagen     = $variable['imagen'];
+    // $usuario = [
+    //   'apellido'   => $variable['apellido'],
+    //   'nombre'     => $variable['nombre'],
+    //   'genero'     => $variable['genero'],
+    //   'correo'     => $variable['correo'],
+    //   'contrasena' => sha1($variable['contrasena']),
+    //   'imagen'     => $variable['imagen'],
+    // ];
+    return $usuario;
   }
 
-  public function logearse()// à mettre dans Autorizacion
+  public function subirFoto()
   {
+    $errores = [];
 
+    if ($_FILES["imgPerfil"]["error"] == UPLOAD_ERR_OK)
+    {
+      $nombre=$_FILES["imgPerfil"]["name"];
+      $archivo=$_FILES["imgPerfil"]["tmp_name"];
+
+      $ext = strtolower(pathinfo($nombre, PATHINFO_EXTENSION)); //lo pasa en minuscula
+
+      if ($ext != "jpg" && $ext != "png" && $ext != "jpeg") {
+        $errores["imgPerfil"] = "Las fotos solo aceptan formatos jpg, png y jpeg";
+        return $errores;
+      }
+
+      $miArchivo = dirname(__FILE__); //si je veux garder une photo dans mon archive je dois changer ici!
+
+      $miArchivo = $miArchivo . "/fotoPerfil/"; // il me créé une archive /img/
+
+      $miArchivo = $miArchivo. md5($_FILES["imgPerfil"]["name"].microtime()) . "." . $ext;
+      $_POST["imagen"] = $miArchivo;
+      move_uploaded_file($archivo, $miArchivo);
+
+      //mettre le if ici
+    } else {
+      $errores["imgPerfil"] = "Hubo un error al procesar tu imagen de perfil";
+    }
+
+    return $errores;
   }
 
   public function validar()//validar qué???
