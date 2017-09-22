@@ -1,6 +1,6 @@
 <?php
 
-require_once ("db.php");
+require_once ("bd.php");
 
 class Autorizacion
 {
@@ -10,9 +10,10 @@ class Autorizacion
 
   }
 
-  public function logout() 
+  public function logout()
   {
-
+    session_destroy;
+  	header('location: index.php');
   }
 
   public function recordarme($value='')

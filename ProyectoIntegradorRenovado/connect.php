@@ -1,12 +1,12 @@
 <?php
 
 $dsn = 'mysql:host=localhost; dbname=mariage_en_beaute; charset=utf8mb4; port:3306';
-$db_user = 'root';
-$db_pass = '';
-$db = new PDO($dsn, $db_user);
+$db_user = 'delphine';
+$db_pass = 'Delphine123Yvan456';
+$db = new PDO($dsn, $db_user, $db_pass);
 
 try {
-  $db = new PDO($dsn, $db_user);
+  $db = new PDO($dsn, $db_user, $db_pass);
 }
 catch (PDOException $exception){
   echo $exception->getMessage();

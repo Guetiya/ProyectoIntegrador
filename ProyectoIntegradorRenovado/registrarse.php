@@ -1,10 +1,11 @@
 <?php
 //require_once "funciones.php";
-require_once "./classes/validacion.php";
-require_once "./classes/usuario.php";
-require_once "./classes/bd.php";
-require_once "./classes/bdJSON.php";
-require_once "./classes/bdMYSQL.php";
+include_once("soporte.php");
+// require_once("classes/validacion.php");
+require_once("classes/usuario.php");
+// require_once("classes/bd.php");
+// require_once("classes/bdJSON.php");// no sé si tengo que ponerlo
+// require_once("classes/bdMYSQL.php");// no sé si tengo que ponerlo
 
 $apellido = (isset($_POST['apellido']) ? $_POST['apellido'] : "");
 $nombre = (isset($_POST['nombre']) ? $_POST['nombre'] : "");
@@ -17,15 +18,15 @@ $errores =[];
 
 if ($_POST){
 
-      $errores = validarDatos($_POST);
-      $errorImagen = subirFoto();
-      $errores = array_merge($errores, $errorImagen);
+      $errores = $validacion->validarDatos($_POST, $bdMYSQL);
+      // $errorImagen = $usuario->subirFoto(); // qué significa?
+      $errores = array_merge($errores, $errorImagen);//no esta bien
 
       if (count($errores) == 0){
-        $usuario = crearUsuario($_POST);
+        $usuario = $usuario->crearUsuario($_POST);
         //print_r($usuario); die;
-        $usuario = guardarUsuario($usuario);
-        $usuario = guardarUsuarioBaseDatos($usuario);
+        $usuario = $bd->guardarUsuario($usuario);// no estoy segura
+        $usuario = $bd->guardarUsuarioBaseDatos($usuario); // no estoy segura
 
         header ("location:bienvenidos.php");
         exit;

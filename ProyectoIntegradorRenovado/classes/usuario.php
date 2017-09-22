@@ -9,7 +9,7 @@ class Usuario
   private $contrasena;
   private $foto;
 
-  public function __construct(Array $usuario)
+  public function __construct(Array $variable)
   {
     $this->nombre     = $variable['nombre'];
     $this->apellido   = $variable['apellido'];
@@ -25,7 +25,7 @@ class Usuario
     //   'contrasena' => sha1($variable['contrasena']),
     //   'imagen'     => $variable['imagen'],
     // ];
-    return $usuario;
+    return $variable;
   }
 
   public function subirFoto()

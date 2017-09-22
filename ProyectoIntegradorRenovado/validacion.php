@@ -1,5 +1,5 @@
 <?php
-
+// no necesito mas este archivo
 function validarNombreOApellido($nombreOApellido, $longitudMinima)
 {
 

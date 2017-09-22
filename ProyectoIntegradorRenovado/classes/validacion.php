@@ -3,8 +3,9 @@ require_once ("bd.php");
 
 class Validacion
 {
-  public function validarDatos($variable, db $db)
+  public function validarDatos($variable, Bd $bdMYSQL) //no estoy segura
   {
+
     foreach ($variable as $key => $value) {
       $variable[$key] = trim($value);
     }
@@ -42,10 +43,10 @@ class Validacion
         }
 
        return $errores;
-  var_dump($variable);
+  // var_dump($variable);
   }
 
-  public function validarPass($pass)
+  public function validarPass($pass, Bd $bdMYSQL)
   {
       //echo "El pass sin hashear es: " . $pass;
       $hashed = sha1($pass);
@@ -80,10 +81,10 @@ class Validacion
       $pass = $_POST['contrasena'];
 
       if (empty($usuario) && !filter_var($usuario , FILTER_VALIDATE_EMAIL)) {
-        $error_usuario = "El usuario es incorrecto";
+        $error_usuario = "El usuario es incorrecto";//"Tenés que poner un correo"
       }
       if (empty ($pass)){
-        $error_contrasena = "La contraseña es incorrecta";
+        $error_contrasena = "La contraseña es incorrecta"; // "Tenés que poner una contraseña"
       }
 
       $user = ValidarPass($_POST ['contrasena']);

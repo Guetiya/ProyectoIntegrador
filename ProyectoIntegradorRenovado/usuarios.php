@@ -1,6 +1,6 @@
 <?php
 require_once "validacion.php";
-
+//no necesito mas este archivo creo
 function guardarUsuario($nombre, $apellido, $genero, $correo, $contrasena, $fotoPerfil)
 {
     // Validar!

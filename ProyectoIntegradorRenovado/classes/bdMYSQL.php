@@ -2,7 +2,7 @@
 require_once ('usuario.php');
 require_once ("bd.php");
 
-class bdMYSQL extends bd
+class BdMYSQL extends Bd
 {
   private $connexion;
 
@@ -11,7 +11,7 @@ class bdMYSQL extends bd
   }
 
   public function guardarUsuarioBaseDatos(Usuario $usuario){
-    require_once "connect.php";
+    require_once "connect.php"; //a poner arriba creo
     $query = $this->connexion->prepare("INSERT INTO users(Apellido, Nombre, Correo, Contraseña)
     VALUES(?,?,?,?)");
     $query->execute(array($_POST['apellido'], $_POST['nombre'], $_POST['correo'], sha1($variable['contrasena'])));

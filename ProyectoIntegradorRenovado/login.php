@@ -1,6 +1,17 @@
 <?php
 //require_once 'validar.php';
-require_once './classes/validacion.php';
+require_once ('./classes/validacion.php');
+
+$usuario='';
+$pass='';
+$error_usuario = "";
+$error_contrasena = "";
+var_dump($usuario);
+var_dump($pass);
+
+// if ($_POST){
+//   $usuario = validarLogin($usuario);
+// }
 
 if(isset($_POST["recordarme"]))
 {
@@ -8,11 +19,7 @@ if(isset($_POST["recordarme"]))
   // setcookie('username', $login, $hour);
   setcookie('correo', $usuario, $hour);
   setcookie('contrasena', $pass, $hour);
-
 }
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -149,7 +156,7 @@ if(isset($_POST["recordarme"]))
                               <label class="col-xs-3" for="correo"> Correo electrónico : </label>
                               <div class="col-xs-9">
                                 <input type="email" placeholder="Correo electrónico" id="correo" name="correo" class="campos" value="<?php echo $usuario; ?>">
-                                <?php echo $error_usuario; ?>
+                                <?php echo $error_usuario;?>
                               </div>
                             </div>
                             <div class="form-group">
