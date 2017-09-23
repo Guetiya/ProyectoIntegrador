@@ -19,15 +19,16 @@ $errores =[];
 if ($_POST){
 
       $errores = $validacion->validarDatos($_POST, $bdMYSQL);
-      // $errorImagen = $usuario->subirFoto(); // qué significa?
+      $errorImagen = $usuario->subirFoto(); // qué significa?
       $errores = array_merge($errores, $errorImagen);//no esta bien
 
       if (count($errores) == 0){
-        $usuario = $usuario->crearUsuario($_POST);
+        // $usuario = $usuario->crearUsuario($_POST);
+        // $usuario = $usuario->__construct($_POST);
+        $usuario = new Usuario($_POST);
         //print_r($usuario); die;
-        $usuario = $bd->guardarUsuario($usuario);// no estoy segura
-        $usuario = $bd->guardarUsuarioBaseDatos($usuario); // no estoy segura
-
+        $usuario = $bdJSON->guardarUsuario($usuario);
+        $usuario = $bdMYSQL->guardarUsuarioBaseDatos($usuario);
         header ("location:bienvenidos.php");
         exit;
       }

@@ -46,7 +46,7 @@ class Usuario
 
       $miArchivo = dirname(__FILE__); //si je veux garder une photo dans mon archive je dois changer ici!
 
-      $miArchivo = $miArchivo . "/fotoPerfil/"; // il me créé une archive /img/
+      $miArchivo = $miArchivo . "/fotoPerfil/"; // il me créé une archive /img/ 
 
       $miArchivo = $miArchivo. md5($_FILES["imgPerfil"]["name"].microtime()) . "." . $ext;
       $_POST["imagen"] = $miArchivo;

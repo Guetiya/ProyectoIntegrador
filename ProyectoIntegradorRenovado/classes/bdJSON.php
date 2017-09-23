@@ -9,7 +9,6 @@ class BdJSON extends Bd
   public function guardarUsuario(Usuario $usuario)
   {
       $json = json_encode($usuario);
-
       file_put_contents("users.json", $json . PHP_EOL, FILE_APPEND);
       return $usuario;
 
