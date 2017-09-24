@@ -140,6 +140,7 @@
               aliqua. Ut enim ad minim veniam,xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               Excepteur sint occaecat cupida id...
             <a href="./articuloBelleza1.php">leer más</a></p>
+            <p><span class="glyphicon glyphicon-hand-right" style="color:#ff9980"></span><a href="articulosNutricion.php" style="color:#ff9980"> Articulos Nutrición</a></p>
           </div>
           <div class="fotoArticulosBelleza col-sm-2">
             <img src="images/fotomaquillaje.jpg" alt="" width="90px" height="100px">

@@ -108,7 +108,7 @@
           </div>
           <div class="row">
             <div class="articulos col-sm-8">
-              <h4><span class="glyphicon glyphicon-heart"></span>Ce que je souhaite accomplir </h4>
+              <h4><span class="glyphicon glyphicon-heart"></span>Ce qu'elle souhaite accomplir</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -117,7 +117,7 @@
                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                 st laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor</p>
-              <h4><span class="glyphicon glyphicon-star"></span>Mes talents</h4>
+              <h4><span class="glyphicon glyphicon-star"></span>Ses talents</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -125,7 +125,7 @@
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                 laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-              <h4><span class="glyphicon glyphicon-education"></span>Mes formations et compétences</h4>
+              <h4><span class="glyphicon glyphicon-education"></span>Ses formations et ses compétences</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

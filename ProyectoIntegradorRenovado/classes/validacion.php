@@ -68,7 +68,7 @@ class Validacion
   }
 
   public function validarLogin()
-  {
+  { //algo esta mal con las variables
     $usuario='';
     $pass='';
     $error_usuario = "";
