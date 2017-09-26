@@ -12,7 +12,7 @@
     <!-- Estilos principales-->
     <link rel="stylesheet" href="css/styles-main.css">
 
-    <title>Artículo Belleza 1</title>
+    <title>La préparation de la peau</title>
   </head>
   <body>
     <header>
@@ -88,7 +88,7 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Talleres en grupos</a></li>
                       </ul>
-                    <li role="presentation"> <a href="#">Profesionales</a> </li>
+                    <li role="presentation"> <a href="./galeria.php">Galería</a> </li>
                     <li role="presentation"> <a href="./contacto.php">Contacto</a> </li>
                   </ul>
                 </div>
@@ -164,7 +164,7 @@
               <source src="audio.ogg" type="audio/ogg" >
             </audio>
             <h3>Et vous? </h3>
-            <p>Comment prenez-vous soin de votre peau? Qu'êtes-vous prêtes à faire, à mettre en place, à changer pour avoir la peau que vous souhaitez?</p>        
+            <p>Comment prenez-vous soin de votre peau? Qu'êtes-vous prêtes à faire, à mettre en place, à changer pour avoir la peau que vous souhaitez?</p>
           </div>
         </div>
         <div class="rowBelleza">

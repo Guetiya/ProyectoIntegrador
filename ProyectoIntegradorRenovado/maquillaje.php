@@ -88,7 +88,7 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Talleres en grupos</a></li>
                       </ul>
-                    <li role="presentation"> <a href="#">Profesionales</a> </li>
+                    <li role="presentation"> <a href="./galeria.php">Galería</a> </li>
                     <li role="presentation"> <a href="./contacto.php">Contacto</a> </li>
                   </ul>
                 </div>
@@ -112,8 +112,6 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <h4>question 2 :</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <h4>question 3 :</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="foto col-sm-4">
               <a href="./galeria.php"><img src="images/fotomaquillaje.jpg" alt="" width="200px" height="250px"></a>
@@ -134,7 +132,7 @@
                 <li><span>Cours d'auto-maquillage</span> : durée 1 heure </li>
                 <li><span>Taller en grupo</span> : pedir informaciones </li>
               </ul>
-              <a class="btn btn-primary btn-lg" href="#" role="button" style="background-color:#ff9980;border:none;">Ver Precios</a>
+              <a class="btn btn-primary btn-lg" href="./precio.php" role="button" style="background-color:#ff9980;border:none;">Ver Precios</a>
             </div>
             </div>
           </div>

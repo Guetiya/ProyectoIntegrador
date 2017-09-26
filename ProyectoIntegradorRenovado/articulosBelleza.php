@@ -88,7 +88,7 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Talleres en grupos</a></li>
                       </ul>
-                    <li role="presentation"> <a href="#">Profesionales</a> </li>
+                    <li role="presentation"> <a href="./galeria.php">Galería</a> </li>
                     <li role="presentation"> <a href="./contacto.php">Contacto</a> </li>
                   </ul>
                 </div>
@@ -113,7 +113,7 @@
             <p>Lorem ipsum ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
               ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
               voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida id...
-            <a href="./articuloBelleza3.php">leer más</a></p>
+            <a href="./articuloPeinado1.php">leer más</a></p>
           </div>
           <div class="fotoArticulosBelleza col-sm-2">
             <img src="images/fotomaquillaje.jpg" alt="" width="90px" height="100px">
@@ -123,10 +123,10 @@
           <div class="articulos col-sm-10">
             <a href="articulosMaquillaje.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-heart"></span>Categoría Maquillaje</h4></a>
             <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e
-            nulla pariatur. Excepteur sint occaecat cupida id e...
-            <a href="./articuloBelleza2.php">leer más</a></p>
+            <p>¿Sabes que el cuido de la piel es muy importante por haber un maquillaje que te va a quedar durante un tiempo?
+            ¿Saber como cuidarla? ¿Estás seguro que lo que estás haciendo esta bien?
+            En este artículo vas a encontrar las respuestas a esas preguntas para que tu piel sea linda...
+            <a href="./articuloMaquillaje1.php">leer más</a></p>
           </div>
           <div class="fotoArticulosBelleza col-sm-2">
             <img src="images/fotomaquillaje.jpg" alt="" width="90px" height="100px">
@@ -136,10 +136,9 @@
           <div class="articulos col-sm-10">
             <a href="articulosMaquillaje.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-heart"></span>Categoría CEI</h4></a>
             <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam,xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Excepteur sint occaecat cupida id...
-            <a href="./articuloBelleza1.php">leer más</a></p>
+            <p>¿Sabes que los colores tienen un impacto muy fuerte sobre tu cara? y según lo que estas poniendo te puede hallagar la tez.
+            Te propongo conocer mas sobre el tema de la colorimetría...
+            <a href="./articuloAsesoria1.php">leer más</a></p>
             <p><span class="glyphicon glyphicon-hand-right" style="color:#ff9980"></span><a href="articulosNutricion.php" style="color:#ff9980"> Articulos Nutrición</a></p>
           </div>
           <div class="fotoArticulosBelleza col-sm-2">
