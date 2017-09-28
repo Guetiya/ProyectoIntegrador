@@ -1,5 +1,5 @@
 <?php
-
+echo "suis debut autorizacion </br>";
 require_once ("bd.php");
 
 class Autorizacion

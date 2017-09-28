@@ -1,5 +1,6 @@
 <?php
 //require_once "funciones.php";
+echo "au début de registrarse </br>";
 include_once("soporte.php");
 // require_once("classes/validacion.php");
 require_once("classes/usuario.php");
@@ -24,10 +25,10 @@ if ($_POST){
 
       if (count($errores) == 0){
         // $usuario = $usuario->crearUsuario($_POST);
-        // $usuario = $usuario->__construct($_POST);
+        $usuario = $usuario->__construct($_POST);
         $usuario = new Usuario($_POST);
         //print_r($usuario); die;
-        $usuario = $bdJSON->guardarUsuario($usuario);
+        // $usuario = $bdJSON->guardarUsuario($usuario);
         $usuario = $bdMYSQL->guardarUsuarioBaseDatos($usuario);
         header ("location:bienvenidos.php");
         exit;

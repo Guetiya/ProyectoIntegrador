@@ -1,4 +1,5 @@
 <?php
+echo "suis début validacion </br>";
 require_once ("bd.php");
 
 class Validacion

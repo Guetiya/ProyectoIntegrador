@@ -1,4 +1,5 @@
 <?php
+echo "suis debut dbmysql </br>";
 require_once ('usuario.php');
 require_once ("bd.php");
 // require_once ("connect.php");
@@ -26,7 +27,8 @@ class BdMYSQL extends Bd
   }
 
 
-  public function guardarUsuarioBaseDatos(Usuario $usuario){
+  public function guardarUsuarioBaseDatos(Usuario $usuario){ //los nombres no son buenos
+    // require_once "connect.php"; //a poner arriba creo
     $query = $this->connexion->prepare("INSERT INTO users(Apellido, Nombre, Correo, Contraseña)
     VALUES(?,?,?,?)");
     $query->execute(array($_POST['apellido'], $_POST['nombre'], $_POST['correo'], sha1($variable['contrasena'])));
