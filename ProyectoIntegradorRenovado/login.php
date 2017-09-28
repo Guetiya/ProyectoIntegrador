@@ -1,17 +1,25 @@
 <?php
 //require_once 'validar.php';
-require_once ('./classes/validacion.php');
+include_once("soporte.php");
+require_once("./classes/validacion.php");
 
 $usuario='';
 $pass='';
 $error_usuario = "";
 $error_contrasena = "";
-var_dump($usuario);
-var_dump($pass);
 
-// if ($_POST){
-//   $usuario = validarLogin($usuario);
-// }
+$errores=[];
+echo "je suis dans login";
+if($_POST){
+  $errores=$validacion->validarLogin($_POST, $bdMYSQL);
+
+    if(count($errores)==0){
+      $usuario = $usuario->loguearse($usuario);
+      $usuario=$usuario->validarPass($pass);
+    }
+}
+
+
 
 if(isset($_POST["recordarme"]))
 {

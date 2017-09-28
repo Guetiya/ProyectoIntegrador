@@ -47,27 +47,6 @@ class Validacion
   // var_dump($variable);
   }
 
-  public function validarPass($pass, Bd $bdMYSQL)
-  {
-      //echo "El pass sin hashear es: " . $pass;
-      $hashed = sha1($pass);
-      //echo "Vamos a buscar el password: " . $hashed;
-      $fp = fopen('users.json', 'r');
-      while ($linea = fgets($fp)) {
-        if (!empty($linea)) {
-          //echo $linea;
-          $linea = json_decode($linea, true);
-          if ($linea['contrasena'] == $hashed) {
-            header ("location: index_usuarios.php");
-            session_start();
-            $_SESSION ['nombre'] = $linea['nombre'];
-          }
-        }
-      }
-
-     return false;
-  }
-
   public function validarLogin()
   { //algo esta mal con las variables
     $usuario='';
@@ -88,7 +67,7 @@ class Validacion
         $error_contrasena = "La contraseña es incorrecta"; // "Tenés que poner una contraseña"
       }
 
-      $user = ValidarPass($_POST ['contrasena']);
+      $user = validarPass($_POST ['contrasena']);
       if ($user) {
         header ("location: index.php");
       }else {
@@ -96,6 +75,27 @@ class Validacion
         $error_contrasena ="La contraseña es incorrecta";
       }
     }
+  }
+
+  public function validarPass($pass, Bd $bdMYSQL)
+  {
+      //echo "El pass sin hashear es: " . $pass;
+      $hashed = sha1($pass);
+      //echo "Vamos a buscar el password: " . $hashed;
+      $fp = fopen('users.json', 'r');
+      while ($linea = fgets($fp)) {
+        if (!empty($linea)) {
+          //echo $linea;
+          $linea = json_decode($linea, true);
+          if ($linea['contrasena'] == $hashed) {
+            header ("location: index_usuarios.php");
+            session_start();
+            $_SESSION ['nombre'] = $linea['nombre'];
+          }
+        }
+      }
+
+     return false;
   }
 }
 

@@ -28,7 +28,7 @@ if ($_POST){
         $usuario = $usuario->__construct($_POST);
         $usuario = new Usuario($_POST);
         //print_r($usuario); die;
-        // $usuario = $bdJSON->guardarUsuario($usuario);
+        $usuario = $bdJSON->guardarUsuario($usuario);
         $usuario = $bdMYSQL->guardarUsuarioBaseDatos($usuario);
         header ("location:bienvenidos.php");
         exit;
