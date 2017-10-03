@@ -17,9 +17,7 @@ class Usuario
     $this->genero     = $variable['genero'];
     $this->correo     = $variable['correo'];
     $this->contrasena = sha1($variable['contrasena']);
-    echo "suis dans usuario avant image </br>";
     $this->imagen     = $variable['imagen'];
-    echo "suis dans usuario après image </br>";
     // $usuario = [
     //   'apellido'   => $variable['apellido'],
     //   'nombre'     => $variable['nombre'],
@@ -126,5 +124,6 @@ class Usuario
   }
 
 }
+
 echo "suis a la fin de usuario </br>";
 ?>

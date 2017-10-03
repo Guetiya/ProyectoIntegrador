@@ -9,7 +9,7 @@ $error_usuario = "";
 $error_contrasena = "";
 
 $errores=[];
-echo "je suis dans login";
+echo "je suis dans login </br>";
 if($_POST){
   $errores=$validacion->validarLogin($_POST, $bdMYSQL);
 
@@ -18,7 +18,7 @@ if($_POST){
       $usuario=$usuario->validarPass($pass);
     }
 }
-
+echo "suis à la fin de login";
 
 
 if(isset($_POST["recordarme"]))

@@ -15,16 +15,12 @@ class Validacion
 
        if (empty($variable['apellido'])){
          $errores['apellido'] = "Escribi un apellido!";
-      //  }elseif (!ctype_alpha($variable['apellido'])) {
-      //    $errores['apellido'] = "tu apellido tiene contener solamente letras!";
        }elseif (strlen($variable['apellido']) < 2) {
          $errores['apellido'] = "Tu apellido debe estar compuesto por un minimo de 2 letras! ";
        }
 
        if (empty($variable['nombre'])){
          $errores['nombre'] = "Escribi un nombre!";
-      //  }elseif (!ctype_alpha($variable['nombre'])) {
-      //    $errores['nombre'] = "tu nombre tiene contener solamente letras!";
        }elseif (strlen($variable['nombre']) < 2) {
          $errores['nombre'] = "Tu nombre debe estar compuesto por un minimo de 2 letras! ";
        }
@@ -60,14 +56,14 @@ class Validacion
       $usuario = $_POST['correo'];
       $pass = $_POST['contrasena'];
 
-      if (empty($usuario) && !filter_var($usuario , FILTER_VALIDATE_EMAIL)) {
+      if (empty($usuario) && !filter_var($usuario, FILTER_VALIDATE_EMAIL)) {
         $error_usuario = "El usuario es incorrecto";//"Tenés que poner un correo"
       }
       if (empty ($pass)){
         $error_contrasena = "La contraseña es incorrecta"; // "Tenés que poner una contraseña"
       }
 
-      $user = validarPass($_POST ['contrasena']);
+      $user = validarPass($_POST ['contrasena']); //erreur ici pour appeler la fonction!!!!!!
       if ($user) {
         header ("location: index.php");
       }else {
