@@ -1,5 +1,4 @@
 <?php
-echo "suis debut autorizacion </br>";
 require_once ("bd.php");
 
 class Autorizacion
@@ -12,7 +11,7 @@ class Autorizacion
 
   public function logout()
   {
-    session_destroy;
+    session_destroy();
   	header('location: index.php');
   }
 

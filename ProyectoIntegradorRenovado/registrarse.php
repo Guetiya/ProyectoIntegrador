@@ -1,12 +1,8 @@
 <?php
 //require_once "funciones.php";
-echo "au début de registrarse </br>";
 include_once("soporte.php");
-// require_once("classes/validacion.php");
 require_once("classes/usuario.php");
-// require_once("classes/bd.php");
-// require_once("classes/bdJSON.php");// no sé si tengo que ponerlo
-// require_once("classes/bdMYSQL.php");// no sé si tengo que ponerlo
+
 
 $apellido = (isset($_POST['apellido']) ? $_POST['apellido'] : "");
 $nombre = (isset($_POST['nombre']) ? $_POST['nombre'] : "");
@@ -17,16 +13,17 @@ $contrasena = (isset($_POST['contrasena']));
 $generos = ["", "Hombre", "Mujer"];
 $errores =[];
 
-if ($_POST){
 
+if ($_POST){
+  // var_dump($_FILES);
       $errores = $validacion->validarDatos($_POST, $bdMYSQL);
+      $usuario = new Usuario($_POST);
       $errorImagen = $usuario->subirFoto(); // qué significa?
       $errores = array_merge($errores, $errorImagen);//no esta bien
 
       if (count($errores) == 0){
         // $usuario = $usuario->crearUsuario($_POST);
-        $usuario = $usuario->__construct($_POST);
-        $usuario = new Usuario($_POST);
+        // $usuario = $usuario->__construct($_POST); no sirve por que hay new Usuario
         //print_r($usuario); die;
         $usuario = $bdJSON->guardarUsuario($usuario);
         $usuario = $bdMYSQL->guardarUsuarioBaseDatos($usuario);
@@ -267,7 +264,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="fotoPerfil">Foto perfil: </label>
                             <div class="col-xs-9">
-                              <input type='file' name='imgPerfil' value="<?php if(isset($imgPerfil)) {echo $imgPerfil; } ?>"/><br/>
+                              <input type='file' name='imgPerfil'/><br/>
                               <span id='register_username_errorloc' class='error'></span>
                             </div>
                           </div>

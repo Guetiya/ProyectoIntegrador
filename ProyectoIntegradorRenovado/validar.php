@@ -17,7 +17,7 @@
 //   if (empty ($pass)){
 //     $error_contrasena = "La contraseña es incorrecta";
 //   }
-//
+//<
 //   $user = ValidarPass($_POST ['contrasena']);
 //   if ($user) {
 //     header ("location: index.php");

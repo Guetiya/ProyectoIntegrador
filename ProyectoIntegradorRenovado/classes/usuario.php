@@ -1,5 +1,4 @@
 <?php
-echo "suis début de usuario </br>";
 class Usuario
 {
   private $id;
@@ -16,16 +15,9 @@ class Usuario
     $this->apellido   = $variable['apellido'];
     $this->genero     = $variable['genero'];
     $this->correo     = $variable['correo'];
-    $this->contrasena = sha1($variable['contrasena']);
-    $this->imagen     = $variable['imagen'];
-    // $usuario = [
-    //   'apellido'   => $variable['apellido'],
-    //   'nombre'     => $variable['nombre'],
-    //   'genero'     => $variable['genero'],
-    //   'correo'     => $variable['correo'],
-    //   'contrasena' => sha1($variable['contrasena']),
-    //   'imagen'     => $variable['imagen'],
-    // ];
+    $this->contrasena = password_hash($variable['contrasena'], PASSWORD_DEFAULT);
+    $this->imagen     = $_FILES['imgPerfil'];
+
     return $variable;
 
   }
@@ -125,5 +117,4 @@ class Usuario
 
 }
 
-echo "suis a la fin de usuario </br>";
 ?>

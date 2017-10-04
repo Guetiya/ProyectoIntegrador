@@ -1,5 +1,4 @@
 <?php
-echo "suis debut dbmysql </br>";
 require_once ('usuario.php');
 require_once ("bd.php");
 // require_once ("connect.php");

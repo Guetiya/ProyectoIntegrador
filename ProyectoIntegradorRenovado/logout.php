@@ -1,4 +1,6 @@
 <?php
-  // session_destroy;
-	// header('location: index.php');
+  session_start();
+  require_once 'soporte.php';
+  $autorizacion->logout();
+	header('location: index.php');
 ?>

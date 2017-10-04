@@ -1,6 +1,7 @@
 <?php
-echo "suis début validacion </br>";
 require_once ("bd.php");
+require_once ("bdJSON.php");
+require_once ("bdMYSQL.php");
 
 class Validacion
 {
@@ -63,7 +64,7 @@ class Validacion
         $error_contrasena = "La contraseña es incorrecta"; // "Tenés que poner una contraseña"
       }
 
-      $user = validarPass($_POST ['contrasena']); //erreur ici pour appeler la fonction!!!!!!
+      $user =$this->validarPass($_POST['contrasena']); //erreur ici pour appeler la fonction!!!!!!
       if ($user) {
         header ("location: index.php");
       }else {
@@ -73,25 +74,30 @@ class Validacion
     }
   }
 
-  public function validarPass($pass, Bd $bdMYSQL)
+  public function validarPass($pass)
   {
       //echo "El pass sin hashear es: " . $pass;
-      $hashed = sha1($pass);
       //echo "Vamos a buscar el password: " . $hashed;
       $fp = fopen('users.json', 'r');
-      while ($linea = fgets($fp)) {
-        if (!empty($linea)) {
+      while (($linea = fgets($fp)) !== false) {
           //echo $linea;
           $linea = json_decode($linea, true);
-          if ($linea['contrasena'] == $hashed) {
-            header ("location: index_usuarios.php");
+
+          if (password_verify($pass, $linea['contrasena']) == true) {
             session_start();
             $_SESSION ['nombre'] = $linea['nombre'];
-          }
+            header ("location: index.php");
         }
       }
 
      return false;
+  }
+
+  public function estaLogueado() {
+    if (isset($_SESSION["nombre"])) {
+      return true;
+    }
+    return false;
   }
 }
 

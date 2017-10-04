@@ -1,4 +1,5 @@
 <?php
+session_start();
 //require_once 'validar.php';
 include_once("soporte.php");
 require_once("./classes/validacion.php");
@@ -9,16 +10,15 @@ $error_usuario = "";
 $error_contrasena = "";
 
 $errores=[];
-echo "je suis dans login </br>";
+
 if($_POST){
   $errores=$validacion->validarLogin($_POST, $bdMYSQL);
-
     if(count($errores)==0){
-      $usuario = $usuario->loguearse($usuario);
-      $usuario=$usuario->validarPass($pass);
+      // $usuario = $usuario->loguearse($usuario);
+      // $usuario=$usuario->validarPass($pass);
     }
 }
-echo "suis à la fin de login";
+
 
 
 if(isset($_POST["recordarme"]))
