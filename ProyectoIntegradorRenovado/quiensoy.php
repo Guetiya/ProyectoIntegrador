@@ -126,13 +126,12 @@
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                 laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
               <h4><span class="glyphicon glyphicon-education"></span>Ses formations et ses compétences</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit, sed do eiusmod tempo</p>
+              <p>Delphine es nutricionista francesa desde hace 15 años, está especializada en los desordenes alimentarios
+              y en la obesidad de los niños y adolescentes. A lo largo de su práctica se acerco también de la sanación por
+              la energía para intervenir sobre la parte emocional que impregna el cuerpo e impacta sobre los desordenes
+              alimentarios y problema de salud.
+              Trabajó en Francia en clínicas, en varias asociaciones y como profesional independiente.
+              </p>
             </div>
             <div class="foto_Delphine col-sm-4">
                 <img src="images/fotoDelphine.jpg" alt="" width="400px" > <!-- contour de foto rond!!!!! -->
