@@ -1,7 +1,6 @@
 <?php
 session_start();
 require_once('soporte.php');
-
  ?>
 <!DOCTYPE html>
 <html>
@@ -220,9 +219,9 @@ require_once('soporte.php');
             <div class="articulos col-sm-4">
               <h2 style="text-align:center;" id="articulos">Artículos</h2>
               <a href="articulosBelleza.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-heart"></span>Categoría Belleza</h4></a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a href="./articuloBelleza1.php">leer más</a></p>
+              <p>Cuidar su piel para usar menos productos, ganar en tiempo y en plata... <a href="./articuloBelleza1.php">leer más</a></p>
               <a href="articulosNutricion.php"style="text-decoration:none;"><h4><span class="glyphicon glyphicon-apple"></span>Categoría Nutrición</h4></a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a href="./articuloNutricion1.php">leer más</a></p>
+              <p>Sabes que tu alimentacion influenca tu tez  ytu belleza en general... <a href="./articuloNutricion1.php">leer más</a></p>
             </div>
 
             <div class="testimonios col-sm-4">

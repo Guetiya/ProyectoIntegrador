@@ -184,7 +184,7 @@ main h1 {
   text-decoration: none;
 }
 
-.container .row .col-xs-12 {
+.containerCarussel {
   background-color: black;
 }
 /* Contenido
@@ -384,6 +384,13 @@ font-size: 18px;
   color: #FF9980;
   font-size: 18px;
 }
+
+/* Contenido precio
+================================*/
+.container .row .precioTitulo .col-xs-12 {
+background-color: none;
+}
+
 
 /* Footer
 ================================*/
