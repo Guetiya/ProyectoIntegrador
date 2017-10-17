@@ -102,6 +102,36 @@
       <div class="container">
           <div class="row">
             <div class="contenidoQuienSoy col-sm-12">
+                <h2 style="text-align:center;"><span class="miNombre">Mariage en Beauté</span>...</h2><!-- retirer le display inline block pour le centrer à h2 -->
+                <hr noshade>
+            </div>
+          </div>
+          <div class="row">
+            <div class="articulos col-md-8 col-md-offset-1">
+              <h4><span class="glyphicon glyphicon-heart"></span>¿Cómo nació <span class="miNombre">Mariage en beauté</span>?</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                st laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor</p>
+              <h4><span class="glyphicon glyphicon-star"></span>Las especificidades de <span class="miNombre">Mariage en beauté</span></h4>
+              <p>Para lograr esto Mariage en beauté propone un concepto que une los oficios de la belleza física con la belleza interior basándose sobre el desarrollo personal. </p>
+              <h4><span class="glyphicon glyphicon-star"></span>Para qué hacer ese concepto</h4>
+              <p>Las ceremonias son momentos  asociadas a la felicidad de un nuevo camino y mi experiencia como ayudante me mostro como el estrés se invitaba a la boda. Entonces seria transformar esas emociones molestas para que las personas disfruten de su dia.</p>
+              <h4><span class="glyphicon glyphicon-education"></span></h4>
+              <p>Delphine es nutricionista francesa desde hace 15 años, está especializada en los desordenes alimentarios
+              y en la obesidad de los niños y adolescentes. A lo largo de su práctica se acerco también de la sanación por
+              la energía para intervenir sobre la parte emocional que impregna el cuerpo e impacta sobre los desordenes
+              alimentarios y problema de salud.
+              Trabajó en Francia en clínicas, en varias asociaciones y como profesional independiente.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contenidoQuienSoy col-sm-12">
                 <h2 style="text-align:center;">¿Quién es <span class="miNombre">Delphine B.</span>?</h2><!-- retirer le display inline block pour le centrer à h2 -->
                 <hr noshade>
             </div>
