@@ -152,7 +152,7 @@ require_once('soporte.php');
             <div class="item active">
               <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="200px">
               <div class="carousel-caption">
-                <a href="#">
+                <a href="./quienSoy.php">
                   <h3>¿Te vas a casar o tienes una ceremonia?</h3>
                   <p>¡Qué buena noticia! ¿Te falta inspiración para tu peinado, maquillaje, e incluso tu vestuario? ¡No te preocupes!<strong> <em>Mariage en beauté </em></strong> te brinda consejos de belleza y te ofrece prestaciones
                   personalizadas.<strong><em>Mariage en beauté</em></strong> juega sobre la combinación de un estilo adaptado con colores adecuadamente escogidos para resaltar tu belleza, con el fin de que irradies el día D. <br>Porque cada uno merece una belleza a medida, <strong><em>Mariage en beauté</em></strong> contribuye a descubrir la tuya.
