@@ -14,6 +14,11 @@ $errores=[];
 if($_POST){
   $errores=$validacion->validarLogin($_POST, $bdMYSQL);
     if(count($errores)==0){
+      $autorizacion->loguear($_POST['email']);
+      if(isset($_POST['recordarme'])){
+        $autorizacion->recordarme($_POST['email']);
+      }
+      header("location:inicio.php");
       // $usuario = $usuario->loguearse($usuario);
       // $usuario=$usuario->validarPass($pass);
     }
@@ -21,13 +26,13 @@ if($_POST){
 
 
 
-if(isset($_POST["recordarme"]))
-{
-  $hour = time() + 3600 * 24 * 30;
-  // setcookie('username', $login, $hour);
-  setcookie('correo', $usuario, $hour);
-  setcookie('contrasena', $pass, $hour);
-}
+// if(isset($_POST["recordarme"]))
+// {
+//   $hour = time() + 3600 * 24 * 30;
+//   // setcookie('username', $login, $hour);
+//   setcookie('correo', $usuario, $hour);
+//   setcookie('contrasena', $pass, $hour);
+// }
 ?>
 
 <!DOCTYPE html>

@@ -32,6 +32,10 @@ class BdMYSQL extends Bd
     VALUES(?,?,?,?)");
     $query->execute(array($_POST['apellido'], $_POST['nombre'], $_POST['correo'], sha1($variable['contrasena'])));
   }
+
+  public function traerPorMail(){
+    //à compléter
+  }
 }
 
 

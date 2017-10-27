@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+session_start();
+require_once('soporte.php');
+ ?>
+ <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -35,10 +39,18 @@
           </div>
           <div class="col-xs-6">
             <aside class="right-col">
+              <?php if ($validacion->estaLogueado() == false): ?>
               <ul class="login">
                 <li> <a href="./login.php" class="listanavegacion">Login</a><span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
                 --><li> <a href="./registrarse.php" class="listanavegacion" style="border-right:none;">Registrarse</a></li>
               </ul>
+            <?php else: ?>
+              <ul class="login">
+                <li class="login" style="display:block;"><a href="./logout.php">
+                <input type="button" style="border-radius : 80px; color:black "name="boton" value="cerrar sesión"></a>
+                </li>
+              </ul>
+            <?php endif; ?>
               <div class="row">
                 <div class="col-md-6 pull-right">
                   <div class="form-group search">

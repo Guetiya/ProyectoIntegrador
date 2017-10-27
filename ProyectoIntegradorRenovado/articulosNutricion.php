@@ -1,3 +1,7 @@
+<?php
+session_start();
+require_once('soporte.php');
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -35,12 +39,20 @@
           </div>
           <div class="col-xs-6">
             <aside class="right-col">
-              <ul class="login">
-                <li> <a href="./login.php" class="listanavegacion">Login</a><span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
-                --><li> <a href="./registrarse.php" class="listanavegacion" style="border-right:none;">Registrarse</a></li>
-              </ul>
               <div class="row">
                 <div class="col-md-6 pull-right">
+                  <?php if ($validacion->estaLogueado() == false): ?>
+                  <ul class="login">
+                    <li> <a href="./login.php" class="listanavegacion">Login</a><span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
+                    --><li> <a href="./registrarse.php" class="listanavegacion" style="border-right:none;">Registrarse</a></li>
+                  </ul>
+                <?php else: ?>
+                  <ul class="login">
+                    <li class="login" style="display:block;"><a href="./logout.php">
+                    <input type="button" style="border-radius : 80px; color:black "name="boton" value="cerrar sesión"></a>
+                    </li>
+                  </ul>
+                <?php endif; ?>
                   <div class="form-group search">
                     <input type="text" class="form-control" id="" placeholder="Escribí tu pregunta">
                     <i class="fa fa-search" aria-hidden="true"></i>
@@ -108,7 +120,7 @@
         </div>
         <div class="rowBelleza">
           <div class="articulos col-sm-10">
-            <a href="articulosMaquillaje.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-apple"></span>titulo 3</h4></a>
+            <a href="articulosMaquillaje.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-apple"></span>Relación entre la comida y las emociones</h4></a>
             <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
             <p>Lorem ipsum ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
               ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -121,7 +133,7 @@
         </div>
         <div class="rowBelleza">
           <div class="articulos col-sm-10">
-            <a href="articulosMaquillaje.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-apple"></span>titulo 2</h4></a>
+            <a href="articulosMaquillaje.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-apple"></span>La importancia del desayuno</h4></a>
             <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
             <p>halleluia ur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e
