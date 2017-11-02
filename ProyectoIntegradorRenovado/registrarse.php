@@ -48,7 +48,7 @@ if ($_POST){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Estilos principales-->
     <link rel="stylesheet" href="css/styles-main.css">
-
+    <script src="funciones.js"></script>
     <title>Registrate</title>
   </head>
   <body>
@@ -170,7 +170,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="apellido">Apellido* : </label>
                             <div class="col-xs-9">
-                              <input type="text" placeholder="apellido" id="apellido" name="apellido" required class="campos" maxlength="40" value="<?php if(isset($apellido)) {echo $apellido; } ?>" id="apellido" placeholder="Apellido" />
+                              <input type="text" placeholder="apellido" id="apellido" name="apellido" class="campos" maxlength="40" value="<?php if(isset($apellido)) {echo $apellido; } ?>" id="apellido" placeholder="Apellido" />
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                     // if (isset($errores['apellido'])) {
@@ -185,7 +185,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="nombre">Nombre* : </label>
                             <div class="col-xs-9">
-                              <input type="text" placeholder="nombre" id="nombre" name="nombre" required class="campos" maxlength="40" value="<?php if(isset($nombre)) {echo $nombre; } ?>">
+                              <input type="text" placeholder="nombre" id="nombre" name="nombre" class="campos" maxlength="40" value="<?php if(isset($nombre)) {echo $nombre; } ?>">
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                     // if (isset($errores['nombre'])) {
@@ -222,7 +222,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="correo">Correo electrónico* : </label>
                             <div class="col-xs-9">
-                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" required class="campos" maxlength="40" value="<?php if(isset($correo)) {echo $correo; } ?>">
+                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" class="campos" maxlength="40" value="<?php if(isset($correo)) {echo $correo; } ?>">
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                   // if (isset($errores['correo'])) {
@@ -236,7 +236,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="contrasena">Contraseña* : </label>
                             <div class="col-xs-9">
-                              <input type="password" placeholder="contraseña" name="contrasena" required class="campos" maxlength="40" >
+                              <input type="password" placeholder="contraseña" name="contrasena" class="campos" maxlength="40" >
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                   // if (isset($errores['contrasena'])) {
@@ -250,7 +250,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="contrasena">Repetir contraseña* : </label>
                             <div class="col-xs-9">
-                              <input type="password" placeholder="contraseña" name="repetirContrasena" required class="campos" maxlength="40" >
+                              <input type="password" placeholder="contraseña" name="repetirContrasena" class="campos" maxlength="40" >
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                   // if (isset($errores['contrasena'])) {
@@ -264,14 +264,14 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="fotoPerfil">Foto perfil: </label>
                             <div class="col-xs-9">
-                              <input type='file' name='imgPerfil'/><br/>
+                              <input type='file' name='imgPerfil'><br/>
                               <span id='register_username_errorloc' class='error'></span>
                             </div>
                           </div>
                       </div>
                       <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                          <button type="submit" class="Formulario_registro" value="Me registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
+                          <button type="submit" class="Formulario_registro" value="Me registro" id="submit" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
                           <button type="reset" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
                         </div>
                       </div>
@@ -316,6 +316,7 @@ if ($_POST){
       </div>
     </footer>
   <!-- Latest compiled and minified JavaScript -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
