@@ -48,6 +48,7 @@ if ($_POST){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Estilos principales-->
     <link rel="stylesheet" href="css/styles-main.css">
+    <script src="funciones.js" charset="utf-8"></script>
 
     <title>Registrate</title>
   </head>
@@ -138,7 +139,7 @@ if ($_POST){
     </header>
     <main class="main_registro">
       <div class="container">
-      <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data">
+      <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data" onsubmit="validarformulario()">
             <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
               <div class="form-group">
                 <label class="col-xs-3" for=""></label>
