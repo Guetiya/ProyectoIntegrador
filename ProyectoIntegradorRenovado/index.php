@@ -278,6 +278,12 @@ require_once('soporte.php');
     </footer>
   <!-- Latest compiled and minified JavaScript -->
   <script type="text/javascript" src="funciones.js" charset="utf-8">
+  window.onload = function() { // Carga la página y luego ejecuta:
+    elemento.querySelector("#cambiar_tema").addEventListener("click", function(){
+        alert("Ayy Me cliqueaste!");
+    });
+  }
+
 
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
