@@ -7,6 +7,21 @@ contrasena= document.querySelector("#contrasena");
 repetirContrasena = document.querySelector("#repetirContrasena");
 submit= document.querySelector("#submit");
 
+// window.onload = function(){
+//   document.querySelector('#cambiar_tema').style.backgroundColor("red");
+// }
+
+//Ejercicio 2 del sprint
+document.querySelector("#cambiar_tema").addEventListener("click", myFunction);
+function myFunction() {
+    document.querySelector("main").style.backgroundColor="green";
+}
+
+function removeHandler() {
+    document.querySelector("#cambiar_tema").removeEventListener("click", myFunction);
+}
+
+
 function surligne(campo, error)
 {
    if(error)
