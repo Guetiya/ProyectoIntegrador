@@ -185,7 +185,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="nombre">Nombre* : </label>
                             <div class="col-xs-9">
-                              <input type="text" placeholder="nombre" id="nombre" name="nombre" class="campos" maxlength="40" value="<?php if(isset($nombre)) {echo $nombre; } ?>">
+                              <input type="text" placeholder="nombre" id="nombre" name="nombre" class="campos" maxlength="40"  onchange=chequearFormulario() value="<?php if(isset($nombre)) {echo $nombre; } ?>">
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                     // if (isset($errores['nombre'])) {
@@ -222,7 +222,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="correo">Correo electrónico* : </label>
                             <div class="col-xs-9">
-                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" class="campos" maxlength="40" value="<?php if(isset($correo)) {echo $correo; } ?>">
+                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" class="campos" maxlength="40" onchange=chequearFormulario() value="<?php if(isset($correo)) {echo $correo; } ?>">
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                   // if (isset($errores['correo'])) {
@@ -271,7 +271,7 @@ if ($_POST){
                       </div>
                       <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                          <button type="submit" class="Formulario_registro" value="Me registro" id="submit" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
+                          <button type="submit" class="Formulario_registro" value="Me registro" id="submit" onsubmit=chequearFormulario() style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
                           <button type="reset" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
                         </div>
                       </div>

@@ -92,3 +92,23 @@ function validarformulario() {
         return false;
     }
 }
+function chequearFormulario(form)
+{
+  if(this.nombre.value == "") {
+    alert("por favor ingrese su nombre");
+    this.name.focus();
+    return false;
+  }
+  if(this.email.value == "" || !this.correo.checked) {
+    alert("Por favor ingrese un mail valido");
+    this.email.focus();
+    return false;
+  }
+  /*if(this.age.value == "" || !this.valid_age.checked) {
+    alert("por favor ingrese");
+    this.age.focus();
+    return false;
+  }*/
+  alert("Success!  The form has been completed, validated and is ready to be submitted...");
+  return false;
+}
