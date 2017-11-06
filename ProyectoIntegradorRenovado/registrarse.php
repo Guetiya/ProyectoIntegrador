@@ -284,7 +284,7 @@ if ($_POST){
     </main>
     <footer>
       <div class="container">
-        <div class="row">
+        <div class="row" id="color">
           <div class="col-xs-12">
             <div class="row">
               <div class="col-xs-5">

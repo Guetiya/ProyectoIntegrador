@@ -1,0 +1,494 @@
+/* *{
+  box-sizing: border-box;
+  overflow: hidden;
+}*/
+
+/*Tipografias y títulos
+========================*/
+body {
+  font-family: "Open Sans";
+}
+
+h1, h3, .main-description, .sign {
+  font-family: Parisienne;
+  color: #FF9980;
+}
+
+.main-description {
+  font-size: 55px;
+}
+
+aside a, i {
+  color: #aaa;
+}
+
+.listanavegacion {
+  color : #aaa;
+}
+
+/* Estilos principales
+==============================*/
+ /*Main description*/
+ .main-description {
+  margin-top: -30px;
+ }
+
+ .center {
+   position: relative;
+ }
+
+ .sign {
+   position: absolute;
+   right: 0;
+   bottom: -17px;
+ }
+
+
+/*aside*/
+.left-col ul,
+.right-col ul {
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.left-col ul li {
+  list-style-type: none;
+  float: left;
+}
+
+.right-col ul {
+  text-align: right;
+}
+
+.right-col .login li {
+    list-style-type: none;
+    text-align: right;
+    display: inline-block;
+    color: #aaa;
+}
+
+.separator {
+  margin: 0 10px;
+}
+
+.left-col .social li {
+  margin-right: 10px;
+}
+
+
+/* Search
+=============*/
+.search {
+  position: relative;
+}
+.search input {
+  padding-right: 30px;
+}
+.fa-search {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+}
+
+/* Barra de navegacion
+=============*/
+.navbar-nav {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.navbar-default {
+  background-color: inherit;
+  border-color: transparent;
+  margin-top: 20px  ;
+}
+
+.navbar-nav ul {
+  padding-left: 0;
+}
+
+.navbar-nav li {
+  list-style-type: none;
+}
+
+.navbar-nav a {
+  font-size: 15px;
+  color : black;
+  padding: 10px 15px;
+}
+
+/* Main
+================================*/
+main {
+  background-color: #fbe4f8; /* Otras colores posibles #e7ece6 #FF9980 */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* en el formulario */
+.main_registro{
+  background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */
+  margin-top: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+main h1 {
+  margin-top: 28px;
+}
+/* pagina del usuario:*/
+.nombre_usuario{
+  display:block;
+  color: #ffa38d;
+  font-size: 15px;
+}
+
+.carousel {
+  background-color: black;
+}
+
+.articulos h4 .btn-lg{
+  font-size: 14px;
+}
+/* formulario
+================================*/
+.formulario{
+  background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */
+  /*height: 377px; No hacer*/
+  margin-top: 20px;
+}
+
+.login{
+  background-color: white;
+}
+
+.cover-title, .cover_p {
+  color: #aaa;
+}
+
+.carousel-inner .item img {
+  height: 266px;
+  margin-left: 900px;
+}
+
+.carousel-caption h3 {
+  margin-bottom: 24px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #823d30;#e7ece6
+}
+
+.carousel-caption a {
+  color: #e7ece6;
+  text-decoration: none;
+}
+
+.containerCarussel {
+  background-color: black;
+}
+/* Contenido
+================================*/
+h2 {
+  font-family:'Lora', serif;
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  color: #823d30;
+  /*display: inline-block;*/
+}
+
+em {
+  /*color :#e7ece6;*/
+  font-family: Parisienne;
+  font-size: 22px;
+  color: #FF9980;
+}
+
+.articulos h4, .contenido_maquillaje h4 {
+  font-family: 'Arimo', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color : #FF9980;
+}
+
+.articulos p .btn-lg{
+  font-size: 14px;
+  padding: 5px 9px;
+}
+.articulos h4 .btn-lg{
+  margin-left: none;
+}
+
+.row .articulos p a{
+  color : #FF9980;
+}
+
+.glyphicon-menu-left {
+  margin-left: 60px;
+}
+
+.testimonios p{
+  margin: auto;
+  display: inline-block;
+}
+.testimonios{
+  display: block;
+}
+
+.fa-quote-right {
+  font-size: 50px;
+  margin-left: 200px;
+  color : #e7ece6;
+}
+
+.articulos h2 {
+  margin-bottom: 25px;
+}
+/*
+articulos de index usuario:
+*/
+.Index_articulo{
+text-decoration: none;
+
+}
+
+/* Contenido quien soy?
+================================*/
+
+/*div div .articulos h2{
+font-family: Parisienne;
+}*/
+h2 a {
+  color: #823d30;
+}
+
+h4 a, h4{
+  color: #FF9980;
+ }
+
+.miNombre{
+  font-family: "Parisienne";
+}
+
+.foto_Delphine img{
+  border-radius: 50%;
+}
+
+.contenidoQuienSoy h2, .contenidoMaquillaje h2 , .contenidoArticulos h2  {
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+/* Contenido maquillaje
+================================*/
+/*.contenidoMaquillaje h2 {
+margin-top: 0px;
+margin-bottom: 20px;
+}*/
+.prestacionesMaquillaje ul li{
+    list-style-type: none;
+    padding-bottom: 12px;
+}
+
+.prestacionesMaquillaje a .btn{
+text-align: center;
+
+}
+
+.prestacionesMaquillaje li span{
+  /*text-decoration:underline;
+  text-decoration-color:#823d30;*/
+  color: #FF9980;
+  font-size: 16px;
+}
+
+hr{
+  border-top: 1px solid #e7ece6;
+}
+
+.prestacionesMaquillaje .btn-lg{
+padding: 4px 9px;
+font-size: 19px;
+margin-left: 522px;
+/*margin-bottom: 15px;*/
+
+}
+
+.btn-primary {
+  background-color: #FF9980;
+  border-color: #FF9980;
+}
+
+
+.foto p a{
+  /*margin-left: 59px;*/
+  color: #823d30;
+  font-size: 16px;
+}
+
+.foto p{
+  margin-top: 23px;
+}
+
+/* articulos attention ne va plus exister
+================================*/
+
+.foto img, .fotoNutricion img {
+  margin-left: 110px;
+}
+
+.articulos .btn1-lg{
+  font-size: 14px;
+  padding: 5px 9px;
+  margin-left: 583px;
+}
+
+/* articulosBelleza
+================================*/
+.fotoArticulosBelleza img {
+  margin-left: 0px;
+}
+
+time {
+  color : #aaa;
+}
+
+.rowBelleza p a{
+  color : #FF9980;
+}
+
+/* articulos articulo1
+================================*/
+h5 {
+  font-family:'Lora', serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #823d30;
+}
+
+.rowBelleza .articulos p em {
+  color: #333;
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+
+.p {
+font-size: 18px;
+
+}
+
+.firma {
+  text-align: right;
+  font-family: "Parisienne";
+  color: #FF9980;
+  font-size: 18px;
+}
+
+/* Contenido precio
+================================*/
+.container .row .precioTitulo .col-xs-12 {
+background-color: none;
+}
+
+
+/* Footer
+================================*/
+footer {
+  background-color: #e7ece6;
+}
+
+footer .row {
+  background-color: #e7ece6;
+}
+
+footer .left-col ul,
+footer .right-col ul {
+  padding-left: 0;
+  overflow: hidden;
+  color : #aaa;
+}
+
+footer .left-col ul li {
+  list-style-type: none;
+  float: left;
+}
+
+footer .right-col ul {
+  text-align: left;
+}
+
+footer .right-col .copyright li {
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+}
+
+footer .separator {
+  margin: 0 10px;
+}
+
+footer .left-col .social li {
+  margin-right: 10px;
+}
+
+
+/* Formularios
+================================*/
+.Formulario_registro label {
+  height: 30px;
+  font-size: 18px;
+}
+
+.campos {
+  border-color: #FAA996;
+  border-radius: 80px;
+  width: 250px;
+}
+
+.formulario button {
+  width: 100px;
+  height: 26px;
+  margin-bottom: 35px;
+}
+
+.login button {
+  width: 100px;
+  height: 26px;
+  margin-top: 20px;
+}
+
+/* Contacto
+================================*/
+/*div input .form-control {
+  border-color: #FAA996;
+  border-radius: 80px;
+  width: 250px;
+}*/
+
+
+/* Media Querys
+================================*/
+@media (min-width: 1200px) {
+  .sign {
+    right:48px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav li {
+    width: 20%;
+  }
+}
+
+@media (max-width: 991px){
+  .main-description {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-description {
+    margin-top: 0;
+  }
+}

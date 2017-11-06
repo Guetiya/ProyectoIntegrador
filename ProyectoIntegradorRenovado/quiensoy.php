@@ -15,7 +15,7 @@ require_once('soporte.php');
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Estilos principales-->
     <link rel="stylesheet" href="css/styles-main.css">
-
+  <script type="text/javascript" src="funciones.js" charset="utf-8"></script>
     <title>¿Quién soy?</title>
   </head>
   <body>
@@ -206,7 +206,8 @@ require_once('soporte.php');
             <aside class="right-col">
               <ul class="copyright">
                 <li>&copy; Copyright<span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
-                --><li> Menciones legales </li>
+                --><li> Menciones legales </li>|</span></li>
+                <button type="button" name="button" value="Cambiar el tema" id="cambiar_tema">Cambiar el tema</button>
               </ul>
             </aside>
           </div>

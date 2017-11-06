@@ -14,8 +14,8 @@ require_once('soporte.php');
     <!-- FontAwesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Estilos principales-->
-    <link rel="stylesheet" href="css/styles-main.css">
-  <script type="text/javascript" src="funciones.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/styles-main.css" id="cambioColor">
+
     <title>Mariage en beauté</title>
   </head>
   <body id="body">
@@ -138,7 +138,7 @@ require_once('soporte.php');
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container" id="color">
         <div class="row">
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
@@ -250,7 +250,7 @@ require_once('soporte.php');
 
     <footer class="col-xs-12">
       <div class="container">
-        <div class="row">
+        <div class="row" id="color">
           <div class="col-xs-5">
             <aside class="left-col">
               <div class="language">
@@ -280,36 +280,24 @@ require_once('soporte.php');
     </footer>
   <!-- Latest compiled and minified JavaScript -->
   <!-- <script type="text/javascript" src="funciones.js" charset="utf-8">
-  // window.onload = function() { // Carga la página y luego ejecuta:
-  //   elemento.querySelector("#cambiar_tema").addEventListener("click", function(){
-  //       alert("Ayy Me cliqueaste!");
-  //   });
-  // }
-  document.querySelector("#cambiar_tema").addEventListener("click", myFunction);
-  function myFunction() {
-      document.querySelector("main").style.backgroundColor="green";
-  }
 
-  function removeHandler() {
-      document.querySelector("#cambiar_tema").removeEventListener("click", myFunction);
-  }
-
-  // setInterval(function(){
-  //   var numeroUsuario = new XMLHttpRequest();
-  //   numeroUsuario.onreadystatechange= function(){
-  //     if (numeroUsuario.readyState== 4 && numeroUsuario.status == 200){
-  //     //console.log(xmlhttp.responseText);
-  //     //console.log(JSON.parse(traerProv.responseText));
-  //     usuario= JSON.parse(numeroUsuario.responseText).contenido;
-  //     getUsuario();
-  //     }
-  //   };
-  //   numeroUsuario.open("GET","http://pilote.techo.org/admin/?do=api.getCiudades?idRegionLT=", true)
-  //   numeroUsuario.send();
-  // }, 30000);
+  setInterval(function(){
+  var numeroUsuario = new XMLHttpRequest();
+  numeroUsuario.onreadystatechange= function(){
+    if (numeroUsuario.readyState== 4 && numeroUsuario.status == 200){
+    //console.log(xmlhttp.responseText);
+   //console.log(JSON.parse(traerProv.responseText));
+     usuario= JSON.parse(numeroUsuario.responseText).contenido;
+   getUsuario();
+      }
+    };
+     numeroUsuario.open("GET","http://pilote.techo.org/admin/?do=api.getCiudades?idRegionLT=", true)
+     numeroUsuario.send();
+   }, 30000);
 
   </script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="funciones.js" charset="utf-8"></script>
   </body>
 </html>

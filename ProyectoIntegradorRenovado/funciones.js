@@ -13,16 +13,14 @@
 
 
 window.onload = function(){
-
 //Ejercicio 2 del sprint
-document.querySelector("#cambiar_tema").addEventListener("click", myFunction);
-function myFunction() {
-    document.querySelector("main").style.backgroundColor="green";
-}
+  document.getElementById("cambiar_tema").onclick = function(){
+    document.getElementById("cambioColor").href='css/styles-mainJava.css';
+  };
 
-function removeHandler() {
-    document.querySelector("#cambiar_tema").removeEventListener("click", myFunction);
-}
+// function removeHandler() {
+//     document.querySelector("#cambiar_tema").removeEventListener("click", myFunction);
+// }
 
 
 function surligne(campo, error)
