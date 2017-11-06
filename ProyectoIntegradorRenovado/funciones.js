@@ -1,15 +1,18 @@
-formulario = document.querySelector("form");
-apellido = document.querySelector("#apellido");
-nombre = document.querySelector("#nombre");
-genero = document.querySelector("#genero");
-correo = document.querySelector("#correo");
-contrasena= document.querySelector("#contrasena");
-repetirContrasena = document.querySelector("#repetirContrasena");
-submit= document.querySelector("#submit");
+// formulario = document.querySelector("form");
+// apellido = document.querySelector("#apellido");
+// nombre = document.querySelector("#nombre");
+// genero = document.querySelector("#genero");
+// correo = document.querySelector("#correo");
+// contrasena= document.querySelector("#contrasena");
+// repetirContrasena = document.querySelector("#repetirContrasena");
+// submit= document.querySelector("#submit");
 
 // window.onload = function(){
 //   document.querySelector('#cambiar_tema').style.backgroundColor("red");
 // }
+
+
+window.onload = function(){
 
 //Ejercicio 2 del sprint
 document.querySelector("#cambiar_tema").addEventListener("click", myFunction);
@@ -73,14 +76,14 @@ function validarForm(f)
       return false;
    }
 }
-<form action="page.php" onsubmit="return verifForm(this)"> //à mettre dans le formulaire
-var elemento = document.querySelector("#button");
-elemento.addEventListener("click", function(){
-  window.close();
-})
+// <form action="page.php" onsubmit="return verifForm(this)"> //à mettre dans le formulaire
+// var elemento = document.querySelector("#button");
+// elemento.addEventListener("click", function(){
+//   window.close();
+// })
 function varlidarusuario() {
     var x = document.forms["myForm"]["fname"].value;
-    if (x == "" || x == ) {
+    if (x == "" || x == "") {
         alert("debe llenar el nombre");
         return false;
     }
@@ -111,4 +114,6 @@ function chequearFormulario(form)
   }*/
   alert("Success!  The form has been completed, validated and is ready to be submitted...");
   return false;
+}
+
 }
