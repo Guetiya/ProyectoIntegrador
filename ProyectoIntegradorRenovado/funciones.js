@@ -15,7 +15,13 @@
 window.onload = function(){
 //Ejercicio 2 del sprint
   document.getElementById("cambiar_tema").onclick = function(){
-    document.getElementById("cambioColor").href='css/styles-mainJava.css';
+    console.log('test');
+    if(document.getElementById("color").className == "container main"){
+      document.getElementById("color").className = "container otro";
+    }
+    else if (document.getElementById("color").className == "container otro"){
+      document.getElementById("color").className = "container main";
+    }
   };
 
 function removeHandler() {

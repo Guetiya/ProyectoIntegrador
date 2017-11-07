@@ -125,7 +125,12 @@ main {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
+.main{
+  background-color: red;
+}
+.otro{
+  background-color: green;
+}
 /* en el formulario */
 .main_registro{
   background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */

@@ -138,7 +138,7 @@ require_once('soporte.php');
       </div>
     </header>
     <main>
-      <div class="container" id="color">
+      <div class="container main" id="color">
         <div class="row">
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
