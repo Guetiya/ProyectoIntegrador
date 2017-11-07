@@ -128,7 +128,7 @@ main {
 
 /* en el formulario */
 .main_registro{
-  background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */
+  background-color: #fbe4f8; /* Otras colores posibles #e7ece6 #FF9980 */
   margin-top: 20px;
   position: relative;
   box-sizing: border-box;
@@ -154,7 +154,7 @@ main h1 {
 /* formulario
 ================================*/
 .formulario{
-  background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */
+  background-color: #fbe4f8; /* Otras colores posibles #e7ece6 #FF9980 */
   /*height: 377px; No hacer*/
   margin-top: 20px;
 }

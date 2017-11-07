@@ -18,9 +18,10 @@ window.onload = function(){
     document.getElementById("cambioColor").href='css/styles-mainJava.css';
   };
 
-// function removeHandler() {
-//     document.querySelector("#cambiar_tema").removeEventListener("click", myFunction);
-// }
+function removeHandler() {
+    document.querySelector("#cambiar_tema").removeEventListener("click", myFunction);
+        document.getElementById("cambioColor").href='css/styles-main.css';
+}
 
 
 function surligne(campo, error)

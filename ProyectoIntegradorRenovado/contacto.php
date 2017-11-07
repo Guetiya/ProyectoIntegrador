@@ -43,7 +43,7 @@ require_once "send_form_email.php";
     <!-- FontAwesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Estilos principales-->
-    <link rel="stylesheet" href="css/styles-main.css">
+    <link rel="stylesheet" href="css/styles-main.css" id="cambioColor">
 
     <title></title>
   </head>
@@ -226,7 +226,8 @@ require_once "send_form_email.php";
             <aside class="right-col">
               <ul class="copyright">
                 <li>&copy; Copyright<span class="separator">|</span></li><!-- Comentario para sacar espacio en blanco adicional
-                --><li> Menciones legales </li>
+                --><li> Menciones legales </li>|</span></li>
+                <button type="button" name="button" value="Cambiar el tema" id="cambiar_tema">Cambiar el tema</button>
               </ul>
             </aside>
           </div>
@@ -236,5 +237,6 @@ require_once "send_form_email.php";
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="funciones.js" charset="utf-8"></script>
   </body>
 </html>
