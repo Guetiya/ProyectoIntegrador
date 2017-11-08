@@ -14,11 +14,11 @@ require_once('soporte.php');
     <!-- FontAwesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Estilos principales-->
-    <link rel="stylesheet" href="css/styles-main.css" id="cambioColor">
+    <link rel="stylesheet" href="css/styles-main.css">
 
     <title>Mariage en beauté</title>
   </head>
-  <body id="body">
+  <body>
     <header>
       <div class="container">
         <div class="row">
@@ -29,7 +29,7 @@ require_once('soporte.php');
                   <li class="fr"> <a href="#">Francés</a><span class="separator">|</span></li>
                   <li class="es"> <a href="#">Español</a><span class="separator">|</span></li>
                   <li class="en"> <a href="#">Inglés</a></li>
-                  <li> Ya somos </li>
+                  <li id="contar"> Ya somos </li>
                 </ul>
                   <h6>hola</h6>
                 <ul class="social">

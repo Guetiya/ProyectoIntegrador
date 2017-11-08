@@ -19,7 +19,7 @@
   <button id="button">cerrar</button>
 
   <main>
-    <div class="container">
+    <div class="container main" id="color">
         <div class="row">
           <div class="row">
             <div class="precioTitulo col-xs-12">

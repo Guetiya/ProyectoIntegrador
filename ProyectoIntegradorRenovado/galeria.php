@@ -22,7 +22,7 @@ require_once('soporte.php');
   </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container main" id="color">
       <div class="row">
         <div class="col-xs-6">
           <aside class="left-col">

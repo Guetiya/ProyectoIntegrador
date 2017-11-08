@@ -111,7 +111,7 @@ require_once('soporte.php');
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container main" id="color">
           <div class="row">
             <div class="contenidoQuienSoy col-sm-12">
                 <h2 style="text-align:center;"><span class="miNombre">Mariage en Beauté</span>...</h2><!-- retirer le display inline block pour le centrer à h2 -->

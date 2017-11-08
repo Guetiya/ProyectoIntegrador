@@ -126,10 +126,10 @@ main {
   margin-bottom: 20px;
 }
 .main{
-  background-color: red;
+  background-color: white;
 }
-.otro{
-  background-color: green;
+.main_cambio{
+  background-color: #87f179;
 }
 /* en el formulario */
 .main_registro{

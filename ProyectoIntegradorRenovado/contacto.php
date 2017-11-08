@@ -142,7 +142,7 @@ require_once "send_form_email.php";
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container main" id="color">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 

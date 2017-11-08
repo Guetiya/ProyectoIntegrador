@@ -111,7 +111,7 @@ require_once('soporte.php');
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container main" id="color">
         <div class="row">
           <div class="contenidoArticulos col-sm-12">
               <h2 style="text-align:center;">Artículos Nutrición</h2>

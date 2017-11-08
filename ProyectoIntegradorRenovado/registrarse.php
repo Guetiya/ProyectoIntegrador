@@ -61,6 +61,7 @@ if ($_POST){
                   <li class="fr"> <a href="#">Francés</a><span class="separator">|</span></li>
                   <li class="es"> <a href="#">Español</a><span class="separator">|</span></li>
                   <li class="en"> <a href="#">Inglés</a></li>
+                  <p id="demo">0</p>
                 </ul>
                 <ul class="social">
                   <li><a href="https://www.facebook.com/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
@@ -270,7 +271,7 @@ if ($_POST){
                       </div>
                       <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                          <button type="submit" class="Formulario_registro" value="Me registro" id="submit" onsubmit=chequearFormulario() style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
+                          <button type="submit" class="Formulario_registro" value="Me registro" id="submit" onclick="myFunction()" onsubmit=chequearFormulario() style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
                           <button type="reset" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
                         </div>
                       </div>

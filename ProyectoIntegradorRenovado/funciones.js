@@ -15,19 +15,35 @@
 window.onload = function(){
 //Ejercicio 2 del sprint
   document.getElementById("cambiar_tema").onclick = function(){
-    console.log('test');
     if(document.getElementById("color").className == "container main"){
-      document.getElementById("color").className = "container otro";
+      document.getElementById("color").className = "container main_cambio";
     }
-    else if (document.getElementById("color").className == "container otro"){
+    else if (document.getElementById("color").className == "container main_cambio"){
       document.getElementById("color").className = "container main";
     }
   };
 
-function removeHandler() {
-    document.querySelector("#cambiar_tema").removeEventListener("click", myFunction);
-        document.getElementById("cambioColor").href='css/styles-main.css';
+//ejercicio 3 del sprint
+var counter = 0;
+function add(){
+  return counter += 1;
 }
+function myFunction(){
+  document.getElementById("demo").innerHTML = add();
+}
+
+// setInterval(function(){
+function myFunction(){
+  var numeroUsuario = new XMLHttpRequest();
+    numeroUsuario.onreadystatechange= function(){
+      if (this.readyState== 4 && this.status == 200){
+          alert(numeroUsuario.responseText);
+      }
+    };
+     numeroUsuario.open("GET","connectados.php", true)
+     numeroUsuario.send();
+}
+// }, 30000);
 
 
 function surligne(campo, error)

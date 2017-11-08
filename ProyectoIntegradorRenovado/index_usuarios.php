@@ -129,7 +129,7 @@ session_start();
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container main" id="color">
         <div class="row">
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->

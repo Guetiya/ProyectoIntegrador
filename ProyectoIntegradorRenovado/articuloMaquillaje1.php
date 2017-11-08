@@ -110,7 +110,7 @@ require_once('soporte.php');
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container main" id="color">
         <div class="row">
           <div class="contenidoArticulos col-sm-12">
             <h5>La préparation de la peau</h5>

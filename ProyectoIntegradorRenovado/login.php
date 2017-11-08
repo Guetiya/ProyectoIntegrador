@@ -62,6 +62,7 @@ if($_POST){
                   <li class="fr"> <a href="#">Francés</a><span class="separator">|</span></li>
                   <li class="es"> <a href="#">Español</a><span class="separator">|</span></li>
                   <li class="en"> <a href="#">Inglés</a></li>
+                  <p id="demo">0</p>
                 </ul>
                 <ul class="social">
                   <li><a href="https://www.facebook.com/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
@@ -139,7 +140,7 @@ if($_POST){
 
     </header>
     <main class="main_registro">
-      <div class="container">
+      <div class="container main" id="color">
       <form id='registro' action='login.php' method='post' enctype="multipart/form-data">
               <input type='hidden' name='submitted' id='submitted' value='1'/>
                   <div class="form-group">
@@ -191,7 +192,7 @@ if($_POST){
 
                             <div class="form-group">
                               <div class="col-sm-offset-3 col-sm-9">
-                                <button type="submit" class="login" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Login </button>
+                                <button type="submit" class="login" onclick="myFunction" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Login </button>
                               </div>
                             </div>
                             <div class="form-group">
@@ -199,7 +200,6 @@ if($_POST){
                                 <a href="ContrasenaOlvidado.html" class="Formulario_registro"> ¿Has olvidado tu contraseña? </a>
                               </div>
                             </div>
-
                       </div>
                     </div>
                   </div>
