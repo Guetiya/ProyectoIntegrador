@@ -25,7 +25,24 @@ class BdJSON extends Bd
   public function guardarUsuarioBaseDatos(Usuario $usuario){
 
   }
-
+  public function sumarUsuarioConnectado(){
+    $count = 0;
+    if ($_POST){
+      $count = $count + 1;
+      //opcion 1 : que pone el resultado por cada linea
+      file_put_contents("connectados.json", $count . PHP_EOL, FILE_APPEND);
+      // opcion 2 : que no se suma nada
+      $fp = fopen("connectados.json", 'c');
+      fwrite($fp, $count);
+      fclose($fp);
+    }
+    return $count;
+  }
+//je n'en ai pas besoin
+  // public function leerNumeroUsuarioConnect(){
+  //   $usuarioConnectado= fopen('connectados.json', 'r');
+  //   return $usuarioConnectado;
+  // }
 }
 
 

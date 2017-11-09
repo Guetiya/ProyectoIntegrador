@@ -28,10 +28,9 @@ require_once('soporte.php');
                 <ul class="lang-selector">
                   <li class="fr"> <a href="#">Francés</a><span class="separator">|</span></li>
                   <li class="es"> <a href="#">Español</a><span class="separator">|</span></li>
-                  <li class="en"> <a href="#">Inglés</a></li>
-                  <li id="contar"> Ya somos </li>
+                  <li class="en"> <a href="#">Inglés</a><span class="separator">|</span></li>
+                  <li >Ya somos <span id="contar"></span>usuarios</li> 
                 </ul>
-                  <h6>hola</h6>
                 <ul class="social">
                   <li><a href="https://www.facebook.com/delphine.bertin.coiffure/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
                   <li><a href="https://www.instagram.com/?hl=fr" target="new"><i class="fa fa-instagram fa-2x"></a></i></li>

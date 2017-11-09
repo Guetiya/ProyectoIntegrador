@@ -27,6 +27,7 @@ if ($_POST){
         //print_r($usuario); die;
         $usuario = $bdJSON->guardarUsuario($usuario);
         $usuario = $bdMYSQL->guardarUsuarioBaseDatos($usuario);
+        $usuario = $bdJSON->sumarUsuarioConnectado();
         header ("location:bienvenidos.php");
         exit;
       }
@@ -52,7 +53,7 @@ if ($_POST){
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container main" id="color">
         <div class="row">
           <div class="col-xs-6">
             <aside class="left-col">
@@ -61,7 +62,7 @@ if ($_POST){
                   <li class="fr"> <a href="#">Francés</a><span class="separator">|</span></li>
                   <li class="es"> <a href="#">Español</a><span class="separator">|</span></li>
                   <li class="en"> <a href="#">Inglés</a></li>
-                  <p id="demo">0</p>
+                  <p id="demo"><?php $count ?></p>
                 </ul>
                 <ul class="social">
                   <li><a href="https://www.facebook.com/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>

@@ -129,11 +129,11 @@ main {
   background-color: white;
 }
 .main_cambio{
-  background-color: #87f179;
+  background-color: #e7ece6;
 }
 /* en el formulario */
 .main_registro{
-  background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */
+  /*background-color: white; /* Otras colores posibles #e7ece6 #FF9980 */*/
   margin-top: 20px;
   position: relative;
   box-sizing: border-box;

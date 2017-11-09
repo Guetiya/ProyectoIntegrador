@@ -7,9 +7,6 @@
 // repetirContrasena = document.querySelector("#repetirContrasena");
 // submit= document.querySelector("#submit");
 
-// window.onload = function(){
-//   document.querySelector('#cambiar_tema').style.backgroundColor("red");
-// }
 
 
 window.onload = function(){
@@ -21,7 +18,7 @@ window.onload = function(){
     else if (document.getElementById("color").className == "container main_cambio"){
       document.getElementById("color").className = "container main";
     }
-  };
+  }
 
 //ejercicio 3 del sprint
 var counter = 0;
@@ -33,16 +30,16 @@ function myFunction(){
 }
 
 // setInterval(function(){
-function myFunction(){
-  var numeroUsuario = new XMLHttpRequest();
-    numeroUsuario.onreadystatechange= function(){
-      if (this.readyState== 4 && this.status == 200){
-          alert(numeroUsuario.responseText);
-      }
-    };
-     numeroUsuario.open("GET","connectados.php", true)
-     numeroUsuario.send();
-}
+    // function myFunction(){
+      var numeroUsuario = new XMLHttpRequest();
+        numeroUsuario.onreadystatechange= function(){
+          if (numeroUsuario.readyState== 4 && numeroUsuario.status == 200){
+              document.getElementById("contar").innerHTML = numeroUsuario.responseText;
+          }
+        };
+         numeroUsuario.open("GET","connectados.json", true)
+         numeroUsuario.send();
+// }
 // }, 30000);
 
 

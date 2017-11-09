@@ -62,7 +62,6 @@ if($_POST){
                   <li class="fr"> <a href="#">Francés</a><span class="separator">|</span></li>
                   <li class="es"> <a href="#">Español</a><span class="separator">|</span></li>
                   <li class="en"> <a href="#">Inglés</a></li>
-                  <p id="demo">0</p>
                 </ul>
                 <ul class="social">
                   <li><a href="https://www.facebook.com/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>

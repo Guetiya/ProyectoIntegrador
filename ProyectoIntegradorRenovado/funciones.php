@@ -108,5 +108,5 @@ function subirFoto() {
   // return $errores;
 }
 
-
+}
  ?>
