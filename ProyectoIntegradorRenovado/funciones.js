@@ -29,7 +29,7 @@ function myFunction(){
   document.getElementById("demo").innerHTML = add();
 }
 
-// setInterval(function(){
+setInterval(function(){
     // function myFunction(){
       var numeroUsuario = new XMLHttpRequest();
         numeroUsuario.onreadystatechange= function(){
@@ -39,8 +39,8 @@ function myFunction(){
         };
          numeroUsuario.open("GET","connectados.json", true)
          numeroUsuario.send();
-// }
-// }, 30000);
+    // }
+}, 30000);
 
 
 function surligne(campo, error)
