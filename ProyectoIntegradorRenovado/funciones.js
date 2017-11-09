@@ -29,7 +29,16 @@ function myFunction(){
   document.getElementById("demo").innerHTML = add();
 }
 
-setInterval(function(){
+if (document.querySelector('.contar')) {
+  checkUsers();
+
+  setInterval(function() {
+    checkUsers();
+  }, 30000);
+  
+}
+
+function checkUsers(){
     // function myFunction(){
       var numeroUsuario = new XMLHttpRequest();
         numeroUsuario.onreadystatechange= function(){
@@ -40,8 +49,7 @@ setInterval(function(){
          numeroUsuario.open("GET","connectados.json", true)
          numeroUsuario.send();
     // }
-}, 30000);
-
+}
 
 function surligne(campo, error)
 {

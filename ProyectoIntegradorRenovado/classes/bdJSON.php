@@ -26,15 +26,15 @@ class BdJSON extends Bd
 
   }
   public function sumarUsuarioConnectado(){
-    $count = 0;
     if ($_POST){
+      $count = (int) file_get_contents("connectados.json");
       $count = $count + 1;
       //opcion 1 : que pone el resultado por cada linea
-      file_put_contents("connectados.json", $count . PHP_EOL, FILE_APPEND);
+      file_put_contents("connectados.json", $count . PHP_EOL);
       // opcion 2 : que no se suma nada
-      $fp = fopen("connectados.json", 'c');
-      fwrite($fp, $count);
-      fclose($fp);
+      // $fp = fopen("connectados.json", 'c');
+      // fwrite($fp, $count);
+      // fclose($fp);
     }
     return $count;
   }
