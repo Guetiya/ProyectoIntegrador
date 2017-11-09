@@ -35,7 +35,7 @@ if (document.querySelector('.contar')) {
   setInterval(function() {
     checkUsers();
   }, 30000);
-  
+
 }
 
 function checkUsers(){
@@ -107,39 +107,72 @@ function validarForm(f)
 // elemento.addEventListener("click", function(){
 //   window.close();
 // })
-function varlidarusuario() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "" || x == "") {
-        alert("debe llenar el nombre");
-        return false;
-    }
-}
-function validarformulario() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-        alert("hay campos vacios por favor llenalos");
-        return false;
-    }
-}
-function chequearFormulario(form)
-{
-  if(this.nombre.value == "") {
-    alert("por favor ingrese su nombre");
-    this.name.focus();
+var username = document.forms["form"]["username"];
+var email = document.forms["form"]["email"];
+var password = document.forms["form"]["password"];
+var foto = document.forms["form"]["foto"];
+
+var error_nombre = document.getElementById("error_nombre");
+var error_email = document.getElementById("error_email");
+var error_password = document.getElementById("error_password");
+
+
+username.addEventListener("blur",nameVerify,true);
+username.addEventListener("blur",emailVerify,true);
+username.addEventListener("blur",passwordVerify,true);
+
+function validar() {
+  if (username.value == "") {
+    username.style.border = "1px solid red";
+    name_error.textContent = "se necesita el nombre";
+    username.focus();
     return false;
+
   }
-  if(this.email.value == "" || !this.correo.checked) {
-    alert("Por favor ingrese un mail valido");
-    this.email.focus();
+
+
+  if (email.value == "") {
+    email.style.border = "1px solid red";
+    email_error.textContent = "se necesita el mail";
+    email.focus();
     return false;
+
   }
-  /*if(this.age.value == "" || !this.valid_age.checked) {
-    alert("por favor ingrese");
-    this.age.focus();
+
+
+  if (password.value == "") {
+    password.style.border = "1px solid red";
+    password_error.textContent = "se necesita la contraseña";
+    password.focus();
     return false;
-  }*/
-  alert("Success!  The form has been completed, validated and is ready to be submitted...");
-  return false;
+
+  }
 }
+
+function verificarNombre() {
+  if (username.value != "") {
+    username.style.border = "1px solid #5E6E66 ";
+    error_nombre.innerHTML = "";
+    return true;
+
+  }
+
+  function verificarEmail() {
+    if (email.value != "") {
+      email.style.border = "1px solid #5E6E66 ";
+      error_email.innerHTML = "";
+      return true;
+
+    }
+
+    function verificarPassword() {
+      if (password.value != "") {
+        password.style.border = "1px solid #5E6E66 ";
+        password_error.innerHTML = "";
+        return true;
+
+      }
+
+
 
 }

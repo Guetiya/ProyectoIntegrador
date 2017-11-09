@@ -139,7 +139,7 @@ if ($_POST){
     </header>
     <main class="main_registro">
       <div class="container">
-      <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data" onkeypress="validarForm(f)">
+      <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data" onsubmit="validarForm(f)">
             <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
               <div class="form-group">
                 <label class="col-xs-3" for=""></label>
@@ -172,6 +172,7 @@ if ($_POST){
                             <label class="col-xs-3" for="apellido">Apellido* : </label>
                             <div class="col-xs-9">
                               <input type="text" placeholder="apellido" id="apellido" name="apellido" class="campos" maxlength="40" value="<?php if(isset($apellido)) {echo $apellido; } ?>" id="apellido" placeholder="Apellido" />
+                              <div id="error_nombre"class="val_error"></div>
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                     // if (isset($errores['apellido'])) {
@@ -187,6 +188,8 @@ if ($_POST){
                             <label class="col-xs-3" for="nombre">Nombre* : </label>
                             <div class="col-xs-9">
                               <input type="text" placeholder="nombre" id="nombre" name="nombre" class="campos" maxlength="40"  onchange=chequearFormulario() value="<?php if(isset($nombre)) {echo $nombre; } ?>">
+                              <div id="error_nombre"class="val_error"></div>
+
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                     // if (isset($errores['nombre'])) {
@@ -224,6 +227,8 @@ if ($_POST){
                             <label class="col-xs-3" for="correo">Correo electrónico* : </label>
                             <div class="col-xs-9">
                               <input type="email" placeholder="correo electrónico" id="correo" name="correo" class="campos" maxlength="40" onchange=chequearFormulario() value="<?php if(isset($correo)) {echo $correo; } ?>">
+                              <div id="error_mail"class="val_error"></div>
+
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                   // if (isset($errores['correo'])) {
@@ -238,6 +243,8 @@ if ($_POST){
                             <label class="col-xs-3" for="contrasena">Contraseña* : </label>
                             <div class="col-xs-9">
                               <input type="password" placeholder="contraseña" name="contrasena" class="campos" maxlength="40" >
+                              <div id="error_password"class="val_error"></div>
+
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                   // if (isset($errores['contrasena'])) {

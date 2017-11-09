@@ -468,6 +468,9 @@ footer .left-col .social li {
   height: 26px;
   margin-top: 20px;
 }
+.val_error{
+  color: #FF1F1F;
+}
 
 /* Contacto
 ================================*/
