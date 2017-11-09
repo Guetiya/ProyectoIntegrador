@@ -120,7 +120,8 @@ require_once('soporte.php');
         </div>
         <div class="rowBelleza">
           <div class="articulos col-sm-10">
-            <a href="articulosMaquillaje.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-heart"></span>Categoría Peinado</h4></a>
+            <a href="articulosMaquillaje.php" style="text-decoration:none;"><h5> <span class="glyphicon glyphicon-heart"></span> Categoría Peinado</h5></a>
+<h3>¡Taller de peinados a la moda francesa!</h3>
             <time class="entry-date published" datetime="2017-03-18T18:42:40+00:00">6 meses atrás</time>
             <p>Lorem ipsum ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
               ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in

@@ -51,6 +51,12 @@ aside a, i {
   overflow: hidden;
 }
 
+.contar{
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  color: #823d30;
+}
+
 .left-col ul li {
   list-style-type: none;
   float: left;

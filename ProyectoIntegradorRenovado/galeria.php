@@ -140,38 +140,63 @@ require_once('soporte.php');
 	<div class="row">
 		<div class='list-group gallery'>
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="fancybox thumbnail" rel="ligthbox" href="http://placehold.it/800x600.png">
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/fotoLea.jpg">
                     <img class="img-responsive" alt="" src="images/fotoLea.jpg" />
                 </a>
             </div> <!-- col-6 / end -->
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="fancybox thumbnail" rel="ligthbox" href="http://placehold.it/800x600.png">
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/fotoJuline.jpg">
                     <img class="img-responsive" alt="" src="images/fotoJuline.jpg" />
                 </a>
             </div> <!-- col-6 / end -->
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="fancybox thumbnail" rel="ligthbox" href="http://placehold.it/800x600.png">
-                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/sarah1.jpg">
+                    <img class="img-responsive" height="378,75" src="images/sarah1.jpg" />
                 </a>
             </div> <!-- col-6 / end -->
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="fancybox thumbnail" rel="ligthbox" href="http://placehold.it/800x600.png">
-                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/angeline1.jpg">
+                    <img class="img-responsive" alt="" src="images/angeline1.jpg" />
                 </a>
             </div> <!-- col-6 / end -->
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="fancybox thumbnail" rel="ligthbox" href="http://placehold.it/800x600.png">
-                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/severine2.jpg">
+                    <img class="img-responsive" alt="" src="images/severine2.jpg" />
                 </a>
             </div> <!-- col-6 / end -->
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="fancybox thumbnail" rel="ligthbox" href="http://placehold.it/800x600.png">
-                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/severine3.jpg">
+                    <img class="img-responsive" alt="" src="images/severine3.jpg" />
                 </a>
             </div> <!-- col-6 / end -->
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="fancybox thumbnail" rel="ligthbox" href="http://placehold.it/800x600.png">
-                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/severine4.jpg">
+                    <img class="img-responsive" alt="" src="images/severine4.jpg" />
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/severine5.jpg">
+                    <img class="img-responsive" alt="" src="images/severine5.jpg" />
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/severine1.jpg">
+                    <img class="img-responsive" alt="" src="images/severine1.jpg" />
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/severine6.jpg">
+                    <img class="img-responsive" alt="" src="images/severine6.jpg" />
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/alix1.jpg">
+                    <img class="img-responsive" alt="" src="images/alix1.jpg" />
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/romane1.jpg">
+                    <img class="img-responsive" alt="" src="images/romane1.jpg" />
                 </a>
             </div> <!-- col-6 / end -->
 
