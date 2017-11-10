@@ -29,7 +29,7 @@ require_once('soporte.php');
                   <li class="fr"> <a href="#">Francés</a><span class="separator">|</span></li>
                   <li class="es"> <a href="#">Español</a><span class="separator">|</span></li>
                   <li class="en"> <a href="#">Inglés</a><span class="separator">|</span></li>
-                  <li class="contar">Ya somos <span id="contar"></span>usuarios</li> 
+                  <li class="contar">Ya somos <span id="contar"></span>usuarios</li>
                 </ul>
                 <ul class="social">
                   <li><a href="https://www.facebook.com/delphine.bertin.coiffure/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
@@ -154,9 +154,10 @@ require_once('soporte.php');
               <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="200px">
               <div class="carousel-caption">
                 <a href="./quienSoy.php">
-                  <h3>¿Te vas a casar o tienes una ceremonia?</h3>
-                  <p>¡Qué buena noticia! ¿Te falta inspiración para tu peinado, maquillaje, e incluso tu vestuario? ¡No te preocupes!<strong> <em>Mariage en beauté </em></strong> te brinda consejos de belleza y te ofrece prestaciones
-                  personalizadas.<strong><em>Mariage en beauté</em></strong> juega sobre la combinación de un estilo adaptado con colores adecuadamente escogidos para resaltar tu belleza, con el fin de que irradies el día D. <br>Porque cada uno merece una belleza a medida, <strong><em>Mariage en beauté</em></strong> contribuye a descubrir la tuya.
+                  <h3>¿Tienes una ceremonia?</h3>
+                  <p>¿Te falta inspiración para tu peinado, maquillaje, e incluso tu vestuario? <strong> <em>Mariage en beauté </em></strong> te brinda consejos de belleza y te ofrece prestaciones personalizadas.
+                  <!-- <strong><em>Mariage en beauté</em></strong> juega sobre la combinación de un estilo adaptado con colores adecuadamente escogidos para resaltar tu belleza, con el fin de que irradies el día D.--> <br>
+                  Porque cada uno merece una belleza a medida, <strong><em>Mariage en beauté</em></strong> contribuye a descubrir la tuya.
                 </a>
               </div>
             </div>
@@ -176,7 +177,7 @@ require_once('soporte.php');
                 <a href="./maquillaje.php">
                   <h3>Maquillaje</h3>
                   <p>Maquillaje natural o uno más atrevido…. A través de su práctica y sus paletas de
-                    colores, <strong><em>Mariage en beauté</em></strong> escoge los que intensifican tus rasgos
+                    colores, <br><strong><em>Mariage en beauté</em></strong> escoge los que intensifican tus rasgos
                     para que tu cara se ilumine el día D.</p>
                 </a>
               </div>
