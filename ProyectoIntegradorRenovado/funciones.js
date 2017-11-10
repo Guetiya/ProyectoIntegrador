@@ -107,10 +107,10 @@ function validarForm(f)
 // elemento.addEventListener("click", function(){
 //   window.close();
 // })
-var username = document.forms["form"]["username"]; //para mi seria document.form ademas el username no existe en registarse.php
-var email = document.forms["form"]["email"]; //email no existe en registrarse.php
-var password = document.forms["form"]["password"]; //password no existe en registrarse.php
-var foto = document.forms["form"]["foto"]; // foto no existe en registrarse.php
+var username = document.forms["form"]["nombre"]; //para mi seria document.form ademas el username no existe en registarse.php
+var email = document.forms["form"]["correo"]; //email no existe en registrarse.php
+var password = document.forms["form"]["constrasena"]; //password no existe en registrarse.php
+var foto = document.forms["form"]["imgPerfil"]; // foto no existe en registrarse.php
 
 var error_nombre = document.getElementById("error_nombre");
 var error_email = document.getElementById("error_email"); //error_emailno existe en registarse.php
@@ -118,8 +118,8 @@ var error_password = document.getElementById("error_password");
 
 
 username.addEventListener("blur",nameVerify,true);
-username.addEventListener("blur",emailVerify,true);
-username.addEventListener("blur",passwordVerify,true);
+email.addEventListener("blur",emailVerify,true);
+password.addEventListener("blur",passwordVerify,true);
 
 function validar() {
   if (username.value == "") {
