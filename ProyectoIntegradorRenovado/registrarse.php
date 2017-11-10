@@ -187,7 +187,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="nombre">Nombre* : </label>
                             <div class="col-xs-9">
-                              <input type="text" placeholder="nombre" id="nombre" name="nombre" class="campos" maxlength="40"  onchange=chequearFormulario() value="<?php if(isset($nombre)) {echo $nombre; } ?>">
+                              <input type="text" placeholder="nombre" id="nombre" name="nombre" class="campos" maxlength="40"  onchange=verificarNombre() value="<?php if(isset($nombre)) {echo $nombre; } ?>">
                               <div id="error_nombre"class="val_error"></div>
 
                               <!-- <span style="color: red"  class='error'>
