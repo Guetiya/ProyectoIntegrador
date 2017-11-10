@@ -107,13 +107,13 @@ function validarForm(f)
 // elemento.addEventListener("click", function(){
 //   window.close();
 // })
-var username = document.forms["form"]["username"];
-var email = document.forms["form"]["email"];
-var password = document.forms["form"]["password"];
-var foto = document.forms["form"]["foto"];
+var username = document.forms["form"]["username"]; //para mi seria document.form ademas el username no existe en registarse.php
+var email = document.forms["form"]["email"]; //email no existe en registrarse.php
+var password = document.forms["form"]["password"]; //password no existe en registrarse.php
+var foto = document.forms["form"]["foto"]; // foto no existe en registrarse.php
 
 var error_nombre = document.getElementById("error_nombre");
-var error_email = document.getElementById("error_email");
+var error_email = document.getElementById("error_email"); //error_emailno existe en registarse.php
 var error_password = document.getElementById("error_password");
 
 
@@ -124,7 +124,7 @@ username.addEventListener("blur",passwordVerify,true);
 function validar() {
   if (username.value == "") {
     username.style.border = "1px solid red";
-    name_error.textContent = "se necesita el nombre";
+    name_error.textContent = "se necesita el nombre"; //de donde viene name_error
     username.focus();
     return false;
 
