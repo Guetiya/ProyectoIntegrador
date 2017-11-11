@@ -167,7 +167,6 @@ function validar_apellido() {
   apellido = document.getElementsByName('apellido').value;
   if (apellido == null || !isNaN(apellido) ) {
     document.getElementById("error_apellido").innerHTML="el apellido no es valido";
-    apellido.focus();
     return false;
   }
 
@@ -182,7 +181,6 @@ function validar_nombre() {
   nombre = document.getElementsByName('nombre').value;
   if (nombre == null || !isNaN(nombre) ) {
     document.getElementById("error_nombre").innerHTML="el nombre no es valido";
-    apellido.focus();
     return false;
   }
 
@@ -197,7 +195,6 @@ function validar_genero() {
    genero = document.getElementsByName('genero').value;
   if (genero == null ) {
     document.getElementById("error_genero").innerHTML="seleccione un genero";
-    genero.focus();
     return false;
   }
 
@@ -212,7 +209,6 @@ function validar_correo() {
   correo = document.getElementsByName('correo').value;
   if (correo == null ) {
     document.getElementById("error_mail").innerHTML="el correo no es valido";
-    correo.focus();
     return false;
   }
 
@@ -227,7 +223,6 @@ function validar_contrasena() {
   contrasena = document.getElementsByName('contrasena').value;
   if (contrasena == null ) {
     document.getElementById("error_contrasena").innerHTML="ingrese una contraseña";
-    contrasena.focus();
     return false;
   }
 
@@ -242,7 +237,6 @@ function validar_repetirContrasena() {
   repetirContrasena = document.getElementsByName('repetirContrasena').value;
   if (repetirContrasena == null ) {
     document.getElementById("error_repetirContrasena").innerHTML="ingrese la contraseña";
-    contrasena.focus();
     return false;
   }
 
@@ -257,7 +251,6 @@ function validar_foto() {
   imgPerfil = document.getElementsByName('imgPerfil').value;
   if (imgPerfil == null ) {
     document.getElementById("error_imgPerfil").innerHTML="ingrese una imagen";
-    imgPerfil.focus();
     return false;
   }
 
