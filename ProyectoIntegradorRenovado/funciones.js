@@ -175,7 +175,7 @@ function validar() {
 
     return false;
   }else if (!expresion.test(correo) ) {
-    alert("el correo no es valido");
+    alert("por favor ingrese los datos de forma correcta");
     return false;
 
   }
