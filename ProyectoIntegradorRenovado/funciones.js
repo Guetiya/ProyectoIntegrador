@@ -107,16 +107,74 @@ window.onload = function(){
 // elemento.addEventListener("click", function(){
 //   window.close();
 // })
+  var username = document.form["form"]["nombre"]; //para mi seria document.form ademas el username no existe en registarse.php
+  var email = document.form["form"]["correo"]; //email no existe en registrarse.php
+  var password = document.form["form"]["constrasena"]; //password no existe en registrarse.php
+  var foto = document.form["form"]["imgPerfil"]; // foto no existe en registrarse.php
+
+  var error_nombre = document.getElementById("error_nombre");
+  var error_email = document.getElementById("error_email"); //error_emailno existe en registarse.php
+  var error_password = document.getElementById("error_password");
+
+
+  username.addEventListener("blur",nameVerify,true);
+  email.addEventListener("blur",emailVerify,true);
+  password.addEventListener("blur",passwordVerify,true);
+
+  function validar() {
+    if (username.value == "") {
+      username.style.border = "1px solid red";
+      name_error.textContent = "se necesita el nombre"; //de donde viene name_error
+      username.focus();
+      return false;
+    }
+    if (email.value == "") {
+      email.style.border = "1px solid red";
+      email_error.textContent = "se necesita el mail";
+      email.focus();
+      return false;
+    }
+    if (password.value == "") {
+      password.style.border = "1px solid red";
+      password_error.textContent = "se necesita la contraseña";
+      password.focus();
+      return false;
+    }
+  }
+
+  function verificarNombre() {
+    if (username.value != "") {
+      username.style.border = "1px solid #5E6E66 ";
+      error_nombre.innerHTML = "";
+      return true;
+    }
+  }
+
+  function verificarEmail() {
+    if (email.value != "") {
+      email.style.border = "1px solid #5E6E66 ";
+      error_email.innerHTML = "";
+      return true;
+    }
+  }
+  function verificarPassword() {
+    if (password.value != "") {
+      password.style.border = "1px solid #5E6E66 ";
+      password_error.innerHTML = "";
+      return true;
+    }
+  }
+}
 function validar() {
   nombre = document.getElementsByName('nombre').value;
   apellido = document.getElementsByName('apellido').value;
   correo = document.getElementsByName('correo').value;
   expresion = /\w+@\w+\.+[a-z]/;
   if (nombre == "" || apellido == "" || correo == "") {
+    alert("por favor complete el formulario");
 
     return false;
-  }
-  if (!expresion.test(correo)) {
+  }else if (!expresion.test(correo) ) {
     alert("el correo no es valido");
     return false;
 
