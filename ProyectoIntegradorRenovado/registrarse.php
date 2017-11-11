@@ -172,7 +172,7 @@ if ($_POST){
                             <label class="col-xs-3" for="apellido">Apellido* : </label>
                             <div class="col-xs-9">
                               <input type="text" onfocus="return validar_apellido();"onchange="clear_apellido();"placeholder="apellido" id="apellido" name="apellido"  class="campos" maxlength="40" value="<?php if(isset($apellido)) {echo $apellido; } ?>" id="apellido" required />
-                              <div id="error_apellido"class="val_error"></div>
+                            <!-- esto hace que muestre el dialogo de error -->  <div id="error_apellido"class="val_error"></div>
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                     // if (isset($errores['apellido'])) {
@@ -220,6 +220,7 @@ if ($_POST){
                                 <option value="genero">Hombre</option>
                                 <option value="genero">Mujer</option>
                               </select> -->
+
                               <div id="error_genero"class="val_error"></div>
 
                             </div>
