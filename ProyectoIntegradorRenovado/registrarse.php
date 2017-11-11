@@ -138,7 +138,7 @@ if ($_POST){
     </header>
     <main class="main_registro">
       <div class="container">
-      <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data" onsubmit="return validacionjs();">
+      <form id='registro' onsubmit="return validacionjs();" action='registrarse.php' method='post' enctype="multipart/form-data">
             <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
               <div class="form-group">
                 <label class="col-xs-3" for=""></label>
@@ -158,7 +158,7 @@ if ($_POST){
                         ?>
                   </span>
                 <!-- </div> -->
-                <span style="color: red" type="center" class='error'> acá deberían ir los errores </span>
+              <div id="div-id" style="color: red" type="center" class='error'> </div>
               </div>
                 <div class="row">
                   <div class="col-xs-6 col-xs-offset-3">
@@ -171,8 +171,8 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="apellido">Apellido* : </label>
                             <div class="col-xs-9">
-                              <input type="text" placeholder="apellido" id="apellido" name="apellido"  class="campos" maxlength="40" value="<?php if(isset($apellido)) {echo $apellido; } ?>" id="apellido"  />
-                              <div id="error_nombre"class="val_error"></div>
+                              <input type="text" onfocus="return validar_apellido();"onchange="clear_apellido();"placeholder="apellido" id="apellido" name="apellido"  class="campos" maxlength="40" value="<?php if(isset($apellido)) {echo $apellido; } ?>" id="apellido" required />
+                              <div id="error_apellido"class="val_error"></div>
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                     // if (isset($errores['apellido'])) {
@@ -187,7 +187,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="nombre">Nombre* : </label>
                             <div class="col-xs-9">
-                              <input type="text" placeholder="nombre" id="nombre" name="nombre" class="campos" maxlength="40"   value="<?php if(isset($nombre)) {echo $nombre; } ?>" >
+                              <input type="text" onclick="return validar_nombre();" onchange="clear_nombre();"placeholder="nombre" id="nombre" name="nombre" class="campos" maxlength="40"   value="<?php if(isset($nombre)) {echo $nombre; } ?>" required>
                               <div id="error_nombre"class="val_error"></div>
 
                               <!-- <span style="color: red"  class='error'>
@@ -203,7 +203,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="genero">Genero : </label>
                             <div class="col-xs-9">
-                              <select class="campos <?=$huboErrorGenero?>" name="genero">
+                              <select class="campos onclick="return validar_genero();" onchange="clear_genero();" <?=$huboErrorGenero?>" name="genero" required>
                                 <?php foreach ($generos as $genero) : ?>
                                   <?php if ($_POST["genero"] == $genero) : ?>
                                     <option value="<?=$genero?>" selected>
@@ -220,13 +220,15 @@ if ($_POST){
                                 <option value="genero">Hombre</option>
                                 <option value="genero">Mujer</option>
                               </select> -->
+                              <div id="error_genero"class="val_error"></div>
+
                             </div>
                           </div>
 
                           <div class="form-group">
                             <label class="col-xs-3" for="correo">Correo electrónico* : </label>
                             <div class="col-xs-9">
-                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" class="campos" maxlength="40"  value="<?php if(isset($correo)) {echo $correo; } ?>"  >
+                              <input type="email" onclick="return validar_correo();" onchange="clear_correo();"placeholder="correo electrónico" id="correo" name="correo" class="campos" maxlength="40"  value="<?php if(isset($correo)) {echo $correo; } ?>" required >
                               <div id="error_mail"class="val_error"></div>
 
                               <!-- <span style="color: red"  class='error'>
@@ -242,8 +244,8 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="contrasena">Contraseña* : </label>
                             <div class="col-xs-9">
-                              <input type="password" placeholder="contraseña" name="contrasena" class="campos" maxlength="40" >
-                              <div id="error_password"class="val_error"></div>
+                              <input type="password" onclick="return validar_contrasena();" onchange="clear_contrasena();"placeholder="contraseña" name="contrasena" class="campos" maxlength="40" required>
+                              <div id="error_contrasena"class="val_error"></div>
 
                               <!-- <span style="color: red"  class='error'>
                                 <?php
@@ -258,7 +260,9 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="contrasena">Repetir contraseña* : </label>
                             <div class="col-xs-9">
-                              <input type="password" placeholder="contraseña" name="repetirContrasena" class="campos" maxlength="40"  >
+                              <input type="password" onclick="return validar_repetirContrasena();" onchange="clear_repetirContrasena();" placeholder="contraseña" name="repetirContrasena" class="campos" maxlength="40" required  >
+                              <div id="error_repetirContrasena"class="val_error"></div>
+
                               <!-- <span style="color: red"  class='error'>
                                 <?php
                                   // if (isset($errores['contrasena'])) {
@@ -272,14 +276,16 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="fotoPerfil">Foto perfil: </label>
                             <div class="col-xs-9">
-                              <input type='file' name='imgPerfil'><br/>
+                              <input type='file'  onclick="return validar_foto();" onchange="clear_foto();" name='imgPerfil' required><br/>
                               <span id='register_username_errorloc' class='error'></span>
+                              <div id="error_imgPerfil"class="val_error"></div>
+
                             </div>
                           </div>
                       </div>
                       <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                          <button type="submit" class="Formulario_registro" value="Me registro" id="submit" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
+                          <button type="submit" class="Formulario_registro" value="Me registro" id="submit" style="background-color:white;border-radius:80px;border-color:#FCA28D;" > Registrarme </button>
                           <button type="reset" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
                         </div>
                       </div>

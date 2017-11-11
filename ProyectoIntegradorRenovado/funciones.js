@@ -151,6 +151,7 @@ window.onload = function(){
     }
   }
 }
+
 function validacionjs() {
     apellido = document.getElementsByName('apellido').value;
     nombre = document.getElementsByName('nombre').value;
@@ -159,17 +160,111 @@ function validacionjs() {
     repetirContrasena = document.getElementsByName('repetirContrasena').value;
     var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
 
-    if (apellido == null || !isNaN(apellido) ) {
-      alert("el apellido no es valido");
-      return false;
-      document.span.error.write("el apellido no es valido");
-    }else if(nombre == null || !isNaN(nombre)) {
-      alert("el nombre no es valido");
-      return false;
-    }else if(correo == null) {
-      alert("complete el correo");
-      return false;
-    };
 
 
+}
+function validar_apellido() {
+  apellido = document.getElementsByName('apellido').value;
+  if (apellido == null || !isNaN(apellido) ) {
+    document.getElementById("error_apellido").innerHTML="el apellido no es valido";
+    apellido.focus();
+    return false;
+  }
+
+}
+function clear_apellido() {
+  apellido = document.getElementsByName('apellido').value;
+
+    document.getElementById("error_apellido").innerHTML="";
+    return false;
+}
+function validar_nombre() {
+  nombre = document.getElementsByName('nombre').value;
+  if (nombre == null || !isNaN(nombre) ) {
+    document.getElementById("error_nombre").innerHTML="el nombre no es valido";
+    apellido.focus();
+    return false;
+  }
+
+}
+function clear_nombre() {
+  nombre = document.getElementsByName('nombre').value;
+
+    document.getElementById("error_nombre").innerHTML="";
+    return false;
+}
+function validar_genero() {
+   genero = document.getElementsByName('genero').value;
+  if (genero == null ) {
+    document.getElementById("error_genero").innerHTML="seleccione un genero";
+    genero.focus();
+    return false;
+  }
+
+}
+function clear_genero() {
+  genero = document.getElementsByName('genero').value;
+
+    document.getElementById("error_genero").innerHTML="";
+    return false;
+}
+function validar_correo() {
+  correo = document.getElementsByName('correo').value;
+  if (correo == null ) {
+    document.getElementById("error_mail").innerHTML="el correo no es valido";
+    correo.focus();
+    return false;
+  }
+
+}
+function clear_correo() {
+  correo = document.getElementsByName('correo').value;
+
+    document.getElementById("error_mail").innerHTML="";
+    return false;
+}
+function validar_contrasena() {
+  contrasena = document.getElementsByName('contrasena').value;
+  if (contrasena == null ) {
+    document.getElementById("error_contrasena").innerHTML="ingrese una contraseña";
+    contrasena.focus();
+    return false;
+  }
+
+}
+function clear_contrasena() {
+  contrasena = document.getElementsByName('contrasena').value;
+
+    document.getElementById("error_contrasena").innerHTML="";
+    return false;
+}
+function validar_repetirContrasena() {
+  repetirContrasena = document.getElementsByName('repetirContrasena').value;
+  if (repetirContrasena == null ) {
+    document.getElementById("error_repetirContrasena").innerHTML="ingrese la contraseña";
+    contrasena.focus();
+    return false;
+  }
+
+}
+function clear_repetirContrasena() {
+  repetirContrasena = document.getElementsByName('repetirContrasena').value;
+
+    document.getElementById("error_repetirContrasena").innerHTML="";
+    return false;
+}
+function validar_foto() {
+  imgPerfil = document.getElementsByName('imgPerfil').value;
+  if (imgPerfil == null ) {
+    document.getElementById("error_imgPerfil").innerHTML="ingrese una imagen";
+    imgPerfil.focus();
+    return false;
+  }
+
+}
+function clear_foto() {
+  imgPerfil = document.getElementsByName('imgPerfil').value;
+
+    document.getElementById("error_imgPerfil").innerHTML="";
+    return false;
 }
