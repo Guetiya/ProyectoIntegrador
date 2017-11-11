@@ -111,10 +111,14 @@ function validar() {
   nombre = document.getElementsByName('nombre').value;
   apellido = document.getElementsByName('apellido').value;
   correo = document.getElementsByName('correo').value;
+  expresion = /\w+@\w+\.+[a-z]/;
   if (nombre == "" || apellido == "" || correo == "") {
-    alert("elcampo nobre esta vacio");
+
     return false;
   }
+  if (!expresion.test(correo)) {
+    alert("el correo no es valido");
+    return false;
 
-
+  }
 }
