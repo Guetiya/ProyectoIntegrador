@@ -152,6 +152,8 @@ window.onload = function(){
   }
 }
 
+//esta es la validacion que cuenta
+
 function validacionjs() {
     apellido = document.getElementsByName('apellido').value;
     nombre = document.getElementsByName('nombre').value;
