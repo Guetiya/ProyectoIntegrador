@@ -107,20 +107,6 @@ window.onload = function(){
 // elemento.addEventListener("click", function(){
 //   window.close();
 // })
-  var username = document.form["form"]["nombre"]; //para mi seria document.form ademas el username no existe en registarse.php
-  var email = document.form["form"]["correo"]; //email no existe en registrarse.php
-  var password = document.form["form"]["constrasena"]; //password no existe en registrarse.php
-  var foto = document.form["form"]["imgPerfil"]; // foto no existe en registrarse.php
-
-  var error_nombre = document.getElementById("error_nombre");
-  var error_email = document.getElementById("error_email"); //error_emailno existe en registarse.php
-  var error_password = document.getElementById("error_password");
-
-
-  username.addEventListener("blur",nameVerify,true);
-  email.addEventListener("blur",emailVerify,true);
-  password.addEventListener("blur",passwordVerify,true);
-
   function validar() {
     if (username.value == "") {
       username.style.border = "1px solid red";
@@ -165,18 +151,25 @@ window.onload = function(){
     }
   }
 }
-function validar() {
-  nombre = document.getElementsByName('nombre').value;
-  apellido = document.getElementsByName('apellido').value;
-  correo = document.getElementsByName('correo').value;
-  expresion = /\w+@\w+\.+[a-z]/;
-  if (nombre == "" || apellido == "" || correo == "") {
-    alert("por favor complete el formulario");
+function validacionjs() {
+    apellido = document.getElementsByName('apellido').value;
+    nombre = document.getElementsByName('nombre').value;
+    correo = document.getElementsByName('correo').value;
+    contrasena = document.getElementsByName('contrasena').value;
+    repetirContrasena = document.getElementsByName('repetirContrasena').value;
+    var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
 
-    return false;
-  }else if (!expresion.test(correo) ) {
-    alert("por favor ingrese los datos de forma correcta");
-    return false;
+    if (apellido == null || !isNaN(apellido) ) {
+      alert("el apellido no es valido");
+      return false;
+      document.span.error.write("el apellido no es valido");
+    }else if(nombre == null || !isNaN(nombre)) {
+      alert("el nombre no es valido");
+      return false;
+    }else if(correo == null) {
+      alert("complete el correo");
+      return false;
+    };
 
-  }
+
 }

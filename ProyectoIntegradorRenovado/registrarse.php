@@ -138,7 +138,7 @@ if ($_POST){
     </header>
     <main class="main_registro">
       <div class="container">
-      <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data" onsubmit="return validar();">
+      <form id='registro' action='registrarse.php' method='post' enctype="multipart/form-data" onsubmit="return validacionjs();">
             <input type='hidden' name='submitted' id='submitted' value='1'/> <!--pourquoi cette ligne? -->
               <div class="form-group">
                 <label class="col-xs-3" for=""></label>
@@ -158,6 +158,7 @@ if ($_POST){
                         ?>
                   </span>
                 <!-- </div> -->
+                <span style="color: red" type="center" class='error'> acá deberían ir los errores </span>
               </div>
                 <div class="row">
                   <div class="col-xs-6 col-xs-offset-3">
@@ -170,7 +171,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="apellido">Apellido* : </label>
                             <div class="col-xs-9">
-                              <input type="text" placeholder="apellido" id="apellido" name="apellido"  onchange="return validar()"class="campos" maxlength="40" value="<?php if(isset($apellido)) {echo $apellido; } ?>" id="apellido" placeholder="Apellido" />
+                              <input type="text" placeholder="apellido" id="apellido" name="apellido"  class="campos" maxlength="40" value="<?php if(isset($apellido)) {echo $apellido; } ?>" id="apellido"  />
                               <div id="error_nombre"class="val_error"></div>
                               <!-- <span style="color: red"  class='error'>
                                 <?php
@@ -186,7 +187,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="nombre">Nombre* : </label>
                             <div class="col-xs-9">
-                              <input type="text" placeholder="nombre" id="nombre" name="nombre" class="campos" maxlength="40"  onchange=return verificarNombre(); value="<?php if(isset($nombre)) {echo $nombre; } ?>" >
+                              <input type="text" placeholder="nombre" id="nombre" name="nombre" class="campos" maxlength="40"   value="<?php if(isset($nombre)) {echo $nombre; } ?>" >
                               <div id="error_nombre"class="val_error"></div>
 
                               <!-- <span style="color: red"  class='error'>
@@ -225,7 +226,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="correo">Correo electrónico* : </label>
                             <div class="col-xs-9">
-                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" class="campos" maxlength="40" onchange=return(verificarEmail()); value="<?php if(isset($correo)) {echo $correo; } ?>"  >
+                              <input type="email" placeholder="correo electrónico" id="correo" name="correo" class="campos" maxlength="40"  value="<?php if(isset($correo)) {echo $correo; } ?>"  >
                               <div id="error_mail"class="val_error"></div>
 
                               <!-- <span style="color: red"  class='error'>
@@ -278,7 +279,7 @@ if ($_POST){
                       </div>
                       <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                          <button type="submit" class="Formulario_registro" value="Me registro" id="submit" onsubmit="validar()" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
+                          <button type="submit" class="Formulario_registro" value="Me registro" id="submit" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Registrarme </button>
                           <button type="reset" class="Formulario_registro" style="background-color:white;border-radius:80px;border-color:#FCA28D;"> Borrar </button>
                         </div>
                       </div>
