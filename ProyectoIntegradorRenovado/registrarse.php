@@ -277,7 +277,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="fotoPerfil">Foto perfil: </label>
                             <div class="col-xs-9">
-                              <input type='file'  onclick="return validar_foto();" onchange="clear_foto();" name='imgPerfil' required><br/>
+                              <input type='file'   name='imgPerfil' required><br/>
                               <span id='register_username_errorloc' class='error'></span>
 
                             </div>

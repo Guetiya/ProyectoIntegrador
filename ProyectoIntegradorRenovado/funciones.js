@@ -249,17 +249,3 @@ function clear_repetirContrasena() {
     document.getElementById("error_repetirContrasena").innerHTML="";
     return false;
 }
-function validar_foto() {
-  imgPerfil = document.getElementsByName('imgPerfil').value;
-  if (imgPerfil == null ) {
-    document.getElementById("error_imgPerfil").innerHTML="ingrese una imagen";
-    return false;
-  }
-
-}
-function clear_foto() {
-  imgPerfil = document.getElementsByName('imgPerfil').value;
-
-    document.getElementById("error_imgPerfil").innerHTML="";
-    return false;
-}
