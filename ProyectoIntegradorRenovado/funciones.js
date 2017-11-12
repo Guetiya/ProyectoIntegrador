@@ -193,6 +193,7 @@ function clear_nombre() {
     document.getElementById("error_nombre").innerHTML="";
     return false;
 }
+//esto genera el error
 /*
 function validar_genero() {
    genero = document.getElementsByName('genero').value;
