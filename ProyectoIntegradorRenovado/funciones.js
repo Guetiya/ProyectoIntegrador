@@ -193,6 +193,7 @@ function clear_nombre() {
     document.getElementById("error_nombre").innerHTML="";
     return false;
 }
+/*
 function validar_genero() {
    genero = document.getElementsByName('genero').value;
   if (genero == null ) {
@@ -201,12 +202,14 @@ function validar_genero() {
   }
 
 }
+
 function clear_genero() {
   genero = document.getElementsByName('genero').value;
 
     document.getElementById("error_genero").innerHTML="";
     return false;
 }
+*/
 function validar_correo() {
   correo = document.getElementsByName('correo').value;
   if (correo == null ) {

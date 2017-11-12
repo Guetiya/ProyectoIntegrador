@@ -203,7 +203,7 @@ if ($_POST){
                           <div class="form-group">
                             <label class="col-xs-3" for="genero">Genero : </label>
                             <div class="col-xs-9">
-                              <select class="campos onclick="return validar_genero();" onchange="clear_genero();" <?=$huboErrorGenero?>" name="genero" required>
+                              <select class="campos <?=$huboErrorGenero?>" name="genero" required>
                                 <?php foreach ($generos as $genero) : ?>
                                   <?php if ($_POST["genero"] == $genero) : ?>
                                     <option value="<?=$genero?>" selected>
@@ -221,7 +221,7 @@ if ($_POST){
                                 <option value="genero">Mujer</option>
                               </select> -->
 
-                              <div id="error_genero"class="val_error"></div>
+                                <!--<div id="error_genero"class="val_error"></div>-->
 
                             </div>
                           </div>
