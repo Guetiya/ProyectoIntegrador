@@ -150,6 +150,11 @@ require_once('soporte.php');
                 </a>
             </div> <!-- col-6 / end -->
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                <a class="fancybox thumbnail" rel="ligthbox" href="images/fotomaquillaje1.jpg">
+                    <img class="img-responsive" alt="" src="images/fotomaquillaje1.jpg" />
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
                 <a class="fancybox thumbnail" rel="ligthbox" href="images/sarah1.jpg">
                     <img class="img-responsive" src="images/sarah1.jpg" />
                 </a>
@@ -197,11 +202,6 @@ require_once('soporte.php');
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
                 <a class="fancybox thumbnail" rel="ligthbox" href="images/romane1.jpg">
                     <img class="img-responsive" alt="" src="images/romane1.jpg" />
-                </a>
-            </div> <!-- col-6 / end -->
-            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="fancybox thumbnail" rel="ligthbox" href="images/fotomaquillaje1.jpg">
-                    <img class="img-responsive" alt="" src="images/fotomaquillaje1.jpg" />
                 </a>
             </div> <!-- col-6 / end -->
         </div> <!-- list-group / end -->

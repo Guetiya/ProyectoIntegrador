@@ -172,7 +172,7 @@ require_once('soporte.php');
               </div>
             </div>
             <div class="item">
-              <img src="images/fotoMaquillajebisCopie.jpg" alt="" width="247px">
+              <img src="images/fotoMaquillajebisCopie1.jpg" alt="" width="247px">
               <div class="carousel-caption">
                 <a href="./maquillaje.php">
                   <h3>Maquillaje</h3>
