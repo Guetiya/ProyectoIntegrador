@@ -151,7 +151,7 @@ require_once('soporte.php');
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="images/fotomaquillaje.jpg" alt="" width="200px" height="200px">
+              <img src="images/fotomaquillaje1.jpg" alt="" width="200px" height="200px">
               <div class="carousel-caption">
                 <a href="./quienSoy.php">
                   <h3>¿Tienes una ceremonia?</h3>
