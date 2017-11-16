@@ -153,6 +153,7 @@ window.onload = function(){
 }
 
 //esta es la validacion que cuenta
+// la validacion la hizo joaquin ( si es que no se nota)
 
 function validacionjs() {
     apellido = document.getElementsByName('apellido').value;
