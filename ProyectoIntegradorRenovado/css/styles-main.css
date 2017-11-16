@@ -187,7 +187,7 @@ main h1 {
   margin-bottom: 24px;
   font-size: 35px;
   font-weight: bold;
-  color: #823d30;#e7ece6
+  color: #f76d53fc;#823d30
 }
 
 .carousel-caption a {
@@ -357,18 +357,60 @@ margin-left: 522px;
 
 /* articulosBelleza
 ================================*/
+.rowBelleza .articulos a h4  {
+  font-family:'Lora', serif;
+  font-size: 23px;
+  font-weight: bold;
+  font-style: italic;
+  color : #FF9980;
+}
+
+.tituloNut {
+  font-family:'Lora', serif;
+  font-style: italic;
+  font-size: 19px;
+  color : #FF9980;
+  font-weight: bold;
+}
+.titulo {
+  font-family:'Lora', serif;
+  font-style: italic;
+  font-size: 19px;
+  color : #823d30;
+  font-weight: bold;
+}
 .fotoArticulosBelleza img {
   margin-left: 0px;
+  margin-top: 38px;
 }
 
 time {
   color : #aaa;
 }
 
-.rowBelleza p a{
+.rowBelleza p span a{
   color : #FF9980;
 }
 
+.leerMas {
+  color : #FF9980;
+}
+
+.link {
+  color : #823d30;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* articulosBelleza
+================================*/
+.rowNutricion .articulos a h4  {
+  font-family:'Lora', serif;
+  font-size: 23px;
+  font-weight: bold;
+  font-style: italic;
+  color : #FF9980;
+}
 /* articulos articulo1
 ================================*/
 h5 {
@@ -479,7 +521,61 @@ footer .left-col .social li {
   border-radius: 80px;
   width: 250px;
 }*/
+/* Testimonios
+================================*/
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+  background-color: #333;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #FF9980;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+    color : #fff;
+    font-size: 14.5px;
+}
+blockquote .firmaClient {
+  font-style: italic;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
 
 /* Media Querys
 ================================*/

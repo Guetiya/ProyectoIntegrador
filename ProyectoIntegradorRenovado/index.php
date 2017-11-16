@@ -34,7 +34,7 @@ require_once('soporte.php');
                 <ul class="social">
                   <li><a href="https://www.facebook.com/delphine.bertin.coiffure/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
                   <li><a href="https://www.instagram.com/?hl=fr" target="new"><i class="fa fa-instagram fa-2x"></a></i></li>
-                  <li><a href="https://www.youtube.com" target="new"><i class="fa fa-youtube"></a></i></li>
+                  <li><a href="https://www.youtube.com" target="new"><i class="fa fa-youtube fa-2x"></a></i></li>
                 </ul>
               </div>
             </aside>
@@ -193,12 +193,12 @@ require_once('soporte.php');
               </div>
             </div>
             <div class="item">
-              <img src="images/fotoNutricion.jpg" alt="" width="200px" height="266px">
+              <img src="images/fotoNut.jpg" alt="" width="243px" height="95px">
               <div class="carousel-caption">
                 <a href="./nutricion.php">
                   <h3>Nutrición</h3>
-                  <p><strong><em>Mariage en beauté</em></strong> asocia tambien el bien estar porque
-                  la belleza empieza a partir de lo que hay adentro de vos. Cuidar su interior para cuidar su belleza.</p>
+                  <p><strong><em>Mariage en beauté</em></strong> asocia tambien el bien estar porque la belleza empieza a partir de lo que <br>
+                  hay adentro de vos. Cuidar su interior para cuidar su belleza.</p>
                 </a>
               </div>
             </div>
@@ -222,11 +222,12 @@ require_once('soporte.php');
               <h2 style="text-align:center;" id="articulos">Artículos</h2>
               <a href="articulosBelleza.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-heart"></span>Categoría Belleza</h4></a>
               <p>Cuidar su piel para usar menos productos, ganar en tiempo y en plata... <a href="./articuloBelleza1.php">leer más</a></p>
-              <a href="articulosNutricion.php"style="text-decoration:none;"><h4><span class="glyphicon glyphicon-apple"></span>Categoría Nutrición</h4></a>
+              <a href="articulosNutricion.php" style="text-decoration:none;"><h4><span class="glyphicon glyphicon-apple"></span>Categoría Nutrición</h4></a>
               <p>Sabes que tu alimentacion influenca tu tez  ytu belleza en general... <a href="./articuloNutricion1.php">leer más</a></p>
             </div>
 
             <div class="testimonios col-sm-4">
+              <a href="./testimonios.php" style="text-decoration:none;">
               <h2 class="">Testimonios</h2>
               <span class="glyphicon glyphicon-menu-left"></span>
               <img src="images/Photo 003 - Copie.jpg" alt="" width="100px" height="100px" class="img-circle">
@@ -235,6 +236,7 @@ require_once('soporte.php');
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 Duis aute irure dolor in tur.</p>
+              </a>
             </div>
 
             <div class="testimonios col-sm-4">
@@ -262,6 +264,7 @@ require_once('soporte.php');
                 <ul class="social">
                   <li><a href="https://www.facebook.com/" target="new"><i class="fa fa-facebook-square fa-2x"></a></i></li>
                   <li><a href="https://www.instagram.com/?hl=fr" target="new"><i class="fa fa-instagram fa-2x"></a></i></li>
+                  <li><a href="https://www.youtube.com" target="new"><i class="fa fa-youtube fa-2x"></a></i></li>
                 </ul>
               </div>
             </aside>

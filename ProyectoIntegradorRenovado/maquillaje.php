@@ -126,7 +126,7 @@ require_once('soporte.php');
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="foto col-sm-4">
-              <a href="./galeria.php"><img src="images/fotomaquillaje.jpg" alt="" width="200px" height="250px"></a>
+              <a href="./galeria.php"><img src="images/fotoMaquillaje1.jpg" alt="" width="200px" height="250px"></a>
               <p><span class="glyphicon glyphicon-hand-right" style="color:#ff9980"></span><a href="articulos.php#belleza" style="color:#ff9980"> Articulos belleza</a></p>
               <p><span class="glyphicon glyphicon-hand-right"style="color:#ff9980"></span><a href="#" style="color:#ff9980"> Testimonios</a></p>
             </div>
